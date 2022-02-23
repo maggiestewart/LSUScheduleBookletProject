@@ -2,16 +2,6 @@ function Course () {
     this.department = "CSC";
 }
 
-let course = new Course();
-
-let objClassAgg = new ClassAggregation();
-
-objClassAgg.fillCourseSelection("ClassFile.xml");
-
-let websiteDisplay = new Display();
-
-websiteDisplay.Run();
-
 
 class ClassConstruct {
     constructor(){
@@ -41,10 +31,6 @@ class ClassConstruct {
 
 
 class ClassAggregation {
-
-    courseSelection;
-    filteredCourseSelection;
-
     /*
     * This constructor should take in the courses previously imported from the XML file and fill the both array
     * members with the data.
@@ -75,19 +61,6 @@ class ClassAggregation {
     }
 }
 
-class Display {
-    /*
-    * displays the schedule booklet and such
-    * Also entails the constant updating of the information being displayed on screen, such as updated classes
-    */
-    Run () {
-        //These are examples of the types of search bars and pop-up windows we will instantiate
-        let availabilitySearch = new SearchBar;
-        let schedulePlannerBox = new SchedulePlanner();
-        let helpfulLinksBox = new helpfulLinksBox();
-        return true;
-    }
-}
 
 class PopupBox {
     //shows the popup box
@@ -101,10 +74,29 @@ class PopupBox {
 }
 
 class SchedulePlanner extends PopupBox {
+    //Take user input
 }
 
 class HelpfulLinks extends PopupBox {
+    Run () {
+        return ["link1","link2"];
+    }
 }
+
+class Display {
+    /*
+    * displays the schedule booklet and such
+    * Also entails the constant updating of the information being displayed on screen, such as updated classes
+    */
+    Run () {
+        //These are examples of the types of search bars and pop-up windows we will instantiate
+        let availabilitySearch = new SearchBar;
+        let schedulePlannerBox = new SchedulePlanner();
+        let helpfulLinks = new HelpfulLinks();
+        return true;
+    }
+}
+
 
 class SearchBar {
     Run () {
@@ -113,7 +105,18 @@ class SearchBar {
 
     Search(){
         objClassAgg.sortCourses(null,null,null,null,null,null,null,
-                                null,null,null,null,null,null,null,
-                                null,null);
+            null,null,null,null,null,null,null,
+            null,null);
     }
 }
+
+
+let course = new Course();
+
+let objClassAgg = new ClassAggregation();
+
+objClassAgg.fillCourseSelection("ClassFile.xml");
+
+let websiteDisplay = new Display();
+
+websiteDisplay.Run();
