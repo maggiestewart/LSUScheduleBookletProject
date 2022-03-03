@@ -1,4 +1,5 @@
 //Dustin Wleczyk
+//Maggie Stewart
 
 
 function Course () {
