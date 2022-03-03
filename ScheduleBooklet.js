@@ -2,7 +2,7 @@
 //Maggie Stewart
 //Olivia Cheung
 //Joshua McCain
-
+//Serene Sam
 
 function Course () {
     this.department = "CSC";
