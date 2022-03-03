@@ -1,3 +1,6 @@
+//Dustin Wleczyk
+
+
 function Course () {
     this.department = "CSC";
 }
