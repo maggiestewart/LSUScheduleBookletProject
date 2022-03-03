@@ -1,6 +1,7 @@
 //Dustin Wleczyk
 //Maggie Stewart
 //Olivia Cheung
+//Joshua McCain
 
 
 function Course () {
