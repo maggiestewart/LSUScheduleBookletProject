@@ -3,6 +3,7 @@
 //Olivia Cheung
 //Joshua McCain
 //Serene Sam
+//Steven Seiden
 
 function Course () {
     this.department = "CSC";
