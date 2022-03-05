@@ -60,6 +60,7 @@ class ClassAggregation {
         httpReq.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
                 document.getElementById("test").innerHTML = this.responseText;
+                this.fillCourseSelection(xmlFileName);
             }
         };
         httpReq.open("GET", xmlFileName, true);
