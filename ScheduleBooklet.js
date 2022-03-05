@@ -51,8 +51,23 @@ class ClassAggregation {
         return true;
     }
 
+    /*
+     * Loads the xml file that the function is called with so that any xml file from LSU booklet can be used.
+     * In the if statement, calling the fill course selection lets us fill our array when the file is ready.
+     */
+    loadXMLFile(xmlFileName){
+        let httpReq = new XMLHttpRequest();
+        httpReq.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("test").innerHTML = this.responseText;
+            }
+        };
+        httpReq.open("GET", xmlFileName, true);
+        httpReq.send();
+    }
+
     fillCourseSelection(xmlFileName){
-        //The ClassConstruct will be called here for each line in the XML file so that each class is accounted for.
+        //The ClassConstruct will be called here for each row in the XML file so that each class is accounted for.
         // For now, it will just contain the default class.
         this.courseSelection = [new ClassConstruct()];
         this.filteredCourseSelection = [new ClassConstruct()];
@@ -122,7 +137,7 @@ let course = new Course();
 
 let objClassAgg = new ClassAggregation();
 
-objClassAgg.fillCourseSelection("ClassFile.xml");
+objClassAgg.loadXMLFile("csc.xml");
 
 let websiteDisplay = new Display();
 
