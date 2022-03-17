@@ -68,8 +68,20 @@ class ClassAggregation {
     }
 
     fillCourseSelection(xmlFileName){
-        //The ClassConstruct will be called here for each row in the XML file so that each class is accounted for.
-        // For now, it will just contain the default class.
+        //Set up XML file to be read
+        let xmlFile = xmlFileName.responseXML;
+        //Get row tags so that each course can be filled individually
+        let rowTags = xmlFile.getElementsByTagName("Row");
+
+        for (let i = 0; i < rowTags.length; i++){
+            //Get each Data tag for the row we are working on
+            let dataTags = rowTags[i].getElementsByTagName("Data");
+            for (let j = 0; j < dataTags.length; j++){
+                
+            }
+
+        }
+
         this.courseSelection = [new ClassConstruct()];
         this.filteredCourseSelection = [new ClassConstruct()];
     }
