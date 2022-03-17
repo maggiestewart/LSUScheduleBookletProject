@@ -77,7 +77,16 @@ class ClassAggregation {
             //Get each Data tag for the row we are working on
             let dataTags = rowTags[i].getElementsByTagName("Data");
             for (let j = 0; j < dataTags.length; j++){
-                
+                //Checks to see if the next row exists, and if it does it is a lab row (aka # of Data tags less than normal)
+                if (i + 1 < rowTags.length && rowTags[i + 1].getElementsByTagName("Data").length < 12){
+
+                    //We run this line because we want to skip over the lab line we just imported and pick up with the next row
+                    i++;
+                }
+                else {
+
+                }
+
             }
 
         }
