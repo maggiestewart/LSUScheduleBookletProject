@@ -5,37 +5,165 @@
 //Serene Sam
 //Steven Seiden
 
-function Course () {
-    this.department = "CSC";
-}
-
-
 class ClassConstruct {
-    constructor(){
-        course.number = 3380;
-        course.section = 1;
-        course.title = "Object Oriented Design";
-        course.hours = 3;
-        course.startTime = "10:30";
-        course.endTime = "11:50";
-        course.days = "TR";
-        course.professor = "Aymond";
-        course.available = 5;
-        course.size = 90;
-        course.building = "Patrick Taylor";
-        course.room = 1100;
-        course.flags = "CI";
-        course.lab = false;
-        course.labStartTime = null;
-        course.labEndTime = null;
+
+    #number = null;
+    #section = null;
+    #title = null;
+    #hours = null;
+    #startTime = null;
+    #endTime = null;
+    #days = null;
+    #professor = null;
+    #available = null;
+    #size = null;
+    #building = null;
+    #room = null;
+    #flags = null;
+    #lab = null;
+    #labStartTime = null;
+    #labEndTime = null;
+
+    static ClassBuilder = class {
+        #number = null;
+        #section = null;
+        #title = null;
+        #hours = null;
+        #startTime = null;
+        #endTime = null;
+        #days = null;
+        #professor = null;
+        #available = null;
+        #size = null;
+        #building = null;
+        #room = null;
+        #flags = null;
+        #lab = null;
+        #labStartTime = null;
+        #labEndTime = null;
+
+        setNumber(number){
+            this.#number = number;
+            return this;
+        }
+
+        setSection(section){
+            this.#section = section;
+            return this;
+        }
+
+        setTitle(title){
+            this.#title = title;
+            return this;
+        }
+
+        setHours(hours){
+            this.#hours = hours;
+            return this;
+        }
+
+        setStartTime(startTime){
+            this.#startTime = startTime;
+            return this;
+        }
+
+        setEndTime(endTime){
+            this.#endTime = endTime;
+            return this;
+        }
+
+        setDays(days){
+            this.#days = days;
+            return this;
+        }
+
+        setProfessor(professor){
+            this.#professor = professor;
+            return this;
+        }
+
+        setAvailable(available){
+            this.#available = available;
+            return this;
+        }
+
+        setSize(size){
+            this.#size = size;
+            return this;
+        }
+
+        setBuilding(building){
+            this.#building = building;
+            return this;
+        }
+
+        setRoom(room){
+            this.#room = room;
+            return this;
+        }
+
+        setFlags(flags){
+            this.#flags = flags;
+            return this;
+        }
+
+        setLab(lab){
+            this.#lab = lab;
+            return this;
+        }
+
+        setLabStartTime(labStartTime){
+            this.#labStartTime = labStartTime;
+            return this;
+        }
+
+        setLabEndTime(labEndTime){
+            this.#labEndTime = labEndTime;
+            return this;
+        }
+
+        build() {
+            const course = new ClassConstruct(
+                this.#number,
+                this.#section,
+                this.#title,
+                this.#hours,
+                this.#startTime,
+                this.#endTime,
+                this.#days,
+                this.#professor,
+                this.#available,
+                this.#size,
+                this.#building,
+                this.#room,
+                this.#flags,
+                this.#lab,
+                this.#labStartTime,
+                this.#labEndTime)
+            return course
+        }
     }
 
-    //class constructor
-    //will have a function that takes in parameters of data types of the classes (search bars)
-    //will be pulling from XML file
+    constructor(number, section, title, hours, startTime, endTime, days, professor, available, size, building, room,
+                flags, lab, labStart, labEnd){
+        this.#number = number;
+        this.#section = section;
+        this.#title = title;
+        this.#hours = hours;
+        this.#startTime = startTime;
+        this.#endTime = endTime;
+        this.#days = days;
+        this.#professor = professor;
+        this.#available = available;
+        this.#size = size;
+        this.#building = building;
+        this.#room = room;
+        this.#flags = flags;
+        this.#lab = lab;
+        this.#labStartTime = labStart;
+        this.#labEndTime = labEnd;
+    }
 }
-
-
 
 class ClassAggregation {
     /*
@@ -153,9 +281,6 @@ class SearchBar {
             null,null);
     }
 }
-
-
-let course = new Course();
 
 let objClassAgg = new ClassAggregation();
 
