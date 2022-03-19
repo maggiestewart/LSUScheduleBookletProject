@@ -195,28 +195,30 @@ class ClassAggregation {
         httpReq.send();
     }
 
-    fillCourseSelection(xmlFileName){
+    fillCourseSelection(xmlFileName) {
         //Set up XML file to be read
         let xmlFile = xmlFileName.responseXML;
         //Get row tags so that each course can be filled individually
         let rowTags = xmlFile.getElementsByTagName("Row");
 
-        for (let i = 0; i < rowTags.length; i++){
+        for (let i = 0; i < rowTags.length; i++) {
             //Get each Data tag for the row we are working on
             let dataTags = rowTags[i].getElementsByTagName("Data");
-            for (let j = 0; j < dataTags.length; j++){
-                //Checks to see if the next row exists, and if it does it is a lab row (aka # of Data tags less than normal)
-                if (i + 1 < rowTags.length && rowTags[i + 1].getElementsByTagName("Data").length < 12){
+
+            //For each row, if the first data tag is a number or "(F)", we know it is a class we want to extract from
+            //If it doesn't follow this rule, for this project, we should just ignore it.
+            if (dataTags[0].getAttribute("ss.Type") === "Number" || dataTags[0].innerHTML === "(F)") {
+
+
+
+                //Checks to see if the next row exists, and if it does, is it a lab row (aka first value is "LAB")
+                if (i + 1 < rowTags.length && rowTags[i + 1].getElementsByTagName("Data")[0].innerHTML === "LAB") {
 
                     //We run this line because we want to skip over the lab line we just imported and pick up with the next row
                     i++;
                 }
-                else {
-
-                }
 
             }
-
         }
 
         this.courseSelection = [new ClassConstruct()];
