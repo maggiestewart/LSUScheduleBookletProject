@@ -186,7 +186,7 @@ class ClassAggregation {
     loadXMLFile(xmlFileName){
         let httpReq = new XMLHttpRequest();
         httpReq.onreadystatechange = function() {
-            if (this.readyState == 4 && this.status == 200) {
+            if (this.readyState === 4 && this.status === 200) {
                 document.getElementById("test").innerHTML = this.responseText;
                 this.fillCourseSelection(xmlFileName);
             }
@@ -207,12 +207,27 @@ class ClassAggregation {
 
             //For each row, if the first data tag is a number or "(F)", we know it is a class we want to extract from
             //If it doesn't follow this rule, for this project, we should just ignore it.
-            if (dataTags[0].getAttribute("ss.Type") === "Number" || dataTags[0].innerHTML === "(F)") {
+            if (dataTags[0].getAttribute("ss.Type") === "Number" || dataTags[0].innerText === "(F)") {
 
+                let tempCourse = new ClassConstruct.ClassBuilder();
 
+                //All courses have the same 4 starting data tag formats, selecting correct data tag positions
+                tempCourse.setAvailable(dataTags[0].innerText)
+                          .setSize(dataTags[1].innerText)
+                          .setNumber(dataTags[3].innerText);
 
-                //Checks to see if the next row exists, and if it does, is it a lab row (aka first value is "LAB")
-                if (i + 1 < rowTags.length && rowTags[i + 1].getElementsByTagName("Data")[0].innerHTML === "LAB") {
+                /* This if statement will split the classes into groups based on the class type, which seems to
+                * be a deciding factor in how a class in structured in the booklet.
+                */
+                if (dataTags[4].getAttribute("ss.Type") === "Number"){
+                   tempCourse.setSection(dataTags[4].innerText);
+                }
+                else if (dataTags[4].innerText === "RES" || dataTags[4].innerText === "IND") {
+
+                }
+
+                //Checks to see if the next row exists, and if it does, is it a lab row? (aka first value is "LAB")
+                if (i + 1 < rowTags.length && rowTags[i + 1].getElementsByTagName("Data")[0].innerText === "LAB") {
 
                     //We run this line because we want to skip over the lab line we just imported and pick up with the next row
                     i++;
