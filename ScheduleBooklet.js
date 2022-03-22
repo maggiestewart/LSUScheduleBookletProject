@@ -321,13 +321,14 @@ class ClassAggregation {
         }
     }
 
-    sortCourses(number, section, title, hours, startTime, endTime, days,
-                professor, available, size, building, room, flags, lab, labStart, labEnd) {
-        return true;
+    sortCourses(hours, startTime, endTime, days, professor, available, flags, lab) {
+        
+
+        return this.filteredCourseSelection;
     }
 
-    sendFilteredClasses(){
-        return this.filteredCourseSelection;
+    sendProfessors(){
+
     }
 }
 
