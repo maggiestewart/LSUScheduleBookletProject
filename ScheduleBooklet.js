@@ -230,30 +230,29 @@ class ClassAggregation {
                 || cellTags[0].getElementsByTagName("Data")[0].innerText === "(F)") {
 
                 tempCourse = tempCourse.setAvailable(cellTags[0].getElementsByTagName("Data")[0].innerText)
-                                       .setSize(cellTags[1].getElementsByTagName("Data")[0].innerText)
-                                       .setNumber(cellTags[3].getElementsByTagName("Data")[0].innerText);
+                    .setSize(cellTags[1].getElementsByTagName("Data")[0].innerText)
+                    .setNumber(cellTags[3].getElementsByTagName("Data")[0].innerText);
 
                 if (cellTags[4].querySelector("Data") != null)
                     tempCourse = tempCourse.setType(cellTags[4].getElementsByTagName("Data")[0].innerText);
 
                 tempCourse = tempCourse.setSection(cellTags[5].getElementsByTagName("Data")[0].innerText)
-                                       .setTitle(cellTags[6].getElementsByTagName("Data")[0].innerText)
-                                       .setHours(cellTags[7].getElementsByTagName("Data")[0].innerText);
+                    .setTitle(cellTags[6].getElementsByTagName("Data")[0].innerText)
+                    .setHours(cellTags[7].getElementsByTagName("Data")[0].innerText);
 
-                if (cellTags[8].getElementsByTagName("Data")[0].innerText !== "TBA"){
+                if (cellTags[8].getElementsByTagName("Data")[0].innerText !== "TBA") {
 
                     //Set times
                     const timeArray = cellTags[8].getElementsByTagName("Data")[0].innerText.split("-");
                     tempCourse = tempCourse.setStartTime(timeArray[0]).setEndTime(timeArray[1])
-                                           .setDays(cellTags[9].getElementsByTagName("Data")[0].innerText);
+                        .setDays(cellTags[9].getElementsByTagName("Data")[0].innerText);
 
                     //If it has a room, get the room and building
                     if (cellTags[10].querySelector("Data") != null)
                         tempCourse = tempCourse.setRoom(cellTags[10].getElementsByTagName("Data")[0].innerText)
-                                               .setBuilding(cellTags[11].getElementsByTagName("Data")[0].innerText);
+                            .setBuilding(cellTags[11].getElementsByTagName("Data")[0].innerText);
 
-                }
-                else
+                } else
                     tempCourse = tempCourse.setStartTime("TBA").setEndTime("TBA");
 
                 //Get special tags when applicable
@@ -269,21 +268,22 @@ class ClassAggregation {
                     tempCourse = tempCourse.setLab(true);
 
                     //Set times by splitting the "-" if not TBA
-                    if (rowTags[i + 1].getElementsByTagName("Data")[1].innerText !== "TBA"){
+                    if (rowTags[i + 1].getElementsByTagName("Data")[1].innerText !== "TBA") {
                         const labTimeArray = rowTags[i + 1].getElementsByTagName("Data")[1].innerText.split("-");
                         tempCourse = tempCourse.setLabStartTime(labTimeArray[0]).setLabEndTime(labTimeArray[1])
-                                               .setLabDays(rowTags[i + 1].getElementsByTagName("Data")[2].innerText);
-                    }
-                    else
+                            .setLabDays(rowTags[i + 1].getElementsByTagName("Data")[2].innerText);
+                    } else {
                         tempCourse = tempCourse.setLabStartTime("TBA").setLabEndTime("TBA");
-
+                    }
                     //We run this line because we want to skip over the lab line we just imported and pick up with the next row
                     i++;
                 }
 
                 this.courseSelection.push(tempCourse.build());
             }
+        }
 
+        this.filteredCourseSelection = this.filteredCourseSelection.concat(this.courseSelection);
             /*
             //Get each Data tag for the row we are working on
             let dataTags = rowTags[i].getElementsByTagName("Data");
@@ -318,12 +318,94 @@ class ClassAggregation {
                 }
 
             }*/
+    }
+
+    filterStartTime()
+    {
+
+    }
+
+    filterDays(days)
+    {
+        var daysArray = str.split(/(\s+)/);
+
+
+        for (var i = 0; i < daysArray; i++) {
+            switch(daysArray[i]) {
+                case "M":
+                    return true;
+                    break;
+                case "T":
+                    return true;
+                    break;
+                case "W":
+                    return true;
+                    break;
+                case "TH":
+                    return true;
+                    break;
+                case "F":
+                    return true;
+                    break;
+                case "S":
+                    return true;
+                    break;
+                case "MTWTFS":
+                    return true;
+                    break;
+                default:
+                    return false;
+                    break;
+            }
         }
     }
 
-    sortCourses(hours, startTime, endTime, days, professor, available, flags, lab) {
-        
+    filterProfessor()
+    {
 
+    }
+
+    //a method for filtering availability, it is called in the sortCourses method
+    filterAvailable(available){
+        //Hiding items that are full
+        if(available == "(F)"){
+            return false;
+            //Hiding items that are on hold
+        } else if(available == "(H)"){
+            return false;
+        } else { //for all numbers and star-ed comments
+            return true;
+        }
+    }
+
+
+    sortCourses(startTime, days, professor, available, flags) {
+        this.filteredCourseSelection = this.filteredCourseSelection.concat(this.courseSelection);
+
+        if (startTime != null){
+
+        }
+
+        if (days != null){
+
+        }
+
+        if (professor != null){
+
+        }
+
+        if (available != null) {
+            filterAvailable();
+        }
+
+        if (flags != null){
+
+        }
+
+        return this.filteredCourseSelection;
+    }
+
+    sendCourses(){
         return this.filteredCourseSelection;
     }
 
