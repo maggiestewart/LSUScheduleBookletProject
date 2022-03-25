@@ -11,23 +11,42 @@
 
             header {
                 background-color: #4F2992;
-                padding: 10px;
+                padding: 5px;
                 text-align: center;
                 color: white;
                 position:fixed;
                 top:0;
                 width: 100%;
+                flex:none;
             }
 
+            html, body {
+                margin: 0;
+                height: 100%;
+                min-height: 100%;
+                position:absolute;
+            }
+
+            body{
+                display: flex;
+                flex-direction: column;
+            }
+
+            main{
+                overflow-y: scroll;
+                -webkit-overflow-scrolling: touch;
+                flex: auto;
+
+            }
             footer {
                 background-color: #4F2992;
-                padding: 10px;
+                padding: 5px;
                 text-align: center;
                 color: white;
                 position:fixed;
                 bottom:0;
                 width: 100%;
-
+                flex:none;
             }
 
         </style>
@@ -35,16 +54,32 @@
         <header>
             <h1>LSU Course Offering</h1>
             <p>Welcome!</p>
+
+            <label for="semester">Choose a semester:</label>
+            <select name="semester" id="semester">
+                <option value="Fall 2022">Fall 2022</option>
+                <option value="Spring 2022">Spring 2022</option>
+                <option value="Fall 2021">Fall 2021</option>
+                <option value="Spring 2021">Spring 2021</option>
+            </select>
+
+            <br>
+
+            <label for="department">Choose a department:</label>
+            <select name="department" id="department">
+                <option value="Computer Science">Computer Science</option>
+                <option value="Math">Math</option>
+            </select>
         </header>
 
-        <p id="test">test</p>
+        <main>
+            <p id="test">test</p>
 
-        <!--- XML information
             <script src="ScheduleBooklet.js"></script>
-        --->
+        </main>
 
         <footer>
-            <p> Other information</p>
+            <p> Other information </p>
         </footer>
 
     </body>
