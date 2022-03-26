@@ -25,6 +25,8 @@ class ClassConstruct {
     #labStartTime = null;
     #labEndTime = null;
     #labDays = null;
+    #startTimeHours=null;
+    #startTimeMinutes=null;
 
     static ClassBuilder = class {
         #number = null;
@@ -45,6 +47,8 @@ class ClassConstruct {
         #labStartTime = null;
         #labEndTime = null;
         #labDays = null;
+        #startTimeHours=null;
+        #startTimeMinutes=null;
 
         setNumber(number){
             this.#number = number;
@@ -136,6 +140,16 @@ class ClassConstruct {
             return this;
         }
 
+        setStartTimeHours(startTimeHours){
+            this.#startTimeHours=startTimeHours;
+            return this;
+        }
+
+        setStartTimeMinutes(startTimeMinutes){
+            this.#startTimeMinutes=startTimeMinutes;
+            return this;
+        }
+
         build() {
             const course = new ClassConstruct(
                 this.#number,
@@ -155,13 +169,15 @@ class ClassConstruct {
                 this.#lab,
                 this.#labStartTime,
                 this.#labEndTime,
-                this.#labDays)
+                this.#labDays,
+                this.#startTimeHours,
+                this.#startTimeMinutes)
             return course
         }
     }
 
     constructor(number, section, type, title, hours, startTime, endTime, days, professor, available, size, building, room,
-                flags, lab, labStart, labEnd, labDays){
+                flags, lab, labStart, labEnd, labDays, startTimeHours, startTimeMinutes){
         this.#number = number;
         this.#section = section;
         this.#type = type;
@@ -180,6 +196,8 @@ class ClassConstruct {
         this.#labStartTime = labStart;
         this.#labEndTime = labEnd;
         this.#labDays = labDays;
+        this.#startTimeHours=startTimeHours;
+        this.#startTimeMinutes=startTimeMinutes;
     }
 
     sendAvailable() {
@@ -329,17 +347,35 @@ class ClassAggregation {
             }*/
     }
 
-    filterStartTime()
+    filterStartTime(startTime)
     {
+        if(startTime.length==3)
+        {
+            var hour3=startTime.slice(0,1);
+            var min3=startTime.slice(1);
 
+            for(var i=0;i<startTime.length;i++)
+            {
+                if(hour3=='9')
+                    return true;
+                elseif(hour3=='4')
+                    return true;
+                elseif(hour3=='')
+                    return false;
+            }
+        }
+        elseif(startTime.length==4)
+        {
+            var hour4=startTime.slice(0,2);
+            var min4=startTime.slice(2);
+        }
     }
 
     filterDays(days)
     {
         let daysArray = days.sendDays().split(/(\s+)/);
 
-
-        for (let i = 0; i < daysArray; i++) {
+        for (var i = 0; i < daysArray; i++) {
             switch(daysArray[i]) {
                 case "M":
                     return true;
@@ -392,11 +428,11 @@ class ClassAggregation {
         this.filteredCourseSelection = [].concat(this.courseSelection);
 
         if (startTime != null){
-
+            this.filterStartTime();
         }
 
         if (days != null){
-
+            this.filterDays();
         }
 
         if (professor != null){
@@ -404,7 +440,7 @@ class ClassAggregation {
         }
 
         if (available != null) {
-            this.filteredCourseSelection = this.filteredCourseSelection.filter(this.filterAvailable);
+            this.filterAvailable();
         }
 
         if (flags != null){
