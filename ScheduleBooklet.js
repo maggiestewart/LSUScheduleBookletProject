@@ -365,6 +365,40 @@ class ClassAggregation {
 
     }
 
+    filterFlags(flags){
+        if(flags == "100% WEB BASED") {
+            return true;
+        } else if (flags == "PERMIS OF DEPT"){
+            return true;
+        } else if (flags == "PERMIS OF INST"){
+            return true;
+        } else if (flags.substring(0, 3) == "C-I"){
+            return true;
+        } else if (flags.substring(0, 8) == "RES COLG") {
+            return true;
+        } else if (flags == "SVC LEARNING") {
+            return true;
+        } else if (flags == "MAJORS ONLY") {
+            return true;
+        } else if (flags == "NON-MAJORS ONLY") {
+            return true;
+        } else if (flags == "AUDITION REQ'D") {
+            return true;
+        } else if (flags == "AFFORDABLE EDUC") {
+            return true;
+        } else if (flags == "OPEN EDUCATIONA") {
+            return true;
+        } else if (flags == "100% WEB BASED"){
+            return true;
+        } else if (flags == "75-99% WEB BASE"){
+            return true;
+        } else if (flags == "50-74% WEB BASE"){
+            return true;
+        } else if (flags == "1-49% WEB BASED"){
+            return true;
+        }
+    }
+
     //a method for filtering availability, it is called in the sortCourses method
     filterAvailable(available){
         //Hiding items that are full
