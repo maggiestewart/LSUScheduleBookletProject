@@ -327,10 +327,10 @@ class ClassAggregation {
 
     filterDays(days)
     {
-        var daysArray = str.split(/(\s+)/);
+        let daysArray = str.split(/(\s+)/);
 
 
-        for (var i = 0; i < daysArray; i++) {
+        for (let i = 0; i < daysArray; i++) {
             switch(daysArray[i]) {
                 case "M":
                     return true;
@@ -368,10 +368,10 @@ class ClassAggregation {
     //a method for filtering availability, it is called in the sortCourses method
     filterAvailable(available){
         //Hiding items that are full
-        if(available == "(F)"){
+        if (available === "(F)"){
             return false;
             //Hiding items that are on hold
-        } else if(available == "(H)"){
+        } else if (available === "(H)"){
             return false;
         } else { //for all numbers and star-ed comments
             return true;
@@ -395,7 +395,7 @@ class ClassAggregation {
         }
 
         if (available != null) {
-            filterAvailable();
+            this.filterAvailable();
         }
 
         if (flags != null){
