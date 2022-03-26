@@ -181,6 +181,14 @@ class ClassConstruct {
         this.#labEndTime = labEnd;
         this.#labDays = labDays;
     }
+
+    sendAvailable() {
+        return this.#available;
+    }
+
+    sendDays() {
+        return this.#days;
+    }
 }
 
 class ClassAggregation {
@@ -227,7 +235,8 @@ class ClassAggregation {
             let tempCourse = new ClassConstruct.ClassBuilder();
 
             if (cellTags[0].getElementsByTagName("Data")[0].getAttribute("ss.Type") === "Number"
-                || cellTags[0].getElementsByTagName("Data")[0].innerText === "(F)") {
+                || cellTags[0].getElementsByTagName("Data")[0].innerText === "(F)"
+                || cellTags[0].getElementsByTagName("Data")[0].innerText === "(H)") {
 
                 tempCourse = tempCourse.setAvailable(cellTags[0].getElementsByTagName("Data")[0].innerText)
                     .setSize(cellTags[1].getElementsByTagName("Data")[0].innerText)
@@ -327,7 +336,7 @@ class ClassAggregation {
 
     filterDays(days)
     {
-        let daysArray = str.split(/(\s+)/);
+        let daysArray = days.sendDays().split(/(\s+)/);
 
 
         for (let i = 0; i < daysArray; i++) {
@@ -368,10 +377,10 @@ class ClassAggregation {
     //a method for filtering availability, it is called in the sortCourses method
     filterAvailable(available){
         //Hiding items that are full
-        if (available === "(F)"){
+        if (available.sendAvailable() === "(F)"){
             return false;
             //Hiding items that are on hold
-        } else if (available === "(H)"){
+        } else if (available.sendAvailable() === "(H)"){
             return false;
         } else { //for all numbers and star-ed comments
             return true;
@@ -380,7 +389,7 @@ class ClassAggregation {
 
 
     sortCourses(startTime, days, professor, available, flags) {
-        this.filteredCourseSelection = this.filteredCourseSelection.concat(this.courseSelection);
+        this.filteredCourseSelection = [].concat(this.courseSelection);
 
         if (startTime != null){
 
@@ -395,7 +404,7 @@ class ClassAggregation {
         }
 
         if (available != null) {
-            this.filterAvailable();
+            this.filteredCourseSelection = this.filteredCourseSelection.filter(this.filterAvailable);
         }
 
         if (flags != null){
