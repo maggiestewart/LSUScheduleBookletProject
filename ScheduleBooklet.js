@@ -405,9 +405,11 @@ class ClassAggregation {
         }
     }
 
-    filterProfessor()
+    filterProfessor(professorWanted)
     {
-
+        if(professor == professorWanted){
+            return true;
+        }
     }
 
     filterFlags(flags){
