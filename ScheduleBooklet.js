@@ -505,9 +505,15 @@ class ClassAggregation {
     sendCourses(){
         return this.filteredCourseSelection;
     }
-
+    
     sendProfessors(){
-
+        for(var i;i<this.courseSelection.length;i++)
+        {
+            if(this.filterProfessor())
+            {
+                return this.courseSelection(this.filterProfessor());
+            }
+        }
     }
 }
 
