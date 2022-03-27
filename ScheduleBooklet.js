@@ -27,6 +27,8 @@ class ClassConstruct {
     #labDays = null;
     #startTimeHours=null;
     #startTimeMinutes=null;
+    #endTimeHours=null;
+    #endTimeMinutes=null;
 
     static ClassBuilder = class {
         #number = null;
@@ -49,6 +51,8 @@ class ClassConstruct {
         #labDays = null;
         #startTimeHours=null;
         #startTimeMinutes=null;
+        #endTimeHours=null;
+        #endTimeMinutes=null;
 
         setNumber(number){
             this.#number = number;
@@ -150,6 +154,14 @@ class ClassConstruct {
             return this;
         }
 
+        setEndTimeHours(endTimeHours){
+            this.#endTimeHours=endTimeHours;
+        }
+
+        setEndTimeMinutes(endTimeMinutes){
+            this.#endTimeMinutes=endTimeMinutes;
+        }
+
         build() {
             const course = new ClassConstruct(
                 this.#number,
@@ -171,13 +183,15 @@ class ClassConstruct {
                 this.#labEndTime,
                 this.#labDays,
                 this.#startTimeHours,
-                this.#startTimeMinutes)
+                this.#startTimeMinutes,
+                this.#endTimeHours,
+                this.#endTimeMinutes)
             return course
         }
     }
 
     constructor(number, section, type, title, hours, startTime, endTime, days, professor, available, size, building, room,
-                flags, lab, labStart, labEnd, labDays, startTimeHours, startTimeMinutes){
+                flags, lab, labStart, labEnd, labDays, startTimeHours, startTimeMinutes,endTimeHours,endTimeMinutes){
         this.#number = number;
         this.#section = section;
         this.#type = type;
@@ -198,6 +212,8 @@ class ClassConstruct {
         this.#labDays = labDays;
         this.#startTimeHours=startTimeHours;
         this.#startTimeMinutes=startTimeMinutes;
+        this.#endTimeHours=endTimeHours;
+        this.#startTimeMinutes=endTimeMinutes;
     }
 
     sendAvailable() {
@@ -271,7 +287,12 @@ class ClassAggregation {
 
                     //Set times
                     const timeArray = cellTags[8].getElementsByTagName("Data")[0].innerText.split("-");
-                    tempCourse = tempCourse.setStartTime(timeArray[0]).setEndTime(timeArray[1])
+                    const startTimer=tempCourse.setStartTimeHours(timeArray[0].slice(0,timeArray[0].length-2))
+                        .setStartTimeMinutes(timeArray[0].slice(timeArray[0].length-2,timeArray[0].length));
+                    const endTimer=tempCourse.setEndTimeHours(timeArray[1].slice(0,timeArray[1].length-2))
+                        .setEndTimeMinutes(timeArray[1].slice(timeArray[1].length-2,timeArray[1].length));
+                    tempCourse = tempCourse.setStartTime(timeArray[0]).setStartTimeHours(startTimer[0])
+                        .setStartTimeMinutes(startTimer[1]).setEndTimeHours(endTimer[0]).setEndTimeMinutes(endTimer[1])
                         .setDays(cellTags[9].getElementsByTagName("Data")[0].innerText);
 
                     //If it has a room, get the room and building
@@ -347,27 +368,22 @@ class ClassAggregation {
             }*/
     }
 
-    filterStartTime(startTime)
+    //sorting using the hours
+    filterStartTime(startTime,endTime)
     {
-        if(startTime.length==3)
+        const hours=startTime.slice(0,startTime.length-2);
+        const minutes=startTime.slice(startTime.length-2,startTime.length);
+        if(!endTime.includes('N')&&startTime>430)
         {
-            var hour3=startTime.slice(0,1);
-            var min3=startTime.slice(1);
-
-            for(var i=0;i<startTime.length;i++)
-            {
-                if(hour3=='9')
-                    return true;
-                elseif(hour3=='4')
-                    return true;
-                elseif(hour3=='')
-                    return false;
-            }
+            hours.sort();
         }
-        elseif(startTime.length==4)
+        else if(startTime<430)
         {
-            var hour4=startTime.slice(0,2);
-            var min4=startTime.slice(2);
+            hours.sort();
+        }
+        else if(endTime.includes('N')&&startTime>430)
+        {
+            hours.sort();
         }
     }
 
@@ -470,7 +486,7 @@ class ClassAggregation {
         }
 
         if (professor != null){
-
+            this.filterProfessor();
         }
 
         if (available != null) {
@@ -478,7 +494,7 @@ class ClassAggregation {
         }
 
         if (flags != null){
-
+            this.filterFlags();
         }
 
         return this.filteredCourseSelection;
