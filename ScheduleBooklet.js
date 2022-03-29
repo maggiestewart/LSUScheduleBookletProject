@@ -473,6 +473,7 @@ class ClassAggregation {
         } else { //for all numbers and star-ed comments
             return true;
         }
+
     }
 
 
@@ -484,19 +485,19 @@ class ClassAggregation {
         }
 
         if (days != null){
-            this.filterDays();
+            this.filteredCourseSelection=this.filteredCourseSelection.filter(this.filterDays);
         }
 
         if (professor != null){
-            this.filterProfessor();
+            this.filteredCourseSelection=this.filteredCourseSelection.filter(this.filterProfessor);
         }
 
         if (available != null) {
-            this.filterAvailable();
+            this.filteredCourseSelection=this.filteredCourseSelection.filter(this.filterAvailable);
         }
 
         if (flags != null){
-            this.filterFlags();
+            this.filteredCourseSelection=this.filteredCourseSelection.filter(this.filterFlags);
         }
 
         return this.filteredCourseSelection;
@@ -505,7 +506,7 @@ class ClassAggregation {
     sendCourses(){
         return this.filteredCourseSelection;
     }
-    
+
     sendProfessors(){
         for(var i;i<this.courseSelection.length;i++)
         {
