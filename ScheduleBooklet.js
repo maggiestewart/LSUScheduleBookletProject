@@ -25,10 +25,6 @@ class ClassConstruct {
     #labStartTime = null;
     #labEndTime = null;
     #labDays = null;
-    #startTimeHours=null;
-    #startTimeMinutes=null;
-    #endTimeHours=null;
-    #endTimeMinutes=null;
 
     static ClassBuilder = class {
         #number = null;
@@ -49,10 +45,6 @@ class ClassConstruct {
         #labStartTime = null;
         #labEndTime = null;
         #labDays = null;
-        #startTimeHours=null;
-        #startTimeMinutes=null;
-        #endTimeHours=null;
-        #endTimeMinutes=null;
 
         setNumber(number){
             this.#number = number;
@@ -144,26 +136,8 @@ class ClassConstruct {
             return this;
         }
 
-        setStartTimeHours(startTimeHours){
-            this.#startTimeHours=startTimeHours;
-            return this;
-        }
-
-        setStartTimeMinutes(startTimeMinutes){
-            this.#startTimeMinutes=startTimeMinutes;
-            return this;
-        }
-
-        setEndTimeHours(endTimeHours){
-            this.#endTimeHours=endTimeHours;
-        }
-
-        setEndTimeMinutes(endTimeMinutes){
-            this.#endTimeMinutes=endTimeMinutes;
-        }
-
         build() {
-            const course = new ClassConstruct(
+            return new ClassConstruct(
                 this.#number,
                 this.#section,
                 this.#type,
@@ -181,12 +155,7 @@ class ClassConstruct {
                 this.#lab,
                 this.#labStartTime,
                 this.#labEndTime,
-                this.#labDays,
-                this.#startTimeHours,
-                this.#startTimeMinutes,
-                this.#endTimeHours,
-                this.#endTimeMinutes)
-            return course
+                this.#labDays)
         }
     }
 
@@ -210,10 +179,6 @@ class ClassConstruct {
         this.#labStartTime = labStart;
         this.#labEndTime = labEnd;
         this.#labDays = labDays;
-        this.#startTimeHours = startTimeHours;
-        this.#startTimeMinutes = startTimeMinutes;
-        this.#endTimeHours = endTimeHours;
-        this.#startTimeMinutes = endTimeMinutes;
     }
 
     sendAvailable() {
@@ -226,6 +191,14 @@ class ClassConstruct {
 
     sendFlags() {
         return this.#flags
+    }
+
+    sendStartTime() {
+        return this.#startTime;
+    }
+
+    sendEndTime() {
+        return this.#endTime;
     }
 }
 
@@ -292,12 +265,13 @@ class ClassAggregation {
 
                     //Set times
                     const timeArray = cellTags[8].getElementsByTagName("Data")[0].innerText.split("-");
+                    /*
                     const startTimer=tempCourse.setStartTimeHours(timeArray[0].slice(0,timeArray[0].length-2))
                         .setStartTimeMinutes(timeArray[0].slice(timeArray[0].length-2,timeArray[0].length));
                     const endTimer=tempCourse.setEndTimeHours(timeArray[1].slice(0,timeArray[1].length-2))
                         .setEndTimeMinutes(timeArray[1].slice(timeArray[1].length-2,timeArray[1].length));
-                    tempCourse = tempCourse.setStartTime(timeArray[0]).setStartTimeHours(startTimer[0])
-                        .setStartTimeMinutes(startTimer[1]).setEndTimeHours(endTimer[0]).setEndTimeMinutes(endTimer[1])
+                     */
+                    tempCourse = tempCourse.setStartTime(timeArray[0]).setEndTime(timeArray[1])
                         .setDays(cellTags[9].getElementsByTagName("Data")[0].innerText);
 
                     //If it has a room, get the room and building
@@ -329,9 +303,10 @@ class ClassAggregation {
                         const labTimeArray = rowTags[i + 1].getElementsByTagName("Data")[1].innerText.split("-");
                         tempCourse = tempCourse.setLabStartTime(labTimeArray[0]).setLabEndTime(labTimeArray[1])
                             .setLabDays(rowTags[i + 1].getElementsByTagName("Data")[2].innerText);
-                    } else {
-                        tempCourse = tempCourse.setLabStartTime("TBA").setLabEndTime("TBA");
                     }
+                    else
+                        tempCourse = tempCourse.setLabStartTime("TBA").setLabEndTime("TBA");
+
                     //We run this line because we want to skip over the lab line we just imported and pick up with the next row
                     i++;
                 }
@@ -377,23 +352,26 @@ class ClassAggregation {
             }*/
     }
 
-    //sorting using the hours
-    filterStartTime(startTime,endTime)
-    {
-        const hours=startTime.slice(0,startTime.length-2);
-        const minutes=startTime.slice(startTime.length-2,startTime.length);
-        if(!endTime.includes('N')&&startTime>430)
-        {
-            hours.sort();
-        }
-        else if(startTime<430)
-        {
-            hours.sort();
-        }
-        else if(endTime.includes('N')&&startTime>430)
-        {
-            hours.sort();
-        }
+    /*
+    * Filters classes of type CourseConstruct based on start time to get morning classes (start of day to 12:00)
+    */
+    filterStartTimeByMorning(course) {
+        return !course.sendEndTime().includes('N') && parseInt(course.sendStartTime()) >= 730
+               && parseInt(course.sendStartTime()) <= 1200;
+    }
+
+    /*
+    * Filters classes of type CourseConstruct based on start time to get afternoon classes (12:00 to before 4:30 start)
+    */
+    filterStartTimeByAfternoon(course) {
+        return parseInt(course.sendStartTime()) < 430 && parseInt(course.sendStartTime()) > 1200;
+    }
+
+    /*
+    * Filters classes of type CourseConstruct based on night flag N to get night classes (start of day to 12:00)
+    */
+    filterStartTimeByNight(course) {
+        return course.sendEndTime().includes('N');
     }
 
     filterDays(days)
@@ -438,7 +416,7 @@ class ClassAggregation {
     }
 
     /* I am putting the original code here so we don't lose all the flags we could theoretically sort by.
-    * filterCIFlag(flags){
+     filterCIFlag(flags){
         if(flags == "100% WEB BASED") {
             return true;
         } else if (flags == "PERMIS OF DEPT"){
@@ -486,7 +464,6 @@ class ClassAggregation {
     filterAvailable(available){
         //Hiding items that are full or on hold, aka only sending numbers back because those are available
         return !(available.sendAvailable() === "(F)" || available.sendAvailable() === "(H)");
-
     }
 
     /*
@@ -494,12 +471,30 @@ class ClassAggregation {
     * 1) null: meaning we don't want to filter/sort by that parameter.
     * 2) some other meaningful value (TBD what that value is for each filter): will pass the if statement and
     * sort accordingly.
-    * */
+    *
+    * *****HOW TO NAME EACH PARAMETER IF NOT NULL*****
+    * 1) startTime: as a string, either 1) "morning" 2) "afternoon" 3) "night"
+    *
+    * 2) days:
+    *
+    * 3) professor:
+    *
+    * 4) available: true if included, null if not
+    *
+    * 5) CIflag: true if included, null if not
+    *
+    * 6) WEBflag: true if included, null if not
+    */
     sortCourses(startTime, days, professor, available, CIflag, WEBflag) {
         this.filteredCourseSelection = [].concat(this.courseSelection);
 
         if (startTime != null){
-            this.filterStartTime();
+            if (startTime === "morning")
+                this.filteredCourseSelection = this.filteredCourseSelection.filter(this.filterStartTimeByMorning);
+            else if (startTime === "afternoon")
+                this.filteredCourseSelection = this.filteredCourseSelection.filter(this.filterStartTimeByAfternoon);
+            else if (startTime === "night")
+                this.filteredCourseSelection = this.filteredCourseSelection.filter(this.filterStartTimeByNight);
         }
 
         if (days != null){
