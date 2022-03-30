@@ -210,10 +210,10 @@ class ClassConstruct {
         this.#labStartTime = labStart;
         this.#labEndTime = labEnd;
         this.#labDays = labDays;
-        this.#startTimeHours=startTimeHours;
-        this.#startTimeMinutes=startTimeMinutes;
-        this.#endTimeHours=endTimeHours;
-        this.#startTimeMinutes=endTimeMinutes;
+        this.#startTimeHours = startTimeHours;
+        this.#startTimeMinutes = startTimeMinutes;
+        this.#endTimeHours = endTimeHours;
+        this.#startTimeMinutes = endTimeMinutes;
     }
 
     sendAvailable() {
@@ -222,6 +222,10 @@ class ClassConstruct {
 
     sendDays() {
         return this.#days;
+    }
+
+    sendFlags() {
+        return this.#flags
     }
 }
 
@@ -433,7 +437,8 @@ class ClassAggregation {
         }
     }
 
-    filterFlags(flags){
+    /* I am putting the original code here so we don't lose all the flags we could theoretically sort by.
+    * filterCIFlag(flags){
         if(flags == "100% WEB BASED") {
             return true;
         } else if (flags == "PERMIS OF DEPT"){
@@ -465,21 +470,32 @@ class ClassAggregation {
         } else if (flags == "1-49% WEB BASED"){
             return true;
         }
+    }*/
+
+    filterCIFlag(course){
+        return course.sendFlags.slice(0,2) === "C-I";
     }
+
+    filterWEBFlag(course){
+        return course.sendFlags === "100% WEB BASED" || course.sendFlags === "75-99% WEB BASE"
+            || course.sendFlags === "50-74% WEB BASE" || course.sendFlags === "1-49% WEB BASED";
+        }
+
 
     //a method for filtering availability, it is called in the sortCourses method
     filterAvailable(available){
-        //Hiding items that are full or on hold
-        if (available.sendAvailable() === "(F)" || available.sendAvailable() === "(H)"){
-            return false;
-        } else { //for all numbers
-            return true;
-        }
+        //Hiding items that are full or on hold, aka only sending numbers back because those are available
+        return !(available.sendAvailable() === "(F)" || available.sendAvailable() === "(H)");
 
     }
 
-
-    sortCourses(startTime, days, professor, available, flags) {
+    /*
+    * For this method, parameters will either be passed as:
+    * 1) null: meaning we don't want to filter/sort by that parameter.
+    * 2) some other meaningful value (TBD what that value is for each filter): will pass the if statement and
+    * sort accordingly.
+    * */
+    sortCourses(startTime, days, professor, available, CIflag, WEBflag) {
         this.filteredCourseSelection = [].concat(this.courseSelection);
 
         if (startTime != null){
@@ -498,8 +514,12 @@ class ClassAggregation {
             this.filteredCourseSelection = this.filteredCourseSelection.filter(this.filterAvailable);
         }
 
-        if (flags != null){
-            this.filteredCourseSelection = this.filteredCourseSelection.filter(this.filterFlags);
+        if (CIflag != null){
+            this.filteredCourseSelection = this.filteredCourseSelection.filter(this.filterCIFlag);
+        }
+
+        if (WEBflag != null){
+            this.filteredCourseSelection = this.filteredCourseSelection.filter(this.filterWEBFlag);
         }
 
         return this.filteredCourseSelection;
