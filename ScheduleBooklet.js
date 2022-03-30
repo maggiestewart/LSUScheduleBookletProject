@@ -233,6 +233,7 @@ class ClassAggregation {
     constructor(){
         this.courseSelection = [];
         this.filteredCourseSelection = [];
+        this.profSelection = [];
     }
 
     Run () {
@@ -308,8 +309,12 @@ class ClassAggregation {
                     tempCourse = tempCourse.setFlags(cellTags[12].getElementsByTagName("Data")[0].innerText);
 
                 //Get professor when applicable
-                if (cellTags[13].querySelector("Data") != null)
-                    tempCourse = tempCourse.setFlags(cellTags[13].getElementsByTagName("Data")[0].innerText);
+                if (cellTags[13].querySelector("Data") != null) {
+                    tempCourse = tempCourse.setProfessor(cellTags[13].getElementsByTagName("Data")[0].innerText);
+                    //Add unique professors to a list for frontend to display
+                    if (!this.profSelection.contains(cellTags[13].getElementsByTagName("Data")[0].innerText))
+                        this.profSelection.push(cellTags[13].getElementsByTagName("Data")[0].innerText);
+                }
 
                 //Check to see if the class has a lab and fill out its info if so
                 if (i + 1 < rowTags.length && rowTags[i + 1].getElementsByTagName("Data")[0].innerText === "LAB") {
@@ -464,13 +469,10 @@ class ClassAggregation {
 
     //a method for filtering availability, it is called in the sortCourses method
     filterAvailable(available){
-        //Hiding items that are full
-        if (available.sendAvailable() === "(F)"){
+        //Hiding items that are full or on hold
+        if (available.sendAvailable() === "(F)" || available.sendAvailable() === "(H)"){
             return false;
-            //Hiding items that are on hold
-        } else if (available.sendAvailable() === "(H)"){
-            return false;
-        } else { //for all numbers and star-ed comments
+        } else { //for all numbers
             return true;
         }
 
@@ -485,19 +487,19 @@ class ClassAggregation {
         }
 
         if (days != null){
-            this.filteredCourseSelection=this.filteredCourseSelection.filter(this.filterDays);
+            this.filteredCourseSelection = this.filteredCourseSelection.filter(this.filterDays);
         }
 
         if (professor != null){
-            this.filteredCourseSelection=this.filteredCourseSelection.filter(this.filterProfessor);
+            this.filteredCourseSelection = this.filteredCourseSelection.filter(this.filterProfessor);
         }
 
         if (available != null) {
-            this.filteredCourseSelection=this.filteredCourseSelection.filter(this.filterAvailable);
+            this.filteredCourseSelection = this.filteredCourseSelection.filter(this.filterAvailable);
         }
 
         if (flags != null){
-            this.filteredCourseSelection=this.filteredCourseSelection.filter(this.filterFlags);
+            this.filteredCourseSelection = this.filteredCourseSelection.filter(this.filterFlags);
         }
 
         return this.filteredCourseSelection;
@@ -508,7 +510,7 @@ class ClassAggregation {
     }
 
     sendProfessors(){
-        for(var i;i<this.courseSelection.length;i++)
+        for(let i; i < this.courseSelection.length; i++)
         {
             if(this.filterProfessor())
             {
