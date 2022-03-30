@@ -1,0 +1,71 @@
+.outsideHeaderWrapper {
+    height: 100%;
+}
+.header {
+    background-color: #4F2992;
+
+    text-align: center;
+    color: white;
+    position:fixed;
+    left: 0;
+    top:0;
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+.navBarOutsideWrapper {
+    margin-top: 114px;
+    text-alight: center;
+    position: static;
+
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.navBar {
+    flex: border-box ;
+    text-align: center;
+    background-color: grey;
+    position: static;
+    width: 100%;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.middlePage {
+    overflow: scroll;
+}
+
+.outerFooterWraper {
+    height: 100%;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer {
+    background-color: #4F2992;
+    text-align: center;
+    color: white;
+    position: relative;
+    padding: 50px;
+
+    width: 100%;
+
+    bottom: 0;
+
+}
+
+a {
+    display: block;
+    width: 100%;
+    line-height: 2em;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+}
+a:hover {
+    color: rebeccapurple;
+    background: #eff;
+}
