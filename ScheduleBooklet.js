@@ -316,7 +316,7 @@ class ClassAggregation {
                 if (cellTags[13].querySelector("Data") != null) {
                     tempCourse = tempCourse.setProfessor(cellTags[13].getElementsByTagName("Data")[0].innerText);
                     //Add unique professors to a list for frontend to display
-                    if (!this.profSelection.contains(cellTags[13].getElementsByTagName("Data")[0].innerText))
+                    if (!this.profSelection.includes(cellTags[13].getElementsByTagName("Data")[0].innerText))
                         this.profSelection.push(cellTags[13].getElementsByTagName("Data")[0].innerText);
                 }
 
@@ -473,12 +473,12 @@ class ClassAggregation {
     }*/
 
     filterCIFlag(course){
-        return course.sendFlags.slice(0,2) === "C-I";
+        return course.sendFlags.includes("C-I");
     }
 
     filterWEBFlag(course){
-        return course.sendFlags === "100% WEB BASED" || course.sendFlags === "75-99% WEB BASE"
-            || course.sendFlags === "50-74% WEB BASE" || course.sendFlags === "1-49% WEB BASED";
+        return course.sendFlags.includes("100% WEB BASED") || course.sendFlags.includes("75-99% WEB BASE")
+            || course.sendFlags.includes("50-74% WEB BASE") || course.sendFlags.includes("1-49% WEB BASED");
         }
 
 
@@ -583,9 +583,7 @@ class SearchBar {
     }
 
     Search(){
-        objClassAgg.sortCourses(null,null,null,null,null,null,null,
-            null,null,null,null,null,null,null,
-            null,null);
+        objClassAgg.sortCourses(null,null,null,null,null,null);
     }
 }
 
