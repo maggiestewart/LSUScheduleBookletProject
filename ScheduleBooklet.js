@@ -189,6 +189,10 @@ class ClassConstruct {
         return this.#days;
     }
 
+    sendProfessor() {
+        return this.#professor;
+    }
+
     sendFlags() {
         return this.#flags
     }
@@ -199,10 +203,6 @@ class ClassConstruct {
 
     sendEndTime() {
         return this.#endTime;
-    }
-
-    sendDays() {
-        return this.#days;
     }
 }
 
@@ -411,13 +411,6 @@ class ClassAggregation {
         return course.sendDays().includes("S");
     }
 
-    filterProfessor(professorWanted)
-    {
-        if(professor == professorWanted){
-            return true;
-        }
-    }
-
     /* I am putting the original code here so we don't lose all the flags we could theoretically sort by.
      filterCIFlag(flags){
         if(flags == "100% WEB BASED") {
@@ -462,7 +455,6 @@ class ClassAggregation {
             || course.sendFlags.includes("50-74% WEB BASE") || course.sendFlags.includes("1-49% WEB BASED");
         }
 
-
     //a method for filtering availability, it is called in the sortCourses method
     filterAvailable(available){
         //Hiding items that are full or on hold, aka only sending numbers back because those are available
@@ -489,7 +481,7 @@ class ClassAggregation {
     *
     * 6) WEBflag: true if included, null if not
     */
-    sortCourses(startTime, mon, tues, wed, thurs, fri, sat, professor, available, CIflag, WEBflag) {
+    sortCourses(startTime, mon, tues, wed, thurs, fri, sat, professorArray, available, CIflag, WEBflag) {
         this.filteredCourseSelection = [].concat(this.courseSelection);
 
         if (startTime != null){
@@ -514,8 +506,19 @@ class ClassAggregation {
         if (sat != null)
             this.filteredCourseSelection = this.filteredCourseSelection.filter(this.filterSat);
 
-        if (professor != null){
-            this.filteredCourseSelection = this.filteredCourseSelection.filter(this.filterProfessor);
+        /*.filter() would not work for this because the professors change from each xml file, as well as there being too
+        * many to keep track of. I did it this way because .filter does not take in a professor parameter, so it's just
+        * easier to do the operation here in the filter.
+        */
+        if (Array.isArray(professorArray) && professorArray.length !== 0){
+            let tempArray = [];
+            for (let i = 0; i < professorArray.length; i++) {
+                for (let j = 0; j < this.filteredCourseSelection.length; j++) {
+                    if (professorArray[i] === this.filteredCourseSelection[j].sendProfessor())
+                        tempArray.push(this.filteredCourseSelection[j]);
+                }
+            }
+            this.filteredCourseSelection = tempArray;
         }
 
         if (available != null) {
@@ -535,16 +538,6 @@ class ClassAggregation {
 
     sendCourses(){
         return this.filteredCourseSelection;
-    }
-
-    sendProfessors(){
-        for(let i; i < this.courseSelection.length; i++)
-        {
-            if(this.filterProfessor())
-            {
-                return this.courseSelection(this.filterProfessor());
-            }
-        }
     }
 }
 
