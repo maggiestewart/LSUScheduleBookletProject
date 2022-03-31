@@ -200,6 +200,10 @@ class ClassConstruct {
     sendEndTime() {
         return this.#endTime;
     }
+
+    sendDays() {
+        return this.#days;
+    }
 }
 
 class ClassAggregation {
@@ -374,38 +378,37 @@ class ClassAggregation {
         return course.sendEndTime().includes('N');
     }
 
-    filterDays(days)
-    {
-        let daysArray = days.sendDays().split(/(\s+)/);
-
-        for (var i = 0; i < daysArray; i++) {
-            switch(daysArray[i]) {
-                case "M":
-                    return true;
-                    break;
-                case "T":
-                    return true;
-                    break;
-                case "W":
-                    return true;
-                    break;
-                case "TH":
-                    return true;
-                    break;
-                case "F":
-                    return true;
-                    break;
-                case "S":
-                    return true;
-                    break;
-                case "MTWTFS":
-                    return true;
-                    break;
-                default:
-                    return false;
-                    break;
+    //Filter by days section
+    filterMon(course) {
+        return course.sendDays().includes("M");
+    }
+    //Dif because we have to make sure it's not reading thursday
+    filterTues(course) {
+        if (course.sendDays().includes("T")) {
+            //String only has 1 T, meaning it is exclusively tues or thurs
+            if (course.sendDays().indexOf("T") === course.sendDays().lastIndexOf("T")) {
+                //test if the one day is thursday. If it is not, return true because it must be tues at that point
+                return !course.sendDays().includes("Th");
             }
+            //Course has both tues and thurs, return true because it definitely has tues
+            else
+                return true;
         }
+        //Return false because no T means no tuesday
+        else
+            return false;
+    }
+    filterWed(course) {
+        return course.sendDays().includes("W");
+    }
+    filterThurs(course) {
+        return course.sendDays().includes("Th");
+    }
+    filterFri(course) {
+        return course.sendDays().includes("F");
+    }
+    filterSat(course) {
+        return course.sendDays().includes("S");
     }
 
     filterProfessor(professorWanted)
@@ -475,9 +478,10 @@ class ClassAggregation {
     * *****HOW TO NAME EACH PARAMETER IF NOT NULL*****
     * 1) startTime: as a string, either 1) "morning" 2) "afternoon" 3) "night"
     *
-    * 2) days:
+    * 2) days: for each field for the days, true if included, null if not
     *
-    * 3) professor:
+    * 3) professor: pass an ARRAY of STRINGS of the profs you want to include. Preferably you would pull the strings
+    * off of the profSelection array based on what professors are chosen so we can do this operation for any xml file.
     *
     * 4) available: true if included, null if not
     *
@@ -485,7 +489,7 @@ class ClassAggregation {
     *
     * 6) WEBflag: true if included, null if not
     */
-    sortCourses(startTime, days, professor, available, CIflag, WEBflag) {
+    sortCourses(startTime, mon, tues, wed, thurs, fri, sat, professor, available, CIflag, WEBflag) {
         this.filteredCourseSelection = [].concat(this.courseSelection);
 
         if (startTime != null){
@@ -497,9 +501,18 @@ class ClassAggregation {
                 this.filteredCourseSelection = this.filteredCourseSelection.filter(this.filterStartTimeByNight);
         }
 
-        if (days != null){
-            this.filteredCourseSelection = this.filteredCourseSelection.filter(this.filterDays);
-        }
+        if (mon != null)
+            this.filteredCourseSelection = this.filteredCourseSelection.filter(this.filterMon);
+        if (tues != null)
+            this.filteredCourseSelection = this.filteredCourseSelection.filter(this.filterTues);
+        if (wed != null)
+            this.filteredCourseSelection = this.filteredCourseSelection.filter(this.filterWed);
+        if (thurs != null)
+            this.filteredCourseSelection = this.filteredCourseSelection.filter(this.filterThurs);
+        if (fri != null)
+            this.filteredCourseSelection = this.filteredCourseSelection.filter(this.filterFri);
+        if (sat != null)
+            this.filteredCourseSelection = this.filteredCourseSelection.filter(this.filterSat);
 
         if (professor != null){
             this.filteredCourseSelection = this.filteredCourseSelection.filter(this.filterProfessor);
@@ -578,7 +591,8 @@ class SearchBar {
     }
 
     Search(){
-        objClassAgg.sortCourses(null,null,null,null,null,null);
+        objClassAgg.sortCourses(null, null, null, null, null, null,null,null,
+                                null,null,null);
     }
 }
 
