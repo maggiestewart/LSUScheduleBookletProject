@@ -160,7 +160,7 @@ class ClassConstruct {
     }
 
     constructor(number, section, type, title, hours, startTime, endTime, days, professor, available, size, building, room,
-                flags, lab, labStart, labEnd, labDays, startTimeHours, startTimeMinutes,endTimeHours,endTimeMinutes){
+                flags, lab, labStart, labEnd, labDays){
         this.#number = number;
         this.#section = section;
         this.#type = type;
