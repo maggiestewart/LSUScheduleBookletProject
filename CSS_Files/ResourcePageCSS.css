@@ -8,6 +8,12 @@
 body {
     padding-top: 60px;
 }
+.middlePage h2 {
+    text-align: center;
+    background-color: #7c7b7b;
+    border-radius: 5px;
+    color: white;
+}
 .header {
     background-color: #4F2992;
 
@@ -63,6 +69,36 @@ csc for drop down boxes
 }
 */
 
+.columnGeneralInformation {
+    text-decoration: none;
+
+
+}
+
+.columnGeneralInformation:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.columnGeneralInformation a {
+    text-decoration: none;
+    border-style: solid;
+    border-spacing: 50px;
+    border-color: lightslategrey;
+    color: black;
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 50px;
+    text-align: center;
+    border-radius: 5px;
+    background: #eeeded;
+}
+
+.columnGeneralInformation a:hover {
+    text-decoration: underline;
+}
 
 .column {
     float: left;
@@ -140,6 +176,7 @@ ul li {
 
  */
 
+/*
 a {
     display: block;
     width: 100%;
@@ -149,9 +186,91 @@ a {
     border-radius: 5px;
     text-decoration: none;
 }
+
+
 a:hover {
-    color: bisque;
+    color: lightslategrey;
 }
+*/
+
+
+/*
+    This part deals with dropdown menu stuff for the resource page
+ */
+
+li a {
+    text-decoration: none;
+    padding: 2px;
+    color: black;
+    text-align: left;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #a19f9f;
+    border-width: 1px;
+
+
+
+}
+
+li a:hover {
+    text-decoration-line: underline;
+}
+
+nav {
+    width : 95%;
+    background: #e7e3e3;
+    margin : 40px auto;
+    border-radius: 5px;
+
+}
+
+span {
+    padding : 15px;
+    background : #6954b6;
+    color : white;
+    font-size : 1.2em;
+    font-variant : small-caps;
+    cursor : pointer;
+    display: block;
+    text-align: center;
+    border-radius: 5px;
+}
+
+span::after {
+    float: right;
+    right: 10%;
+    content:"+";
+}
+
+.slide {
+    clear: both;
+    width: 100%;
+    height: 0px;
+    overflow: hidden;
+    text-align: center;
+    transition: height .4s ease;
+
+
+}
+
+.slide li {
+    padding: 30px;
+}
+
+#touch, #touch1, #touch2, #touch3, #touch4, #touch5, #touch6, #touch7, #touch8, #touch9, #touch10, #touch11, #touch12, #touch13, #touch14 {
+    position: absolute;
+    opacity: 0;
+    height: 0px;
+}
+
+#touch:checked + .slide, #touch1:checked + .slide, #touch2:checked + .slide, #touch3:checked + .slide, #touch4:checked + .slide, #touch4:checked + .slide, #touch5:checked + .slide, #touch6:checked + .slide, #touch7:checked + .slide, #touch8:checked + .slide, #touch9:checked + .slide, #touch10:checked + .slide, #touch11:checked + .slide, #touch12:checked + .slide, #touch13:checked + .slide, #touch14:checked + .slide {
+    height: 250px;
+}
+
+
+/*
+    Dropdown menu stuff for resource page ends here
+ */
 #generalHeader {
     text-align: center;
 }
