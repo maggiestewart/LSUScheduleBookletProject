@@ -181,6 +181,10 @@ class ClassConstruct {
         this.#labDays = labDays;
     }
 
+    getNumber() {
+        return this.#number;
+    }
+
     getAvailable() {
         return this.#available;
     }
@@ -211,11 +215,13 @@ class ClassAggregation {
     * This constructor should take in the courses previously imported from the XML file and fill the both array
     * members with the data.
     */
-    constructor(){
+    constructor() {
         this.courseSelection = [];
         this.filteredCourseSelection = [];
         this.profSelection = [];
+        this.thousandsArrays = [[], [], [], [], [], [], [], [], []];
     }
+
 
     Run () {
         return true;
@@ -235,6 +241,18 @@ class ClassAggregation {
         };
         httpReq.open("GET", xmlFileName, true);
         httpReq.send();
+    }
+
+    /*
+    * Pass in an array of CourseConstructs.
+    * It separates them by 1000 level into thousandsArrays, having each contained array count for a 1000 level up to
+    * 9000 level courses.
+    */
+    fillThousandsArray(courseArray) {
+        for (let i = 1; i <= courseArray.length; i++) {
+            this.thousandsArrays[i - 1] = courseArray.filter(function(course) {return i * 1000 <= parseInt(course.getNumber())
+                                                                               && parseInt(course.getNumber) < i * 1000 + 1000});
+        }
     }
 
     fillCourseSelection(xmlFileName) {
@@ -320,6 +338,7 @@ class ClassAggregation {
         }
 
         this.filteredCourseSelection = this.filteredCourseSelection.concat(this.courseSelection);
+        this.fillThousandsArray(this.filteredCourseSelection);
             /*
             //Get each Data tag for the row we are working on
             let dataTags = rowTags[i].getElementsByTagName("Data");
@@ -533,33 +552,11 @@ class ClassAggregation {
             this.filteredCourseSelection = this.filteredCourseSelection.filter(this.filterWEBFlag);
         }
 
-        return this.filteredCourseSelection;
+        this.fillThousandsArray(this.filteredCourseSelection);
     }
 
     sendCourses(){
         return this.filteredCourseSelection;
-    }
-}
-
-
-class PopupBox {
-    //shows the popup box
-    Run () {
-        return true;
-    }
-
-    ShowBox () {
-        return true;
-    }
-}
-
-class SchedulePlanner extends PopupBox {
-    //Take user input
-}
-
-class HelpfulLinks extends PopupBox {
-    Run () {
-        return ["link1","link2"];
     }
 }
 
@@ -571,8 +568,6 @@ class Display {
     Run () {
         //These are examples of the types of search bars and pop-up windows we will instantiate
         let availabilitySearch = new SearchBar;
-        let schedulePlannerBox = new SchedulePlanner();
-        let helpfulLinks = new HelpfulLinks();
         return true;
     }
 }
