@@ -181,27 +181,27 @@ class ClassConstruct {
         this.#labDays = labDays;
     }
 
-    sendAvailable() {
+    getAvailable() {
         return this.#available;
     }
 
-    sendDays() {
+    getDays() {
         return this.#days;
     }
 
-    sendProfessor() {
+    getProfessor() {
         return this.#professor;
     }
 
-    sendFlags() {
+    getFlags() {
         return this.#flags
     }
 
-    sendStartTime() {
+    getStartTime() {
         return this.#startTime;
     }
 
-    sendEndTime() {
+    getEndTime() {
         return this.#endTime;
     }
 }
@@ -360,35 +360,35 @@ class ClassAggregation {
     * Filters classes of type CourseConstruct based on start time to get morning classes (start of day to 12:00)
     */
     filterStartTimeByMorning(course) {
-        return !course.sendEndTime().includes('N') && parseInt(course.sendStartTime()) >= 730
-               && parseInt(course.sendStartTime()) <= 1200;
+        return !course.getEndTime().includes('N') && parseInt(course.getStartTime()) >= 730
+               && parseInt(course.getStartTime()) <= 1200;
     }
 
     /*
     * Filters classes of type CourseConstruct based on start time to get afternoon classes (12:00 to before 4:30 start)
     */
     filterStartTimeByAfternoon(course) {
-        return parseInt(course.sendStartTime()) < 430 && parseInt(course.sendStartTime()) > 1200;
+        return parseInt(course.getStartTime()) < 430 && parseInt(course.getStartTime()) > 1200;
     }
 
     /*
     * Filters classes of type CourseConstruct based on night flag N to get night classes (start of day to 12:00)
     */
     filterStartTimeByNight(course) {
-        return course.sendEndTime().includes('N');
+        return course.getEndTime().includes('N');
     }
 
     //Filter by days section
     filterMon(course) {
-        return course.sendDays().includes("M");
+        return course.getDays().includes("M");
     }
     //Dif because we have to make sure it's not reading thursday
     filterTues(course) {
-        if (course.sendDays().includes("T")) {
+        if (course.getDays().includes("T")) {
             //String only has 1 T, meaning it is exclusively tues or thurs
-            if (course.sendDays().indexOf("T") === course.sendDays().lastIndexOf("T")) {
+            if (course.getDays().indexOf("T") === course.getDays().lastIndexOf("T")) {
                 //test if the one day is thursday. If it is not, return true because it must be tues at that point
-                return !course.sendDays().includes("Th");
+                return !course.getDays().includes("Th");
             }
             //Course has both tues and thurs, return true because it definitely has tues
             else
@@ -399,16 +399,16 @@ class ClassAggregation {
             return false;
     }
     filterWed(course) {
-        return course.sendDays().includes("W");
+        return course.getDays().includes("W");
     }
     filterThurs(course) {
-        return course.sendDays().includes("Th");
+        return course.getDays().includes("Th");
     }
     filterFri(course) {
-        return course.sendDays().includes("F");
+        return course.getDays().includes("F");
     }
     filterSat(course) {
-        return course.sendDays().includes("S");
+        return course.getDays().includes("S");
     }
 
     /* I am putting the original code here so we don't lose all the flags we could theoretically sort by.
@@ -447,18 +447,18 @@ class ClassAggregation {
     }*/
 
     filterCIFlag(course){
-        return course.sendFlags.includes("C-I");
+        return course.getFlags.includes("C-I");
     }
 
     filterWEBFlag(course){
-        return course.sendFlags.includes("100% WEB BASED") || course.sendFlags.includes("75-99% WEB BASE")
-            || course.sendFlags.includes("50-74% WEB BASE") || course.sendFlags.includes("1-49% WEB BASED");
+        return course.getFlags.includes("100% WEB BASED") || course.getFlags.includes("75-99% WEB BASE")
+            || course.getFlags.includes("50-74% WEB BASE") || course.getFlags.includes("1-49% WEB BASED");
         }
 
     //a method for filtering availability, it is called in the sortCourses method
     filterAvailable(available){
         //Hiding items that are full or on hold, aka only sending numbers back because those are available
-        return !(available.sendAvailable() === "(F)" || available.sendAvailable() === "(H)");
+        return !(available.getAvailable() === "(F)" || available.getAvailable() === "(H)");
     }
 
     /*
@@ -514,7 +514,7 @@ class ClassAggregation {
             let tempArray = [];
             for (let i = 0; i < professorArray.length; i++) {
                 for (let j = 0; j < this.filteredCourseSelection.length; j++) {
-                    if (professorArray[i] === this.filteredCourseSelection[j].sendProfessor())
+                    if (professorArray[i] === this.filteredCourseSelection[j].getProfessor())
                         tempArray.push(this.filteredCourseSelection[j]);
                 }
             }
