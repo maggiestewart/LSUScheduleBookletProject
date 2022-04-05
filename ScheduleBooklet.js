@@ -604,34 +604,6 @@ class ClassAggregation {
     }
 }
 
-class Display {
-    /*
-    * displays the schedule booklet and such
-    * Also entails the constant updating of the information being displayed on screen, such as updated classes
-    */
-    Run () {
-        //These are examples of the types of search bars and pop-up windows we will instantiate
-        let availabilitySearch = new SearchBar;
-        return true;
-    }
-}
-
-
-class SearchBar {
-    Run () {
-        return true;
-    }
-
-    Search(){
-        objClassAgg.sortCourses(null, null, null, null, null, null,null,null,
-                                null,null,null);
-    }
-}
-
 let objClassAgg = new ClassAggregation();
 
 objClassAgg.loadXMLFile("csc.xml");
-
-let websiteDisplay = new Display();
-
-websiteDisplay.Run();
