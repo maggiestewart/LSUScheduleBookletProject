@@ -599,8 +599,12 @@ class ClassAggregation {
         this.fillThousandsArray(this.filteredCourseSelection);
     }
 
-    sendCourses(){
-        return this.filteredCourseSelection;
+    getThousandsCourses(){
+        return this.thousandsArrays;
+    }
+
+    getProfArray(){
+        return this.profSelection;
     }
 }
 
