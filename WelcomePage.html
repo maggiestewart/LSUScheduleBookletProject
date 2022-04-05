@@ -21,7 +21,7 @@
     <div class = "headerBar">
         <br>
         <select class = "chooseDepartment" name = "chooseDepartment">
-
+            <option disabled selected value> -- Select a department -- </option>
             <option value = "Computer Science">
                 Computer Science
             </option>
@@ -32,6 +32,7 @@
         </select>
 
         <select class = "chooseSemester" name = "chooseSemester">
+            <option disabled selected value> -- Select a semester -- </option>
             <option value = "Fall 2022">
                 Fall 2022
             </option>
@@ -63,17 +64,16 @@
 
 
     <div class = "footer">
-        <h4><a href="ResourcesPage.html">Scheduling Resources</a></h4>
+        <div class = "columnFooterPages">
+            <p><a href="ResourcesPage.html" target = "_blank">Scheduling Resources</a></p>
+            <p><a href="SchedulePopUp.js" target="_blank">Create a Mock Schedule</a></p>
+        </div>
+
     </div>
 
     <div class = "subFooter">
         <p> Team Loading... <Loading class="."></Loading> </p>
     </div>
-
-
-
-
-
 
     </body>
 </html>
