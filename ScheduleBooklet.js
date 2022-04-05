@@ -259,31 +259,29 @@ class ClassAggregation {
     * This constructor should take in the courses previously imported from the XML file and fill the both array
     * members with the data.
     */
-    constructor() {
+    constructor(XMLFileName) {
         this.courseSelection = [];
         this.filteredCourseSelection = [];
         this.profSelection = [];
         this.thousandsArrays = [[], [], [], [], [], [], [], [], []];
-    }
-
-
-    Run () {
-        return true;
+        this.XMLFileName = XMLFileName;
     }
 
     /*
      * Loads the xml file that the function is called with so that any xml file from LSU booklet can be used.
      * In the if statement, calling the fill course selection lets us fill our array when the file is ready.
+     *
+     * This function HAS TO BE CALLED before stuff can be operated on.
      */
-    loadXMLFile(xmlFileName){
+    loadXMLFile(){
         let httpReq = new XMLHttpRequest();
         httpReq.onreadystatechange = function() {
             if (this.readyState === 4 && this.status === 200) {
                 document.getElementById("test").innerHTML = this.responseText;
-                this.fillCourseSelection(xmlFileName);
+                this.fillCourseSelection(this.XMLFileName);
             }
         };
-        httpReq.open("GET", xmlFileName, true);
+        httpReq.open("GET", this.XMLFileName, true);
         httpReq.send();
     }
 
@@ -607,6 +605,17 @@ class ClassAggregation {
         return this.profSelection;
     }
 }
+
+const classAggMap = new Map([
+    ["fal22csc", new ClassAggregation("fal22csc.xml")],
+    ["spr22csc", new ClassAggregation("spr22csc.xml")],
+    ["fal21csc", new ClassAggregation("fal21csc.xml")],
+    ["spr21csc", new ClassAggregation("spr21csc.xml")],
+    [],
+    [],
+    [],
+    []
+]);
 
 let objClassAgg = new ClassAggregation();
 
