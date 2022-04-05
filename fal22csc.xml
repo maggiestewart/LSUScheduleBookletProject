@@ -1,0 +1,3457 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Author>Steven Seiden</Author>
+  <LastAuthor>Steven Seiden</LastAuthor>
+  <Created>2022-02-05T00:57:04Z</Created>
+  <LastSaved>2022-02-05T01:12:54Z</LastSaved>
+  <Version>16.00</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>17440</WindowHeight>
+  <WindowWidth>28040</WindowWidth>
+  <WindowTopX>17220</WindowTopX>
+  <WindowTopY>5760</WindowTopY>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s65">
+   <NumberFormat ss:Format="@"/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="Sheet1">
+  <Names>
+   <NamedRange ss:Name="csc" ss:RefersTo="=Sheet1!R1C1:R143C14"/>
+  </Names>
+  <Table ss:ExpandedColumnCount="14" ss:ExpandedRowCount="143" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultColumnWidth="65" ss:DefaultRowHeight="16">
+   <Column ss:Width="21"/>
+   <Column ss:Width="25" ss:Span="1"/>
+   <Column ss:Index="4" ss:Width="44"/>
+   <Column ss:Width="31"/>
+   <Column ss:Width="51"/>
+   <Column ss:Width="141"/>
+   <Column ss:Width="43"/>
+   <Column ss:Width="74"/>
+   <Column ss:Width="48"/>
+   <Column ss:Width="31"/>
+   <Column ss:Width="98" ss:Span="1"/>
+   <Column ss:Index="14" ss:Width="100"/>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">22</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">53</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1240</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">STATS &amp; GRAPH MATLB</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">3</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1130-1220</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">M W</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1245</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PATRICK TAYLOR</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">BRENER N</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">LAB</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1130-0120</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">F</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">BRENER N</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">(F)</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">65</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1253</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">2</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">COMP SCI WITH C++</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">3</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">900-1020</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">T TH</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1236</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PATRICK TAYLOR</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">DUNCAN W</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">7</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">83</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1253</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">COMP SCI WITH C++</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">3</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1030-1150</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">T TH</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1225</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PATRICK TAYLOR</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">DUNCAN W</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">17</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">28</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1254</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">COMP SCI 11 WITH C++</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">3</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1200-0120</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">T TH</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">218</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">TUREAUD HALL</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">WALKER C</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">(F)</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">84</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1350</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">COMP SCI I-MJRS</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">4</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1030-1120</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">M W F</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1245</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PATRICK TAYLOR</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">DUNCAN W</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">LAB</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">430-0720N</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">W</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">DUNCAN W</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">(F)</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">47</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1350</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">2</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">COMP SCI I-MJRS</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">4</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1030-1150</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">T TH</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1212</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PATRICK TAYLOR</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">KUNDU S</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">LAB</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">430-0720N</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">T</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">KUNDU S</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">26</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">70</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1351</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">3</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">COMP SCI II-MJRS</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">4</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">930-1020</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">M W F</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">103</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">TUREAUD HALL</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">BRENER N</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">LAB</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">230-0520</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">F</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">BRENER N</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">6</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">90</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1351</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">COMP SCI II-MJRS</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">4</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1030-1150</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">T TH</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">26</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">HATCHER HALL</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">BRANDT S</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">LAB</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">430-0720N</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">TH</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">BRANDT S</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">19</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">61</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">2259</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">DISCRETE STRUCTURES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">3</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">130-0250</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">T TH</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1245</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PATRICK TAYLOR</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">KUNDU S</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">12</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">103</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">2262</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">NUMERICAL METHODS</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">3</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">900-1020</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">T TH</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">103</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">DESIGN BUILDING</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">BRENER N</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">(F)</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">98</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">2463</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PROGMMG DGITL MEDIA</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">3</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">130-0250</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">T TH</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">228</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">TUREAUD HALL</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">ALLISON J</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">(F)</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">73</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">2610</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CLOUD &amp; WEB PROGMNG</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">3</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">900-1020</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">T TH</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">WANG Q</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">**</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">HELD</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">IN CSC LABS PFT 2324</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">2326</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">5</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">15</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">2700</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CMPTVE PRGMG 1CR HR</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1-3</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">630-0820N</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">T</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1216</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PATRICK TAYLOR</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">TRAXLER I</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">9</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">111</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">3102</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">ADV DATA STRUCTURES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">3</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1200-0120</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">T TH</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">103</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">DESIGN BUILDING</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">SHAH R</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">8</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">62</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">3200</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">ETHICS IN COMPUTING</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">300-0350</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">M</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">100% WEB BASED</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">TRIANTAPHYLLO</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">4</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">96</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">3304</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">INTRO TO SYSTM PROG</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">3</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1200-0120</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">M W</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">139</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">ALLEN</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">AYMOND P</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">12</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">108</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">3380</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">OBJ ORIENTED DESIGN</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">3</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1030-1150</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">T TH</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1100</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PATRICK TAYLOR</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">C-I TECH</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">AYMOND P</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">(F)</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">121</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">3501</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">COMP ORGANIZATN/DSN</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">3</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">900-1020</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">M W</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">16</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">LOCKETT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">WANG H</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">4</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">3991</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC HONORS RESEARCH</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">3</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">TBA</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PERMIS OF DEPT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MUKHOPADHYAY</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">4</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">3992</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC HONORS THESIS</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">3</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">TBA</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PERMIS OF DEPT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">WANG Q</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">4</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">3992</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">2</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC HONORS THESIS</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">3</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">TBA</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PERMIS OF DEPT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RICHARD G</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">3</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">2</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">3992</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">3</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC HONORS THESIS</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">3</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">TBA</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MAHMOUD A</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">4</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">3999</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">IND UNDERGRAD RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1-3</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">TBA</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PERMIS OF DEPT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RICHARD G</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">5</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">3999</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">2</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">IND UNDERGRAD RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1-3</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">TBA</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PERMIS OF DEPT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">5</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">3999</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">3</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">IND UNDERGRAD RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1-3</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">TBA</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PERMIS OF DEPT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">5</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">3999</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">4</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">IND UNDERGRAD RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1-3</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">TBA</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PERMIS OF DEPT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">5</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">3999</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">5</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">IND UNDERGRAD RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1-3</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">TBA</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PERMIS OF DEPT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">(F)</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">103</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">4101</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PROG LANGUAGES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">3</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">300-0420</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">T TH</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">103</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">DESIGN BUILDING</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MAHMOUD A</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">3</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">117</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">4103</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">OPERATING SYSTEMS</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">3</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1030-1150</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">M W</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1100</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PATRICK TAYLOR</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RICHARD G</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">19</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">80</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">4263</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">VIDEO GAME DESIGN</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">3</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">430-0550N</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">T TH</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1100</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PATRICK TAYLOR</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">WEBB A</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">59</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">4330</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">SOFTWARE SYST DEVEL</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">3</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1030-1150</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">T TH</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">100% WEB BASED</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CARVER D</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">(F)</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">78</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">4351</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">COMPILER CONSTRUCTN</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">3</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1200-0120</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">M W</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1206</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PATRICK TAYLOR</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">BAUMGARTNER G</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">(F)</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">12</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">4360</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">2</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MALWARE ANALYSIS/REV</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">3</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">600-0720N</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">M W</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">SYLVE J</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">(F)</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">28</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">4360</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MALWARE ANALYSIS/REV</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">3</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">130-0420</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">W</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RICHARD G</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">**</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">HELD</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">IN CSC LAB PFT 2317</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">3</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">67</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">4402</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">INTR DATABSE MGT SYS</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">3</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1200-0120</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">T TH</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1206</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PATRICK TAYLOR</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CHEN J</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">(F)</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">41</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">4512</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">OPTIMIZATION</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">3</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">300-0420</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">T TH</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">100% WEB BASED</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">TRIANTAPHYLLO</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">**</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">WORLD</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">WIDE WEB-BASED DELI</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">VERY</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">54</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">4562</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MOBILE SEC &amp; CRYPTO</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">3</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1030-1150</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">M W</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">203</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">TUREAUD HALL</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">WANG C</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">(F)</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">23</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">4700</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">2</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CYB FORENSC &amp; THREAT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">3</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">430-0550N</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">M W</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MILLER D, MAHMOUD A, RICHARD G</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">8</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">20</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">4700</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">APPLIED DEEP LEARNG</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">3</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">930-1220</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">F</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">ZHANG J</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">**</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">HELD</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">IN CSC LAB PFT 2341</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">8</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">32</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">4740</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">BIG DATA TECH</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">3</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">130-0250</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">M W</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">2324</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PATRICK TAYLOR</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">LEE K</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">4</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">4999</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">ADV IND UNDGRAD RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1-3</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">TBA</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PERMIS OF DEPT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MAHMOUD A</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">98</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">4999</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">2</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">ADV IND UNDGRAD RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1-3</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">TBA</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PERMIS OF DEPT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">BRANDT S</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">98</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">4999</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">3</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">ADV IND UNDGRAD RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1-3</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">TBA</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PERMIS OF DEPT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">WEBB A</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">***</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CS</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">C  708</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">0  **</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">*</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CROSS-LISTED WITH</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">EE 77</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">20</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">7</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">8</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">7080</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">2</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">ADV COMPUTER ARCH</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">3</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1230-0150</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">M W</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">WANG C</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">19</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">7090</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">IND</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">DESIGN PROJECT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1-9</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">TBA</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PERMIS OF DEPT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">SUN M</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">19</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">7090</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">IND</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">2</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">DESIGN PROJECT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1-9</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">TBA</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PERMIS OF DEPT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">LEE K</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">18</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">2</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">7090</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">IND</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">3</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">DESIGN PROJECT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1-9</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">TBA</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PERMIS OF DEPT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">WANG Q</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">16</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">4</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">7090</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">IND</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">4</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">DESIGN PROJECT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1-9</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">TBA</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PERMIS OF DEPT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CHEN J</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">19</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">7090</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">IND</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">5</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">DESIGN PROJECT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1-9</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">TBA</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PERMIS OF DEPT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">KARKI B</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">18</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">2</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">7090</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">IND</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">6</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">DESIGN PROJECT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1-9</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">TBA</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PERMIS OF DEPT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">TRIANTAPHYLLO</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">5</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">7090</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">IND</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">7</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">DESIGN PROJECT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1-9</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">TBA</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PERMIS OF DEPT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">BAUMGARTNER G</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">23</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">7</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">7101</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PROGRAM LANG STRUCTS</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">3</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">200-0320</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">M W</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1216</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PATRICK TAYLOR</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">BAUMGARTNER G</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">10</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">15</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">7135</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">2</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">SOFTWARE ENGINEERING</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">3</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">130-0250</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">T TH</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">100% WEB BASED</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CARVER D</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">2</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">8</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">7700</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">3</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">ADV MOB SEC &amp; CRYPTO</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">3</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1030-1150</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">M W</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">WANG C</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">2</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">18</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">7700</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">2</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">WEB SEARCH &amp; DATA AN</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">3</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1200-0120</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">T TH</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">2324</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PATRICK TAYLOR</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">SUN M</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">14</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">16</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">7800</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">SEM</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">2</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC RESEARCH SEMINAR</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">900-0950</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">W</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CHEN F</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">4</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">7999</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">SEL READINGS IN CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1-3</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">TBA</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PERMIS OF DEPT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MAHMOUD A</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">4</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">7999</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">2</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">SEL READINGS IN CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1-3</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">TBA</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PERMIS OF DEPT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">ZHANG J</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">4</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">7999</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">3</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">SEL READINGS IN CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1-3</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">TBA</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PERMIS OF DEPT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CHEN F</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">97</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">2</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">7999</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">4</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">SEL READINGS IN CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1-3</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">TBA</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PERMIS OF DEPT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">KAISER H</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">3</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">2</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">7999</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">5</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">SEL READINGS IN CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1-3</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">TBA</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PERMIS OF DEPT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">SUN M</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">4</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">7999</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">6</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">SEL READINGS IN CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1-3</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">TBA</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PERMIS OF DEPT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">WANG Q</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">98</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">7999</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">7</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">SEL READINGS IN CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1-3</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">TBA</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PERMIS OF DEPT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CHEN J</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">20</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">8000</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">THESIS RESEARCH</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1-9</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">2 TBA</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PERMIS OF DEPT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">WANG C</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">20</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">8000</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">2</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">THESIS RESEARCH</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1-9</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">2 TBA</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PERMIS OF DEPT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">BAUMGARTNER G</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">19</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">8000</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">3</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">THESIS RESEARCH</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1-9</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">2 TBA</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PERMIS OF DEPT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">WANG H</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">20</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">8000</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">4</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">THESIS RESEARCH</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1-9</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">2 TBA</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PERMIS OF DEPT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CARVER D</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">20</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">8000</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">5</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">THESIS RESEARCH</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1-9</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">2 TBA</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PERMIS OF DEPT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CHEN J</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">20</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">8000</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">6</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">THESIS RESEARCH</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1-9</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">2 TBA</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PERMIS OF DEPT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CHEN F</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">20</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">8000</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">7</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">THESIS RESEARCH</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1-9</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">2 TBA</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PERMIS OF DEPT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">20</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">8000</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">8</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">THESIS RESEARCH</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1-9</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">2 TBA</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PERMIS OF DEPT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">20</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">8000</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">9</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">THESIS RESEARCH</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1-9</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">2 TBA</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PERMIS OF DEPT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">KARKI B</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">20</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">8000</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">10</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">THESIS RESEARCH</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1-9</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">2 TBA</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PERMIS OF DEPT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">20</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">8000</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">11</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">THESIS RESEARCH</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1-9</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">2 TBA</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PERMIS OF DEPT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">KUNDU S</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">20</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">8000</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">12</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">THESIS RESEARCH</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1-9</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">2 TBA</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PERMIS OF DEPT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MUKHOPADHYAY</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">20</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">8000</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">13</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">THESIS RESEARCH</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1-9</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">2 TBA</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PERMIS OF DEPT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PARK S</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">20</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">8000</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">14</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">THESIS RESEARCH</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1-9</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">2 TBA</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PERMIS OF DEPT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">SHAH R</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">20</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">8000</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">15</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">THESIS RESEARCH</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1-9</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">2 TBA</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PERMIS OF DEPT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">SUN M</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">20</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">8000</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">16</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">THESIS RESEARCH</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1-9</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">2 TBA</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PERMIS OF DEPT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">TRIANTAPHYLLO</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">20</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">8000</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">17</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">THESIS RESEARCH</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1-9</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">2 TBA</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PERMIS OF DEPT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">20</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">8000</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">18</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">THESIS RESEARCH</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1-9</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">2 TBA</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PERMIS OF DEPT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">20</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">8000</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">19</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">THESIS RESEARCH</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1-9</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">2 TBA</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PERMIS OF DEPT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">20</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">8000</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">20</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">THESIS RESEARCH</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1-9</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">2 TBA</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PERMIS OF DEPT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">KAISER H</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">20</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">8000</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">21</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">THESIS RESEARCH</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1-9</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">2 TBA</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PERMIS OF DEPT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">20</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">8000</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">22</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">THESIS RESEARCH</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1-9</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">2 TBA</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PERMIS OF DEPT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">LI X</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">20</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">8000</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">23</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">THESIS RESEARCH</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1-9</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">2 TBA</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PERMIS OF DEPT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">20</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">8000</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">24</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">THESIS RESEARCH</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1-9</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">2 TBA</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PERMIS OF DEPT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">20</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">8000</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">25</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">THESIS RESEARCH</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1-9</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">2 TBA</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PERMIS OF DEPT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">BRANDT S</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">20</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">8000</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">26</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">THESIS RESEARCH</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1-9</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">2 TBA</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PERMIS OF DEPT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">20</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">8000</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">27</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">THESIS RESEARCH</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1-9</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">2 TBA</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PERMIS OF DEPT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">19</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">8000</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">28</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">THESIS RESEARCH</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1-9</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">2 TBA</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PERMIS OF DEPT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MAHMOUD A</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">20</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">8000</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">29</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">THESIS RESEARCH</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1-9</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">2 TBA</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PERMIS OF DEPT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">WANG Q</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">20</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">8000</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">30</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">THESIS RESEARCH</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1-9</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">2 TBA</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PERMIS OF DEPT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">LEE K</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">16</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">4</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">8000</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">31</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">THESIS RESEARCH</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1-9</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">2 TBA</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PERMIS OF DEPT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RICHARD G</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">20</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">8000</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">32</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">THESIS RESEARCH</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1-9</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">2 TBA</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PERMIS OF DEPT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">20</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">8000</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">33</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">THESIS RESEARCH</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1-9</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">2 TBA</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PERMIS OF DEPT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">YE J</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">97</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">2</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">9000</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">DISSERTATION RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1-9</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">2 TBA</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PERMIS OF DEPT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">WANG C</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">94</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">5</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">9000</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">2</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">DISSERTATION RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1-9</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">2 TBA</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PERMIS OF DEPT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">BAUMGARTNER G</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">96</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">3</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">9000</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">3</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">DISSERTATION RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1-9</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">2 TBA</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PERMIS OF DEPT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">WANG H</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">98</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">9000</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">4</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">DISSERTATION RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1-9</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">2 TBA</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PERMIS OF DEPT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CARVER D</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">98</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">9000</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">5</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">DISSERTATION RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1-9</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">2 TBA</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PERMIS OF DEPT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CHEN J</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">99</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">9000</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">6</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">DISSERTATION RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1-9</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">2 TBA</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PERMIS OF DEPT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CHEN F</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">99</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">9000</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">7</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">DISSERTATION RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1-9</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">2 TBA</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PERMIS OF DEPT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">99</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">9000</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">8</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">DISSERTATION RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1-9</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">2 TBA</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PERMIS OF DEPT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">98</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">9000</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">9</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">DISSERTATION RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1-9</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">2 TBA</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PERMIS OF DEPT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">KARKI B</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">99</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">9000</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">10</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">DISSERTATION RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1-9</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">2 TBA</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PERMIS OF DEPT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">99</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">9000</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">11</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">DISSERTATION RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1-9</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">2 TBA</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PERMIS OF DEPT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">KUNDU S</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">97</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">2</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">9000</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">12</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">DISSERTATION RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1-9</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">2 TBA</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PERMIS OF DEPT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MUKHOPADHYAY</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">99</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">9000</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">13</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">DISSERTATION RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1-9</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">2 TBA</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PERMIS OF DEPT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PARK S</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">98</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">9000</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">14</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">DISSERTATION RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1-9</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">2 TBA</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PERMIS OF DEPT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">SHAH R</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">99</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">9000</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">15</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">DISSERTATION RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1-9</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">2 TBA</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PERMIS OF DEPT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">SUN M</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">3</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">2</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">9000</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">16</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">DISSERTATION RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1-9</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">2 TBA</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PERMIS OF DEPT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">TRIANTAPHYLLO</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">99</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">9000</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">17</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">DISSERTATION RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1-9</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">2 TBA</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PERMIS OF DEPT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">99</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">9000</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">18</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">DISSERTATION RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1-9</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">2 TBA</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PERMIS OF DEPT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">96</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">3</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">9000</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">19</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">DISSERTATION RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1-9</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">2 TBA</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PERMIS OF DEPT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">ZHANG J</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">97</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">2</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">9000</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">20</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">DISSERTATION RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1-9</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">2 TBA</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PERMIS OF DEPT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">KAISER H</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">99</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">9000</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">21</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">DISSERTATION RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1-9</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">2 TBA</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PERMIS OF DEPT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">99</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">9000</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">22</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">DISSERTATION RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1-9</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">2 TBA</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PERMIS OF DEPT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">LI X</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">99</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">9000</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">23</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">DISSERTATION RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1-9</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">2 TBA</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PERMIS OF DEPT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">99</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">9000</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">24</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">DISSERTATION RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1-9</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">2 TBA</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PERMIS OF DEPT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">99</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">9000</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">25</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">DISSERTATION RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1-9</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">2 TBA</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PERMIS OF DEPT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">BRANDT S</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">99</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">9000</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">26</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">DISSERTATION RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1-9</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">2 TBA</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PERMIS OF DEPT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">99</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">9000</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">27</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">DISSERTATION RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1-9</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">2 TBA</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PERMIS OF DEPT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">96</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">3</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">9000</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">28</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">DISSERTATION RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1-9</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">2 TBA</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PERMIS OF DEPT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MAHMOUD A</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">97</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">2</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">9000</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">29</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">DISSERTATION RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1-9</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">2 TBA</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PERMIS OF DEPT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">WANG Q</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">98</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">9000</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">30</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">DISSERTATION RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1-9</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">2 TBA</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PERMIS OF DEPT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">LEE K</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">97</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">2</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">9000</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">31</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">DISSERTATION RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1-9</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">2 TBA</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PERMIS OF DEPT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RICHARD G</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">99</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">9000</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">32</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">DISSERTATION RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1-9</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">2 TBA</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PERMIS OF DEPT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">98</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">9000</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">33</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">DISSERTATION RES</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">1-9</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">2 TBA</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">PERMIS OF DEPT</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">YE J</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">S</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">ESSION</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">B</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">OFFERIN</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">GS BELOW    01/18/20</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">22 - 0</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">44625</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">22</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">8</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">7740</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">BIG DATA SYS &amp; APP</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">3</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">TBA</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">100% WEB BASED</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">LEE K</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">S</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">ESSION</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">C</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">OFFERIN</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">GS BELOW    03/21/20</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">22 - 0</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">44688</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">17</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">8</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">CSC</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">4762</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">BLOCKCHAIN &amp; CRYPTO</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">3</Data><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">TBA</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><NamedCell ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">100% WEB BASED</Data><NamedCell
+      ss:Name="csc"/></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">MUKHOPADHYAY</Data><NamedCell
+      ss:Name="csc"/></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Selected/>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>46</ActiveRow>
+     <RangeSelection>R47</RangeSelection>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+  <QueryTable xmlns="urn:schemas-microsoft-com:office:excel">
+   <Name>csc</Name>
+   <AutoFormatFont/>
+   <AutoFormatPattern/>
+   <QuerySource>
+    <QueryType>Text</QueryType>
+    <TextWizardSettings>
+     <Name x:HRef="/Users/stevenseiden/Downloads/csc.txt"/>
+     <Source>10000</Source>
+     <Decimal>.</Decimal>
+     <ThousandSeparator>,</ThousandSeparator>
+     <TrailingMinusNumbers/>
+     <FormatSettings>
+      <FieldType>AutoFormat</FieldType>
+      <FieldStart>0</FieldStart>
+      <FieldType>AutoFormat</FieldType>
+      <FieldStart>3</FieldStart>
+      <FieldType>AutoFormat</FieldType>
+      <FieldStart>9</FieldStart>
+      <FieldType>AutoFormat</FieldType>
+      <FieldStart>14</FieldStart>
+      <FieldType>AutoFormat</FieldType>
+      <FieldStart>20</FieldStart>
+      <FieldType>AutoFormat</FieldType>
+      <FieldStart>25</FieldStart>
+      <FieldType>AutoFormat</FieldType>
+      <FieldStart>32</FieldStart>
+      <FieldType>AutoFormat</FieldType>
+      <FieldStart>52</FieldStart>
+      <FieldType>AutoFormat</FieldType>
+      <FieldStart>58</FieldStart>
+      <FieldType>AutoFormat</FieldType>
+      <FieldStart>70</FieldStart>
+      <FieldType>AutoFormat</FieldType>
+      <FieldStart>77</FieldStart>
+      <FieldType>AutoFormat</FieldType>
+      <FieldStart>83</FieldStart>
+      <FieldType>AutoFormat</FieldType>
+      <FieldStart>100</FieldStart>
+      <FieldType>AutoFormat</FieldType>
+      <FieldStart>117</FieldStart>
+     </FormatSettings>
+    </TextWizardSettings>
+    <VersionLastEdit>6</VersionLastEdit>
+    <VersionLastRefresh>6</VersionLastRefresh>
+   </QuerySource>
+  </QueryTable>
+ </Worksheet>
+</Workbook>
