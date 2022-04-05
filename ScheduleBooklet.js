@@ -608,6 +608,10 @@ class ClassAggregation {
 
 const classAggMap = new Map([
     ["fal22csc", new ClassAggregation("fal22csc.xml")],
+    ["fal22engl", new ClassAggregation("fal22engl.xml")],
+    ["fal22engr", new ClassAggregation("fal22engr.xml")],
+    ["fal22hnrs", new ClassAggregation("fal22hnrs.xml")],
+    ["fal22math", new ClassAggregation("fal22math.xml")],
     ["spr22csc", new ClassAggregation("spr22csc.xml")],
     ["fal21csc", new ClassAggregation("fal21csc.xml")],
     ["spr21csc", new ClassAggregation("spr21csc.xml")],
