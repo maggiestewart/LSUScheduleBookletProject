@@ -185,8 +185,28 @@ class ClassConstruct {
         return this.#number;
     }
 
-    getAvailable() {
-        return this.#available;
+    getSection() {
+        return this.#section;
+    }
+
+    getType() {
+        return this.#type;
+    }
+
+    getTitle() {
+        return this.#title;
+    }
+
+    getHours() {
+        return this.#hours;
+    }
+
+    getStartTime() {
+        return this.#startTime;
+    }
+
+    getEndTime() {
+        return this.#endTime;
     }
 
     getDays() {
@@ -197,16 +217,40 @@ class ClassConstruct {
         return this.#professor;
     }
 
+    getAvailable() {
+        return this.#available;
+    }
+
+    getSize() {
+        return this.#size;
+    }
+
+    getBuilding() {
+        return this.#building;
+    }
+
+    getRoom() {
+        return this.#room;
+    }
+
     getFlags() {
         return this.#flags
     }
 
-    getStartTime() {
-        return this.#startTime;
+    getLab() {
+        return this.#lab;
     }
 
-    getEndTime() {
-        return this.#endTime;
+    getLabStartTime() {
+        return this.#labStartTime;
+    }
+
+    getLabEndTime() {
+        return this.#labEndTime;
+    }
+
+    getLabDays() {
+        return this.#labDays;
     }
 }
 
