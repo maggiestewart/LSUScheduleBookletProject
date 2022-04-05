@@ -1,62 +1,93 @@
-.outsideHeaderWrapper {
-    height: 100%;
+/*
+
+* {
+    box-sizing: border-box;
 }
+*/
+
+
+body {
+    padding-top: 80px;
+}
+
+
+
 .header {
     background-color: #4F2992;
-
     text-align: center;
     color: white;
     position:fixed;
     left: 0;
-    top:0;
-    width: 100%;
-    margin-bottom: 20px;
-
-}
-.navBarOutsideWrapper {
-    margin-top: 114px;
-    text-alight: center;
-    position: static;
-
-    left: 0;
     top: 0;
     width: 100%;
-    margin-bottom: 20px;
-}
-.navBar {
-    flex: border-box ;
-    text-align: center;
-    background-color: grey;
-    position: static;
-    width: 100%;
+    margin-bottom: 50px;
 
-    padding-top: 20px;
-    padding-bottom: 20px;
 }
+
+
+.headerBar {
+
+
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: grey;
+    margin-bottom: 100px;
+
+
+}
+select {
+    background-color: grey;
+}
+.chooseDepartment, .chooseSemester {
+    background-color: whitesmoke;
+    float: left;
+    left: 0;
+    text-align: center;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+    border-style: solid;
+    margin-left: 10px;
+}
+
+
+
 
 .middlePage {
-    overflow: scroll;
+
+
 }
 
-.outerFooterWraper {
-    height: 100%;
-    bottom: 0;
-    width: 100%;
-}
 
 .footer {
     background-color: #4F2992;
     text-align: center;
     color: white;
     position: relative;
-    padding: 50px;
+    padding: 5px;
+    left: 0%;
 
     width: 100%;
 
-    bottom: 0;
+
 
 }
 
+.subFooter {
+    background-color: grey;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    position: relative;
+    top: 0px;
+
+
+
+}
+
+
+/*
 a {
     display: block;
     width: 100%;
@@ -68,4 +99,9 @@ a {
 a:hover {
     color: rebeccapurple;
     background: #eff;
+}
+*/
+
+a:link {
+    color:white;
 }

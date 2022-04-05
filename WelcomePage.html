@@ -11,51 +11,67 @@
 
     <body>
 
-        <div class = "outsideHeaderWrapper">
+    <div class = "header">
+        <h1>LSU Course Offering</h1>
+       <!--- <p>Welcome!</p> --->
+    </div>
 
-            <div class="header">
-                <h1>LSU Course Offering</h1>
-                <p>Welcome!</p>
-            </div>
 
-        </div>
 
-        <div class = "navBarOutsideWrapper">
-            <div class = "navBar">
-                <label for="semester">Choose a semester:</label>
-                <select name="semester" id="semester">
-                    <option value="Fall 2022">Fall 2022</option>
-                    <option value="Spring 2022">Spring 2022</option>
-                    <option value="Fall 2021">Fall 2021</option>
-                    <option value="Spring 2021">Spring 2021</option>
-                </select>
+    <div class = "headerBar">
+        <br>
+        <select class = "chooseDepartment" name = "chooseDepartment">
 
-                <p></p>
+            <option value = "Computer Science">
+                Computer Science
+            </option>
 
-                <label for="department">Choose a department:</label>
-                <select name="department" id="department">
-                    <option value="Computer Science">Computer Science</option>
-                    <option value="Math">Math</option>
-                </select>
+            <option value = "Math">
+                Math
+            </option>
+        </select>
 
-            </div>
+        <select class = "chooseSemester" name = "chooseSemester">
+            <option value = "Fall 2022">
+                Fall 2022
+            </option>
 
-        </div>
+            <option value = "Spring 2022">
+                Spring 2022
+            </option>
 
-        <div class = "middlePage">
-            <p id="test">test</p>
-            <p><script src="ScheduleBooklet.js"> </script></p>
+            <option value = "Fall 2021">
+                Fall 2021
+            </option>
 
-        </div>
+            <option value = "Spring 2021">
+                Spring 2021
+            </option>
+        </select>
+    <br><br>
+    </div>
 
-        <div class = "outerFooterWraper">
 
-            <div class = "footer">
-               <h4><a href="ResourcesPage.html">Scheduling Resources</a></h4>
+    <div class = "middlePage">
+        <!--
+        <p id="test">test</p>
 
-            </div>
+        <p><script src="ScheduleBooklet.js"> </script></p>
+          --->
+    </div>
 
-        </div>
+
+
+    <div class = "footer">
+        <h4><a href="ResourcesPage.html">Scheduling Resources</a></h4>
+    </div>
+
+    <div class = "subFooter">
+        <p> Team Loading... <Loading class="."></Loading> </p>
+    </div>
+
+
+
 
 
 
