@@ -7,7 +7,8 @@
 
 
 body {
-    padding-top: 71px;
+    padding-top: 80px;
+    margin: 0;
 }
 
 
@@ -72,6 +73,9 @@ body {
 
 
 }
+
+
+
 
 
 .tableForHeaderBar tbody {
@@ -207,17 +211,23 @@ li a:hover {
     width: 95%;
     border: 1px solid #9b989d;
     background-color: mediumpurple;
-    border-radius: 5px;
     border-spacing: 0px;
     border-collapse: collapse;
+}
+
+#theadTRRight tr{
+    border-top-right-radius: 5px;
+}
+
+#theadTRLeft tr{
+    border-top-left-radius: 5px;
+
 }
 
 #tbodyTR tr, #tbodyTR td {
 
     padding: 0px;
     width: 95%;
-    border: 1px solid #9b989d;
-    border-radius: 5px;
     border-spacing: 0px;
     border-collapse: collapse;
 }
