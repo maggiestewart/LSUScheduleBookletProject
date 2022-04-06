@@ -123,7 +123,7 @@ body {
 }
 
 .subFooter {
-    background-color: grey;
+    background-color: #4E5052;
     width: 100%;
     position: relative;
     padding: 20px;
@@ -173,9 +173,10 @@ li a:hover {
 
 #specialh1 {
     text-align: center;
+    color: white;
     width: 95%;
     border-radius: 5px;
-    background-color: #9e64d7;
+    background-color: #4F2992;
 }
 
 
@@ -194,7 +195,7 @@ li a:hover {
     text-align: center;
     border: 3px solid #999;
     padding: 0px;
-    background-color: mediumpurple;
+    background-color: #4F2992;
     border-collapse: collapse;
 }
 

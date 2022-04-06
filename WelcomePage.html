@@ -35,7 +35,7 @@
                  <input name = "semesterInput" type = "hidden" value = 1>
 
                  <select id = "chooseDepartment" name = "chooseDepartment">
-                     <option disabled selected value> -- Select a department -- </option>
+                     <option disabled selected value> -- Select a semester -- </option>
                      <option value = "CSC"> Computer Science </option>
                      <option value = "MAT"> Math </option>
                      <option value = "ENL"> English </option>
@@ -43,7 +43,7 @@
              </td>
              <td>
                  <select id = "chooseSemester" name = "chooseSemester">
-                     <option disabled selected value> -- Select a semester -- </option>
+                     <option disabled selected value> -- Select a department -- </option>
                      <option value = "FAL22"> Fall 2022 </option>
                      <option value = "SPR22"> Spring 2022 </option>
                      <option value = "FAL21"> Fall 2021 </option>
@@ -61,9 +61,9 @@
         </tbody>
     </table>
 
-    <h1 id = "specialh1" style="margin-left: 25px; width:97%">1000-Level Classes</h1>
+    <h1 id = "specialh1" style="margin-left: 23px; width:97.35%; ">1000-Level Classes</h1>
 
-    <table class = "classesTable">
+    <table class = "classesTable" style="margin: 20px; ">
         <thead id = "theadTR">
             <tr>
 
@@ -157,10 +157,10 @@
 
 
     <div class = "footer">
-        <ul class = "footerLinks">
+        <ul class = "footerLinks" style="color: white;">
 
-            <li><a href="ResourcesPage.html" target = "_blank">Scheduling Resources</a></li>
-            <li><a href="SchedulePopUp.js" target="_blank">Create a Mock Schedule</a></li>
+            <li><a href="ResourcesPage.html" target = "_blank"style="color: white;">Scheduling Resources</a></li>
+            <li><a href="SchedulePopUp.js" target="_blank" style="color: white;">Create a Mock Schedule</a></li>
 
         </ul>
 
@@ -168,7 +168,10 @@
     </div>
 
     <div class = "subFooter">
-        <p> Team Loading... <Loading class="."></Loading> </p>
+<!--        <p> Team Loading... <Loading class="."></Loading> </p>-->
+        <center>
+            <img alt="Team Loading logo" class=logo height=auto src="Team loading.png" width=225px>
+        </center>
     </div>
 
     </body>
