@@ -264,6 +264,7 @@ class ClassAggregation {
         this.filteredCourseSelection = [];
         this.profSelection = [];
         this.thousandsArrays = [[], [], [], [], [], [], [], [], []];
+        this.tables = [];
         this.XMLFileName = XMLFileName;
         this.loadXMLFile()
     }
@@ -289,6 +290,9 @@ class ClassAggregation {
     * Pass in an array of CourseConstructs.
     * It separates them by 1000 level into thousandsArrays, having each contained array count for a 1000 level up to
     * 9000 level courses.
+    *
+    * The method then fills this.tables with the tables in the form of strings that can then be sent to table tags in
+    * the frontend.
     */
     fillThousandsArrayAndTabularize(courseArray) {
         for (let i = 1; i <= courseArray.length; i++) {
@@ -296,15 +300,19 @@ class ClassAggregation {
                                                                                && parseInt(course.getNumber) < i * 1000 + 1000});
         }
         //After filling the array, tabularize all values and send tables to frontend
-        this.tabularize();
+        let courses;
+        for (courses in this.thousandsArrays) {
+            this.tables.push(this.tabularize(courses));
+        }
+        //Sends each 1000 table to their respective table tag in frontend
+
     }
 
     /*
-    * Takes the ClassAgg thousandsArrays inner courses and makes 9 different tables. Sends them to frontend by sending
-    * to tag IDs.
+    * Takes any array of ClassConstructs and makes a table. Returns the table when constructed.
     */
-    tabularize() {
-        let tableHeader =
+    tabularize(array) {
+        let table =
             `<tr>
                 <th colspan="14">Course</th>
                 <th colspan="3">Lab</th>
@@ -329,10 +337,30 @@ class ClassAggregation {
                 <th>Lab Days</th>
             </tr>`;
 
-        let courseArray;
-        for (courseArray in this.thousandsArrays) {
-
+        let course;
+        for (course in array) {
+            table += "<tr><td>" +
+                    course.getAvailable() + "</td>><td>" +
+                    course.getSize() + "</td>><td>" +
+                    course.getNumber() + "</td>><td>" +
+                    course.getType() + "</td>><td>" +
+                    course.getSection() + "</td>><td>" +
+                    course.getTitle() + "</td>><td>" +
+                    course.getHours() + "</td>><td>" +
+                    course.getStartTime() + "</td>><td>" +
+                    course.getEndTime() + "</td>><td>" +
+                    course.getDays() + "</td>><td>" +
+                    course.getRoom() + "</td>><td>" +
+                    course.getBuilding() + "</td>><td>" +
+                    course.getFlags() + "</td>><td>" +
+                    course.getProfessor() + "</td>><td>" +
+                    course.getLabStartTime() + "</td>><td>" +
+                    course.getLabEndTime() + "</td>><td>" +
+                    course.getLabDays() + "</td>><td>" +
+                    "</td>></tr>>";
         }
+
+        return table;
     }
 
     fillCourseSelection(xmlFileName) {
