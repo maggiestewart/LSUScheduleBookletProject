@@ -290,10 +290,48 @@ class ClassAggregation {
     * It separates them by 1000 level into thousandsArrays, having each contained array count for a 1000 level up to
     * 9000 level courses.
     */
-    fillThousandsArray(courseArray) {
+    fillThousandsArrayAndTabularize(courseArray) {
         for (let i = 1; i <= courseArray.length; i++) {
             this.thousandsArrays[i - 1] = courseArray.filter(function(course) {return i * 1000 <= parseInt(course.getNumber())
                                                                                && parseInt(course.getNumber) < i * 1000 + 1000});
+        }
+        //After filling the array, tabularize all values and send tables to frontend
+        this.tabularize();
+    }
+
+    /*
+    * Takes the ClassAgg thousandsArrays inner courses and makes 9 different tables. Sends them to frontend by sending
+    * to tag IDs.
+    */
+    tabularize() {
+        let tableHeader =
+            `<tr>
+                <th colspan="14">Course</th>
+                <th colspan="3">Lab</th>
+            </tr>
+            <tr>
+                <th>Avl</th>
+                <th>Enrl</th>
+                <th>Number</th>
+                <th>Type</th>
+                <th>Section</th>
+                <th>Title</th>
+                <th>Hours</th>
+                <th>Start</th>
+                <th>End</th>
+                <th>Days</th>
+                <th>Room</th>
+                <th>Building</th>
+                <th>Special Enrollment</th>
+                <th>Professor</th>
+                <th>Lab Start</th>
+                <th>Lab End</th>
+                <th>Lab Days</th>
+            </tr>`;
+
+        let courseArray;
+        for (courseArray in this.thousandsArrays) {
+
         }
     }
 
@@ -380,7 +418,7 @@ class ClassAggregation {
         }
 
         this.filteredCourseSelection = this.filteredCourseSelection.concat(this.courseSelection);
-        this.fillThousandsArray(this.filteredCourseSelection);
+        this.fillThousandsArrayAndTabularize(this.filteredCourseSelection);
     }
 
     /*
@@ -525,7 +563,7 @@ class ClassAggregation {
             this.filteredCourseSelection = this.filteredCourseSelection.filter(this.filterWEBFlag);
         }
 
-        this.fillThousandsArray(this.filteredCourseSelection);
+        this.fillThousandsArrayAndTabularize(this.filteredCourseSelection);
     }
 
     getThousandsCourses(){
