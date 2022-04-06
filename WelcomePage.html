@@ -16,47 +16,154 @@
        <!--- <p>Welcome!</p> --->
     </div>
 
+    <table class = "tableForHeaderBar">
+        <tbody>
+          <tr>
+              <td>
+                  <b>Semester/Year:</b>
+              </td>
+              <td>
+                  <b>Departments:</b>
+              </td>
+              <td>
+                  <b>Advanced Search:</b>
+              </td>
+         </tr>
+
+         <tr>
+             <td>
+                 <input name = "semesterInput" type = "hidden" value = 1>
+
+                 <select id = "chooseDepartment" name = "chooseDepartment">
+                     <option disabled selected value> -- Select a department -- </option>
+                     <option value = "CSC"> Computer Science </option>
+                     <option value = "MAT"> Math </option>
+                     <option value = "ENL"> English </option>
+                 </select>
+             </td>
+             <td>
+                 <select id = "chooseSemester" name = "chooseSemester">
+                     <option disabled selected value> -- Select a semester -- </option>
+                     <option value = "FAL22"> Fall 2022 </option>
+                     <option value = "SPR22"> Spring 2022 </option>
+                     <option value = "FAL21"> Fall 2021 </option>
+                     <option value = "SPR21"> Spring 2021 </option>
+                 </select>
+             </td>
+
+             <td>
+                 <p>
+                     <input type = "button" id = "search" value = "search" />
+                 </p>
+             </td>
+
+         </tr>
+        </tbody>
+    </table>
+
+    <h1 id = "specialh1">1xxx Classes</h1>
+
+    <table class = "classesTable">
+        <thead id = "theadTR">
+        <tr>
+
+            <td> Course Name</td>
+            <td> Course Number</td>
+            <td> Professor</td>
 
 
-    <center><div class = "headerBar">
-        <br>
-        <select id = "chooseDepartment" name = "chooseDepartment">
-            <option disabled selected value> -- Select a department -- </option>
-            <option value = "CSC"> Computer Science </option>
-            <option value = "MAT"> Math </option>
-            <option value = "ENL"> English </option>
-        </select>
 
-        <select id = "chooseSemester" name = "chooseSemester">
-            <option disabled selected value> -- Select a semester -- </option>
-            <option value = "FAL22"> Fall 2022 </option>
-            <option value = "SPR22"> Spring 2022 </option>
-            <option value = "FAL21"> Fall 2021 </option>
-            <option value = "SPR21"> Spring 2021 </option>
-        </select>
+        </tr>
 
-        <p>
-            <input type = "button" id = "search" value = "search" />
-        </p>
-    <br><br>
-    </div> </center>
+
+
+
+        </thead>
+
+        <tbody id = "tbodyTR">
+            <tr>
+                <td> Bob</td>
+                <td> Susan </td>
+                <td> Steven</td>
+
+            </tr>
+
+            <tr>
+                <td> Bob</td>
+                <td> Susan </td>
+                <td> Steven</td>
+
+            </tr>
+            <tr>
+                <td> Bob</td>
+                <td> Susan </td>
+                <td> Steven</td>
+
+            </tr>
+            <tr>
+                <td> Bob</td>
+                <td> Susan </td>
+                <td> Steven</td>
+
+            </tr>
+
+        </tbody>
+
+
+    </table>
+
+    <table class = "classesTable">
+
+    </table>
+
+    <table class = "classesTable">
+
+    </table>
+
+    <table class = "classesTable">
+
+    </table>
+
+    <table class = "classesTable">
+
+    </table>
+
+    <table class = "classesTable">
+
+    </table>
+
+    <table class = "classesTable">
+
+    </table>
+
+    <table class = "classesTable">
+
+    </table>
+
+    <table class = "classesTable">
+
+    </table>
+
 
 
     <div class = "middlePage">
-        <!--
+
         <p id="test">test</p>
 
         <p><script src="ScheduleBooklet.js"> </script></p>
-          --->
+
     </div>
 
 
 
     <div class = "footer">
-        <div class = "columnFooterPages">
-            <p><a href="ResourcesPage.html" target = "_blank">Scheduling Resources</a></p>
-            <p><a href="SchedulePopUp.js" target="_blank">Create a Mock Schedule</a></p>
-        </div>
+        <ul class = "footerLinks">
+
+            <li><a href="ResourcesPage.html" target = "_blank">Scheduling Resources</a></li>
+            <li><a href="SchedulePopUp.js" target="_blank">Create a Mock Schedule</a></li>
+
+        </ul>
+
 
     </div>
 
