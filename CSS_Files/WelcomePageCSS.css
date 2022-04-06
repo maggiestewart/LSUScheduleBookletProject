@@ -63,7 +63,6 @@ body {
 */
 .tableForHeaderBar {
     width: 100%;
-    border: 1px solid #eeebeb;
     font-family: Arial, Helvetica, sans-serif;
     border-radius: 10px;
     border-spacing: 0px;
@@ -210,7 +209,6 @@ li a:hover {
 #theadTR tr, #theadTR td {
     padding: 0px;
     width: 95%;
-    border: 1px solid #9b989d;
     background-color: mediumpurple;
     border-spacing: 0px;
     border-collapse: collapse;
@@ -231,4 +229,39 @@ li a:hover {
     width: 95%;
     border-spacing: 0px;
     border-collapse: collapse;
+}
+
+@media (prefers-color-scheme: dark) {
+    html {
+        background: #2b2b2b;
+    }
+    .columnGeneralInformation a {
+        color: white;
+        background: #171717;
+    }
+
+    li a {
+        color: white;
+    }
+
+    nav {
+        background: #171717;
+
+    }
+
+    .navBar {
+        background-color: #262626;
+    }
+
+    body {
+        color: white;
+    }
+
+    .classesTable tr:nth-child(odd) {
+        background-color: #1c1c1c;
+        border-collapse: collapse;
+    }
+
+
+
 }
