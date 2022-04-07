@@ -8,8 +8,8 @@
 
 let desiredHours = prompt("Enter the number of desired credit hours or q to quit", "");
 let text;
-int hours = 0;
-int totalCreditHr = 0;
+let hours = 0;
+let totalCreditHr = 0;
 
 while ((desiredHours != null || desiredHours != "q" || desiredHours != "Q") && (hours <= desiredHours)) {
     text = "User cancelled the prompt";
@@ -23,10 +23,16 @@ while ((desiredHours != null || desiredHours != "q" || desiredHours != "Q") && (
 
 }
 
+function courseName()
+{
+    let input = document.getElementById("chooseDepartment");
+    alert(input);
+}
+
 window.writeValues = function(form) {
-    var classNum = form.classNum.value;
-    var sectionNum = form.sectionNum.value;
-    var creditHour = form.creditHour.value;
+    let classNum = form.classNum.value;
+    let sectionNum = form.sectionNum.value;
+    let creditHour = form.creditHour.value;
 
     document.getElementById('classInfo').innerHTML = classNum + ' ' + sectionNum + ' ' + creditHour;
 }
