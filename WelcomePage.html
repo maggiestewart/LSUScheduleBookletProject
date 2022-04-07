@@ -901,10 +901,16 @@
                     this.filteredCourseSelection = tempArray;
                 }
                 /*
-                if (WEBflag != null){
-                    this.filteredCourseSelection = this.filteredCourseSelection.filter(this.filterWEBFlag);
-                }
-                */
+                if (document.getElementById("wb").checked) {
+                    let tempArray = [];
+                    for (let i = 0; i < this.filteredCourseSelection.length; i++) {
+                        if (this.filteredCourseSelection[i].getFlags() !== null && (this.filteredCourseSelection[i].getFlags().includes("100% WEB BASED") || this.filteredCourseSelection[i].getFlags().includes("75-99% WEB BASE")
+                            || this.filteredCourseSelection[i].getFlags().includes("50-74% WEB BASE") || this.filteredCourseSelection[i].getFlags().includes("1-49% WEB BASED")))
+                            tempArray.push(this.filteredCourseSelection[i]);
+                    }
+                    this.filteredCourseSelection = tempArray;
+                }*/
+
                 this.fillThousandsArrayAndTabularize(this.filteredCourseSelection);
             }
 
