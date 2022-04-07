@@ -361,6 +361,8 @@ class ClassAggregation {
                     else
                         labFlag = false;
                 });
+                this.filteredCourseSelection = this.filteredCourseSelection.concat(this.courseSelection);
+                this.fillThousandsArrayAndTabularize(this.filteredCourseSelection);
             });
         });
     }
