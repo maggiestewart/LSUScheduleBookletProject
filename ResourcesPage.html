@@ -177,7 +177,21 @@
 
         </ul>
     </nav>
+<!--
 
+        Create a list of your potential classes:
+
+            <form>
+                Course Number: <input type="text" name="courseNum">
+                <br>
+                Course Section: <input type="text" name="courseSection">
+                <br>
+                Credit Hours: <input type="text" name="creditHour">
+
+    </form>
+
+
+-->
 
 
 </div>
@@ -185,7 +199,11 @@
 
 <div class = "footer">
     <ul id = "FooterList">
-        <li><a href="SchedulePopUp.js" style="color: white;  border-style: solid;">Create a Mock Schedule</a></li>
+        <!--<li><a href="SchedulePopUp.html" style="color: white;  border-style: solid;">Create a Mock Schedule</a></li> -->
+        <li><a href="SchedulePopUp.html"
+           onclick="window.open('SchedulePopUp.html', 'newwindow', 'width=300,height=250');
+              return false;"
+        >Create a Mock Schedule</a></li>
         <li><a href = "WelcomePage.html" style="color: white;  border-style: solid;"> Back to Schedule Booklet </a></li>
     </ul>
 </div>
