@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+
+<body>
+    <p>Create a list of your potential classes:</p>
+        <table style="table-layout: fixed; width: 100%;" >
+            <tr>
+                <td>Department:</td>
+                <td> <select id = "chDepartment" name = "chooseDepartment">
+                    <option disabled selected value> -- Select a department -- </option>
+                    <option value = "CSC"> Computer Science </option>
+                    <option value = "MAT"> Math </option>
+                    <option value = "ENL"> English </option>
+                </select></td>
+            </tr>
+
+            <tr>
+                <td>Course Number:</td>
+                <td><input type = "text" name = "courseNum" ></td>
+            </tr>
+
+            <br>
+            <tr>
+                <td>Course Section: </td>
+                <td><input type = "text" name = "courseSection"></td>
+            </tr>
+
+            <br>
+            <tr>
+                <td>Credit Hours:</td>
+                <td><input type = "text" name = "creditHour"></td>
+            </tr>
+
+        </table>
+
+        <script>document.write(document.getElementById('courseNum').value+" "+document.getElementById('courseSection').value+""+document.getElementById('creditHour').value);</script>
+
+        <span id = "classInfo"></span><br />
+
+        <input type = "button" value = "Submit" onClick="writeValues(form)">
+
+</body>

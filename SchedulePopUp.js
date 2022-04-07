@@ -21,6 +21,12 @@ while ((desiredHours != null || desiredHours != "q" || desiredHours != "Q") && (
 
     //display information
 
-    //looking to implement prototype design pattern or factory design pattern
-    }
+}
+
+window.writeValues = function(form) {
+    var classNum = form.classNum.value;
+    var sectionNum = form.sectionNum.value;
+    var creditHour = form.creditHour.value;
+
+    document.getElementById('classInfo').innerHTML = classNum + ' ' + sectionNum + ' ' + creditHour;
 }
