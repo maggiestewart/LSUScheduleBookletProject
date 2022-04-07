@@ -86,7 +86,7 @@ csc for drop down boxes
     text-decoration: none;
     border-style: solid;
     border-spacing: 50px;
-    border-color: lightslategrey;
+    border-color: #4E5052;
     color: black;
     float: left;
     width: 50%;
@@ -231,7 +231,7 @@ nav {
 
 span {
     padding : 15px;
-    background : #6954b6;
+    background : #4F2992;
     color : white;
     font-size : 1.2em;
     font-variant : small-caps;
