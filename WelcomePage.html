@@ -446,24 +446,22 @@
                     .then((response)=>{
                     response.text().then((xml)=>{
                         xmlContent = xml;
-                        console.log("hi");
                         let parser = new DOMParser();
                         let xmlDOM = parser.parseFromString(xmlContent, "application/xml");
                         let rows = xmlDOM.querySelectorAll("Row");
 
                         rows.forEach(rowXMLNode => {
-                            document.getElementById("test").innerHTML += " " + rowXMLNode.children[0].childNodes[0].innerHTML;
                             if (!labFlag){
                                 let tempCourse = new ClassConstruct.ClassBuilder();
-
+                                
                                 //If first tag has a data tag child and
-                                if (rowXMLNode.children[0].childNodes[0].nodeValue === "(F)"
-                                    || rowXMLNode.children[0].childNodes[0].nodeValue === "(H)"
-                                    || rowXMLNode.children[0].children[0].getAttribute("Type")  === "Number") {
-
-                                    tempCourse = tempCourse.setAvailable(rowXMLNode.children[0].childNodes[0].nodeValue)
-                                        .setSize(rowXMLNode.children[1].childNodes[0].nodeValue)
-                                        .setNumber(rowXMLNode.children[3].childNodes[0].nodeValue)
+                                if (rowXMLNode.children[0].childNodes[0].textContent === "(F)"
+                                    || rowXMLNode.children[0].childNodes[0].textContent === "(H)"
+                                    || rowXMLNode.children[0].children[0].getAttribute("ss:Type")  === "Number") {
+                                        document.getElementById("test").innerHTML += " " + rowXMLNode.children[0].childNodes[0].textContent;
+                                    tempCourse = tempCourse.setAvailable(rowXMLNode.children[0].childNodes[0].textContent)
+                                        .setSize(rowXMLNode.children[1].childNodes[0].textContent)
+                                        .setNumber(rowXMLNode.children[3].childNodes[0].textContent);
 
                                     if (rowXMLNode.children[4].querySelector("Data") !== null)
                                         tempCourse = tempCourse.setType(rowXMLNode.children[4].childNodes[0].nodeValue);
@@ -851,7 +849,7 @@
             //["fal22engr", new ClassAggregation("fal22engr.xml")],
             //["fal22hnrs", new ClassAggregation("fal22hnrs.xml")],
             //["fal22math", new ClassAggregation("fal22math.xml")],
-            ["spr22csc", new ClassAggregation("spr22csc.xml")],
+            //["spr22csc", new ClassAggregation("spr22csc.xml")],
             //["fal21csc", new ClassAggregation("fal21csc.xml")],
             //["spr21csc", new ClassAggregation("spr21csc.xml")],
             [],
