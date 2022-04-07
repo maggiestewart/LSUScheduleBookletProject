@@ -585,28 +585,29 @@
                 <th>Lab End</th>
                 <th>Lab Days</th>
             </tr>`;
-
+            document.getElementById("test").innerHTML += " " + "hello";
                 let course;
-                for (course in array) {
+                for (let i = 0; i < array.length; i++) {
+                    document.getElementById("test").innerHTML += array[i].getAvailable();
                     table += "<tr><td>" +
-                        course.getAvailable() + "</td>><td>" +
-                        course.getSize() + "</td>><td>" +
-                        course.getNumber() + "</td>><td>" +
-                        course.getType() + "</td>><td>" +
-                        course.getSection() + "</td>><td>" +
-                        course.getTitle() + "</td>><td>" +
-                        course.getHours() + "</td>><td>" +
-                        course.getStartTime() + "</td>><td>" +
-                        course.getEndTime() + "</td>><td>" +
-                        course.getDays() + "</td>><td>" +
-                        course.getRoom() + "</td>><td>" +
-                        course.getBuilding() + "</td>><td>" +
-                        course.getFlags() + "</td>><td>" +
-                        course.getProfessor() + "</td>><td>" +
-                        course.getLabStartTime() + "</td>><td>" +
-                        course.getLabEndTime() + "</td>><td>" +
-                        course.getLabDays() + "</td>><td>" +
-                        "</td>></tr>>";
+                        array[i].getAvailable() + "</td><td>" +
+                        array[i].getSize() + "</td><td>" +
+                        array[i].getNumber() + "</td><td>" +
+                        array[i].getType() + "</td><td>" +
+                        array[i].getSection() + "</td><td>" +
+                        array[i].getTitle() + "</td><td>" +
+                        array[i].getHours() + "</td><td>" +
+                        array[i].getStartTime() + "</td><td>" +
+                        array[i].getEndTime() + "</td><td>" +
+                        array[i].getDays() + "</td><td>" +
+                        array[i].getRoom() + "</td><td>" +
+                        array[i].getBuilding() + "</td><td>" +
+                        array[i].getFlags() + "</td><td>" +
+                        array[i].getProfessor() + "</td><td>" +
+                        array[i].getLabStartTime() + "</td><td>" +
+                        array[i].getLabEndTime() + "</td><td>" +
+                        array[i].getLabDays() + "</td><td>" +
+                        "</td></tr>";
                 }
 
                 return table;
