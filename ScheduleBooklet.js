@@ -275,7 +275,7 @@ class ClassAggregation {
      * This is called on object creation so the arrays will be ready for use no matter what.
      */
     loadXMLFile(){
-        let httpReq = new XMLHttpRequest();
+        /*let httpReq = new XMLHttpRequest();
         httpReq.onreadystatechange = function() {
             if (this.readyState === 4 && this.status === 200 && this.XMLFileName !== null) {
                 document.getElementById("test").innerHTML = this.responseText;
@@ -283,7 +283,20 @@ class ClassAggregation {
             }
         };
         httpReq.open("GET", this.XMLFileName, true);
-        httpReq.send();
+        httpReq.send();*/
+        let xmlContent = "";
+        fetch(this.XMLFileName).then((response)=>{
+            response.text().then((xml)=>{
+                let parser = new DOMParser();
+                let xmlDOM = parser.parseFromString(xmlContent, "application/xml");
+                let rows = xmlDOM.querySelectorAll("Row");
+
+                rows.forEach(rowXMLNode => {
+                    //If first tag has a data tag child and
+                    if (rowXMLNode.children[0].hasChildNodes() && rowXMLNode.children[0].childNodes[0].nodeValue){}
+                });
+            });
+        });
     }
 
     /*
