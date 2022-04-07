@@ -11,7 +11,7 @@ body {
 }
 .middlePage h2 {
     text-align: center;
-    background-color: #7c7b7b;
+    background-color: #4E5052;
     border-radius: 5px;
     color: white;
 }
@@ -129,7 +129,7 @@ ul li {
 
 .subFooter {
 
-    background-color: grey;
+    background-color: #4E5052;
     position: relative;
     padding: 20px;
     color: white;
@@ -157,7 +157,7 @@ ul li {
     padding: 5px;
     width: 100%;
     color: white;
-    background-color: grey;
+    background-color: #4E5052;
     text-align: center;
     border-bottom-style: solid;
     border-bottom-width: 10px;
