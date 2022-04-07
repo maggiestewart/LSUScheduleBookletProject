@@ -458,59 +458,58 @@
                                 if (rowXMLNode.children[0].childNodes[0].textContent === "(F)"
                                     || rowXMLNode.children[0].childNodes[0].textContent === "(H)"
                                     || rowXMLNode.children[0].children[0].getAttribute("ss:Type")  === "Number") {
-                                        document.getElementById("test").innerHTML += " " + rowXMLNode.children[0].childNodes[0].textContent;
+                                        
                                     tempCourse = tempCourse.setAvailable(rowXMLNode.children[0].childNodes[0].textContent)
                                         .setSize(rowXMLNode.children[1].childNodes[0].textContent)
                                         .setNumber(rowXMLNode.children[3].childNodes[0].textContent);
-
+                                        
                                     if (rowXMLNode.children[4].querySelector("Data") !== null)
-                                        tempCourse = tempCourse.setType(rowXMLNode.children[4].childNodes[0].nodeValue);
-
-                                    tempCourse = tempCourse.setSection(rowXMLNode.children[5].childNodes[0].nodeValue)
-                                        .setTitle(rowXMLNode.children[6].childNodes[0].nodeValue)
-                                        .setHours(rowXMLNode.children[7].childNodes[0].nodeValue);
-
-                                    if (rowXMLNode.children[8].childNodes[0].nodeValue !== "TBA") {
+                                        tempCourse = tempCourse.setType(rowXMLNode.children[4].childNodes[0].textContent);
+                                        
+                                    tempCourse = tempCourse.setSection(rowXMLNode.children[5].childNodes[0].textContent)
+                                        .setTitle(rowXMLNode.children[6].childNodes[0].textContent)
+                                        .setHours(rowXMLNode.children[7].childNodes[0].textContent);
+                                        
+                                    if (rowXMLNode.children[8].childNodes[0].textContent !== "TBA") {
                                         //Set times
-                                        const timeArray = rowXMLNode.children[8].childNodes[0].nodeValue.split("-");
+                                        const timeArray = rowXMLNode.children[8].childNodes[0].textContent.split("-");
                                         tempCourse = tempCourse.setStartTime(timeArray[0]).setEndTime(timeArray[1])
-                                            .setDays(rowXMLNode.children[9].childNodes[0].nodeValue);
+                                            .setDays(rowXMLNode.children[9].childNodes[0].textContent);
 
                                         //If it has a room, get the room and building
                                         if (rowXMLNode.children[10].querySelector("Data") !== null)
-                                            tempCourse = tempCourse.setRoom(rowXMLNode.children[10].childNodes[0].nodeValue)
-                                                .setBuilding(rowXMLNode.children[11].childNodes[0].nodeValue);
+                                            tempCourse = tempCourse.setRoom(rowXMLNode.children[10].childNodes[0].textContent)
+                                                .setBuilding(rowXMLNode.children[11].childNodes[0].textContent);
                                     } else
                                         tempCourse = tempCourse.setStartTime("TBA").setEndTime("TBA");
 
                                     //Get special tags when applicable
                                     if (rowXMLNode.children[12].querySelector("Data") !== null)
-                                        tempCourse = tempCourse.setFlags(rowXMLNode.children[12].childNodes[0].nodeValue);
+                                        tempCourse = tempCourse.setFlags(rowXMLNode.children[12].childNodes[0].textContent);
 
                                     //Get professor when applicable
                                     if (rowXMLNode.children[13].querySelector("Data") !== null) {
-                                        tempCourse = tempCourse.setProfessor(rowXMLNode.children[13].childNodes[0].nodeValue);
+                                        tempCourse = tempCourse.setProfessor(rowXMLNode.children[13].childNodes[0].textContent);
                                         //Add unique professors to a list for frontend to display
-                                        if (!this.profSelection.includes(rowXMLNode.children[13].childNodes[0].nodeValue))
-                                            this.profSelection.push(rowXMLNode.children[13].childNodes[0].nodeValue);
+                                        if (!this.profSelection.includes(rowXMLNode.children[13].childNodes[0].textContent))
+                                            this.profSelection.push(rowXMLNode.children[13].childNodes[0].textContent);
                                     }
-
+                                    
                                     //Check to see if the class has a lab and fill out its info if so
-                                    if (rowXMLNode.nextSibling !== null && rowXMLNode.nextSibling.childNodes[4].childNodes[0].nodeValue === "LAB") {
+                                    if (rowXMLNode.nextElementSibling !== null && rowXMLNode.nextElementSibling.children[4].childNodes[0].textContent === "LAB") {
                                         tempCourse = tempCourse.setLab("LAB");
-
                                         //Set times by splitting the "-" if not TBA
-                                        if (rowXMLNode.nextSibling.childNodes[8].childNodes[0].nodeValue !== "TBA") {
-                                            const labTimeArray = rowXMLNode.nextSibling.childNodes[8].childNodes[0].nodeValue.split("-");
+                                        if (rowXMLNode.nextElementSibling.children[8].childNodes[0].textContent !== "TBA") {
+                                            const labTimeArray = rowXMLNode.nextElementSibling.children[8].childNodes[0].textContent.split("-");
                                             tempCourse = tempCourse.setLabStartTime(labTimeArray[0]).setLabEndTime(labTimeArray[1])
-                                                .setLabDays(rowXMLNode.nextSibling.childNodes[9].childNodes[0].nodeValue);
+                                                .setLabDays(rowXMLNode.nextElementSibling.children[9].childNodes[0].textContent);
                                         } else
                                             tempCourse = tempCourse.setLabStartTime("TBA").setLabEndTime("TBA");
-
+                                        
                                         //We run this line because we want to skip over the lab line we just imported and pick up with the next row
                                         labFlag = true;
                                     }
-
+                                    //document.getElementById("test").innerHTML += " " + rowXMLNode.children[0].childNodes[0].textContent;
                                     this.courseSelection.push(tempCourse.build());
                                 }
                             }
@@ -518,6 +517,7 @@
                             else
                                 labFlag = false;
                         });
+                        document.getElementById("test").innerHTML += this.courseSelection[0].getAvailable();
                         this.filteredCourseSelection = this.filteredCourseSelection.concat(this.courseSelection);
                         this.fillThousandsArrayAndTabularize(this.filteredCourseSelection);
                     });
