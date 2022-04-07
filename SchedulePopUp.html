@@ -64,65 +64,58 @@
                        placeholder="Credit hours"
                        value=""/></td>
         </tr>
-
-
 </table>
-
 
 	<buttons style="position: fixed; bottom: 5px;">
             <button type="button"
-                    onClick="addItem()">
+                    onClick="myCourse.addItem(), myCourse.clearItems()">
+
                 Add
             </button>
             <button type="button"
-                    onClick="removeItem()">
+                    onClick="myCourse.removeItem()">
                 Remove
             </button>
 
         </buttons>
 
 
-
-
 	<script>
+            // Define the addItem() function to be called through onclick
+            // function addItem() {
+                let myCourse = {
+                    addItem: function () {
+                        // Get type of element from form
+                        let type = "body"
+                        // Get the text/value for the tag from the form
+                        let value = document.getElementById("dept").value.padEnd(21, " \xa0") +
+                            document.getElementById("num").value.padEnd(28, " \xa0") +
+                            document.getElementById("section").value.padEnd(19, " \xa0") +
+                            document.getElementById("hours").value;
 
-            // Define the addItem() function
-            // to be called through onclick
-            function addItem() {
+                        // createElement() is used for creating a new element
+                        type
+                            = document.createElement(type);
 
-                // Get type of element from form
-                let type = "body"
+                        type.appendChild(
+                            document.createTextNode(value));
 
-                // Get the text/value for the tag
-                // from the form
-                let value = document.getElementById("dept").value.padEnd(21, " \xa0") +
-                    document.getElementById("num").value.padEnd(28, " \xa0") +
-                    document.getElementById("section").value.padEnd(19, " \xa0") +
-                    document.getElementById("hours").value;
-
-                // createElement() is used for
-                // creating a new element
-                type
-                    = document.createElement(type);
-
-                // Use value as textnode in this example
-                type.appendChild(
-                    document.createTextNode(value));
-
-                // Append as child to the parent
-                // tag i.e. ol
-                document.getElementById(
-                    "parent").appendChild(type);
-
-
-            }
-
-            function removeItem() {
-                // Get type of element from form
-                var select = document.getElementById('parent');
-                select.removeChild(select.lastChild);
-
-            }
+                        // Append as child to the parent
+                        document.getElementById(
+                            "parent").appendChild(type);
+                    },
+                    removeItem: function () {
+                       // Get type of element from form
+                       let select = document.getElementById('parent');
+                       select.removeChild(select.lastChild);
+                    },
+                    clearItems: function(){
+                        document.getElementById("dept").value = "";
+                        document.getElementById("num").value = "";
+                        document.getElementById("section").value = "";
+                        document.getElementById("hours").value = "";
+                    }
+                };
 
         </script>
 </body>
