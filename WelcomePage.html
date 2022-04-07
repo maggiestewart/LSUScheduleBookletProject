@@ -553,7 +553,7 @@
                 
                 //Sends each 1000 table to their respective table tag in frontend
                 for (let i = 1; i <= this.tables.length; i++) {
-                    document.getElementById(i + "000").innerHTML = this.tables[i-1];
+                    document.getElementById(i.toString() + "000").innerHTML = this.tables[i-1];
                 }
             }
 
