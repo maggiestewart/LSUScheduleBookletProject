@@ -20,9 +20,13 @@
 
 </div>
 <br>
+<!-- prompt user for desired hours -->
+
 Create a list of your potential classes:
+
 <table style="table-layout: fixed; width: 100%;" >
-    <tr>
+    <form action="#" style="text-align:center;">
+
         <td>Department:</td>
         <td> <select id = "chDepartment" name = "chooseDepartment">
             <option disabled selected value> -- Select a department -- </option>
@@ -30,38 +34,73 @@ Create a list of your potential classes:
             <option value = "MAT"> Math </option>
             <option value = "ENL"> English </option>
         </select></td>
-    </tr>
+        <br /><br />
 
-    <tr>
-        <td>Course Number:</td>
-        <td><input type = "text" name = "courseNum" ></td>
-    </tr>
+        <tr>
+            <td>Course Number:</td>
+            <td><input type = "text" id = "coNum" name = "courseNum" ></td>
+        </tr>
 
-    <br>
-    <tr>
-        <td>Course Section: </td>
-        <td><input type = "text" name = "courseSection"></td>
-    </tr>
+        <br>
+        <tr>
+            <td>Course Section: </td>
+            <td><input type = "text" id = "coSect" name = "courseSection"></td>
+        </tr>
 
-    <br>
-    <tr>
-        <td>Credit Hours:</td>
-        <td><input type = "text" name = "creditHour"></td>
-    </tr>
+        <br>
+        <tr>
+            <td>Credit Hours:</td>
+            <td><input type = "text" id = "crHr" name = "creditHour"></td>
+        </tr>
+
+
+        <!-- Submit the Form -->
+        <tr>
+        <td><button type="button"
+                onClick="addItem()">
+            Submit
+        </button></td>
+        </tr>
+    </form>
+
 
 </table>
 
-<script>document.write(document.getElementById('courseNum').value+" "+document.getElementById('courseSection').value+""+document.getElementById('creditHour').value);</script>
-
 <span id = "classInfo"></span><br />
 
-<input type = "button" value = "Submit" onclick="myFunc(form)">
+<!-- <input type = "button" id = "submit" value = "Submit" onclick="addItem()"> -->
 
-<script src="SchedulePopUp.js"></script>
+<script>
+    // Define the addItem() function
+    // to be called through onclick
+    function addItem() {
+
+        // Get type of element from form
+        let type = document.
+        getElementById("type").value;
+
+        // Get the text/value for the tag
+        // from the form
+        let chDepartment = document.
+        getElementById("chDepartment").value;
+
+        // createElement() is used for
+        // creating a new element
+        type
+            = document.createElement(chDepartment);
+
+        // Use value as textnode in this example
+        type.appendChild(
+            document.createTextNode(chDepartment));
+
+        // Append as child to the parent
+        // tag i.e. ol
+        document.getElementById(
+            "parent").appendChild(chDepartment);
+    }
+</script>
 
 <hr>
-
-
 
 <table>
     <tr>
@@ -71,7 +110,7 @@ Create a list of your potential classes:
         <th> &nbsp;Hours &nbsp;</th>
     </tr>
     <tr>
-        <td><script>document.getElementById('chooseDepartment').value</script></td>
+        <td><script>document.getElementById('chDepartment').value</script></td>
         <td><script>document.getElementById('courseNum').value</script></td>
         <td><script>document.getElementById('courseSection').innerHTML</script></td>
         <td><script>document.getElementById('creditHours').innerText</script></td>
@@ -79,3 +118,5 @@ Create a list of your potential classes:
 </table>
 
 </body>
+
+</html>

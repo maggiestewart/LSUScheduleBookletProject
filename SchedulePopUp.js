@@ -6,14 +6,14 @@
 // ask for user input for desired number of credit hours
 // loop until user hits 'q' or exceeds desired number of credit hours for courses selected
 
-let desiredHours = 0;
-desiredHours = ("Enter the number of desired credit hours or q to quit");
+let desiredHours = prompt("Enter the number of desired credit hours or q to quit");
 let text;
-let hours = 0;
 let totalCreditHr = 0;
 
+desiredHours = parseInt(desiredHours);
 
-while ((desiredHours != "q" || desiredHours != "Q") && (hours <= desiredHours)) {
+
+while ((desiredHours != "q" || desiredHours != "Q") && (totalCreditHr <= desiredHours)) {
     text = "User cancelled the prompt";
     //class department drop down
     // let classNum = prompt("Enter the course number or q to quit");
@@ -26,13 +26,28 @@ while ((desiredHours != "q" || desiredHours != "Q") && (hours <= desiredHours)) 
 }
 
 function myFunc() {
-    let input = document.getElementById("chooseDepartment");
-    let input = document.getElementById("courseNum");
-    let input = document.getElementById("courseSection");
-    let input = document.getElementById("creditHour");
+    let department = document.getElementById("chooseDepartment");
+    let courseNum = document.getElementById("courseNum");
+    let courseSection = document.getElementById("courseSection");
+    let creditHr = document.getElementById("creditHour");
 
+    var classContents = department + courseNum + courseSection + creditHr;
+    var printContents = document.getElementById(classContents).innerHTML;
+
+    document.body.innerHTML = printContents;
+    window.print();
 }
-
+//
+// function printDiv(divName) {
+//     var printContents = document.getElementById(divName).innerHTML;
+//     var originalContents = document.body.innerHTML;
+//
+//     document.body.innerHTML = printContents;
+//
+//     window.print();
+//
+//     document.body.innerHTML = originalContents;
+// }
 
 // function courseName() {
 //     let input = document.getElementById("chooseDepartment");
