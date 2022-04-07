@@ -548,7 +548,6 @@
                 let courses;
                 for (let i = 0; i < this.thousandsArrays.length; i++) {
                     this.tables.push(this.tabularize(this.thousandsArrays[i]));
-                    document.getElementById("test").innerHTML += " " + "hello";
                 }
                 
                 //Sends each 1000 table to their respective table tag in frontend
@@ -585,29 +584,64 @@
                 <th>Lab End</th>
                 <th>Lab Days</th>
             </tr>`;
-            document.getElementById("test").innerHTML += " " + "hello";
                 let course;
                 for (let i = 0; i < array.length; i++) {
-                    document.getElementById("test").innerHTML += array[i].getAvailable();
                     table += "<tr><td>" +
                         array[i].getAvailable() + "</td><td>" +
                         array[i].getSize() + "</td><td>" +
-                        array[i].getNumber() + "</td><td>" +
-                        array[i].getType() + "</td><td>" +
-                        array[i].getSection() + "</td><td>" +
+                        array[i].getNumber() + "</td><td>";
+                    
+                    if (array[i].getType() !== null)
+                        table += array[i].getType() + "</td><td>";
+                    else
+                        table += "</td><td>";
+                    
+                    table += array[i].getSection() + "</td><td>" +
                         array[i].getTitle() + "</td><td>" +
                         array[i].getHours() + "</td><td>" +
                         array[i].getStartTime() + "</td><td>" +
-                        array[i].getEndTime() + "</td><td>" +
-                        array[i].getDays() + "</td><td>" +
-                        array[i].getRoom() + "</td><td>" +
-                        array[i].getBuilding() + "</td><td>" +
-                        array[i].getFlags() + "</td><td>" +
-                        array[i].getProfessor() + "</td><td>" +
-                        array[i].getLabStartTime() + "</td><td>" +
-                        array[i].getLabEndTime() + "</td><td>" +
-                        array[i].getLabDays() + "</td><td>" +
-                        "</td></tr>";
+                        array[i].getEndTime() + "</td><td>";
+
+                    if (array[i].getDays() !== null)
+                        table += array[i].getDays() + "</td><td>";
+                    else
+                        table += "</td><td>";
+
+                    if (array[i].getRoom() !== null)
+                        table += array[i].getRoom() + "</td><td>";
+                    else
+                        table += "</td><td>";
+
+                    if (array[i].getBuilding() !== null)
+                        table += array[i].getBuilding() + "</td><td>";
+                    else
+                        table += "</td><td>";
+                    
+                    if (array[i].getFlags() !== null)
+                        table += array[i].getFlags() + "</td><td>";
+                    else
+                        table += "</td><td>";
+                    
+                    if (array[i].getProfessor() !== null)
+                        table += array[i].getProfessor() + "</td><td>";
+                    else
+                        table += "</td><td>";
+
+                    if (array[i].getLabStartTime() !== null)
+                        table += array[i].getLabStartTime() + "</td><td>";
+                    else
+                        table += "</td><td>";
+
+                    if (array[i].getEndTime() !== null)
+                        table += array[i].getEndTime() + "</td><td>";
+                    else
+                        table += "</td><td>";
+
+                    if (array[i].getLabDays() !== null)
+                        table += array[i].getLabDays() + "</td><td>";
+                    else
+                        table += "</td><td>";
+                    table += "</td></tr>";
                 }
 
                 return table;
