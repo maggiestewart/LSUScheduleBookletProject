@@ -1,122 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
+<link rel="shortcut icon" type="image/jpg" href="favicon.ico"/>
 <head>
 
     <meta charset="UTF-8">
-    <meta content = "width=device-width, initial-scale=1">
+    <meta content="width=device-width, initial-scale=1">
     <title>Mock Schedule</title>
-    <link rel = "stylesheet" type = "text/css" href = "CSS_Files/SchedulePopUp.css">
+    <link rel="stylesheet" type="text/css" href="CSS_Files/SchedulePopUp.css">
 
 
 </head>
 
 <body>
-
-<div class = "header">
-    <img alt="LSU logo" align="left" class=logo height=20px style="padding-top: 15px; padding-right: 15px; padding-left: 15px" src="https://www.lsu.edu/_resources_fierce/svgs/lsu-logo.svg" width=auto>
-    <div style="text-align: left; font-size: 20px; padding-top: 15px" >
-        Mock Schedule
+<div class="header">
+    <img alt="LSU logo" align="left" class=logo height=20px
+         style="padding-top: 15px; padding-right: 15px; padding-left: 15px"
+         src="https://www.lsu.edu/_resources_fierce/svgs/lsu-logo.svg" width=auto>
+    <div style="text-align: left; font-size: 20px; padding-top: 15px">
+        Schedule Planner
     </div>
 
 </div>
-<br>
-<!-- prompt user for desired hours -->
 
-Create a list of your potential classes:
+<br><br>
+<ol id="parent" style="padding:0; line-height: 0; margin : 0;">
+    <th>Department &nbsp; &nbsp; &nbsp;
+        Course Number &nbsp; &nbsp; &nbsp;
+        Section &nbsp; &nbsp; &nbsp;
+        Credit Hours
+    </th>
+</ol>
 
-<table style="table-layout: fixed; width: 100%;" >
-    <form action="#" style="text-align:center;">
+	<table style="table-layout: fixed; width: 100%; position: fixed; bottom: 35px;">
 
         <td>Department:</td>
-        <td> <select id = "chDepartment" name = "chooseDepartment">
-            <option disabled selected value> -- Select a department -- </option>
-            <option value = "CSC"> Computer Science </option>
-            <option value = "MAT"> Math </option>
-            <option value = "ENL"> English </option>
+        <td><select id="dept" name="chooseDepartment">
+            <option disabled selected value> -- Select a department --</option>
+            <option value="CSC"> Computer Science</option>
+            <option value="MATH"> Math</option>
+            <option value="ENGL"> English</option>
         </select></td>
-        <br /><br />
+        <br/><br/>
 
         <tr>
             <td>Course Number:</td>
-            <td><input type = "text" id = "coNum" name = "courseNum" ></td>
+            <td><input type="text" id="num"
+                       placeholder="Course number"
+                       value=""/>
+                </td>
         </tr>
-
         <br>
         <tr>
-            <td>Course Section: </td>
-            <td><input type = "text" id = "coSect" name = "courseSection"></td>
+            <td>Course Section:</td>
+            <td><input type="text" id="section"
+                       placeholder="Course section"
+                       value=""/></td>
         </tr>
 
         <br>
         <tr>
             <td>Credit Hours:</td>
-            <td><input type = "text" id = "crHr" name = "creditHour"></td>
+            <td><input type="text" id="hours"
+                       placeholder="Credit hours"
+                       value=""/></td>
         </tr>
-
-
-        <!-- Submit the Form -->
-        <tr>
-        <td><button type="button"
-                onClick="addItem()">
-            Submit
-        </button></td>
-        </tr>
-    </form>
 
 
 </table>
 
-<span id = "classInfo"></span><br />
 
-<!-- <input type = "button" id = "submit" value = "Submit" onclick="addItem()"> -->
+	<buttons style="position: fixed; bottom: 5px;">
+            <button type="button"
+                    onClick="addItem()">
+                Add
+            </button>
+            <button type="button"
+                    onClick="removeItem()">
+                Remove
+            </button>
 
-<script>
-    // Define the addItem() function
-    // to be called through onclick
-    function addItem() {
+        </buttons>
 
-        // Get type of element from form
-        let type = document.
-        getElementById("type").value;
 
-        // Get the text/value for the tag
-        // from the form
-        let chDepartment = document.
-        getElementById("chDepartment").value;
 
-        // createElement() is used for
-        // creating a new element
-        type
-            = document.createElement(chDepartment);
 
-        // Use value as textnode in this example
-        type.appendChild(
-            document.createTextNode(chDepartment));
+	<script>
 
-        // Append as child to the parent
-        // tag i.e. ol
-        document.getElementById(
-            "parent").appendChild(chDepartment);
-    }
-</script>
+            // Define the addItem() function
+            // to be called through onclick
+            function addItem() {
 
-<hr>
+                // Get type of element from form
+                let type = "body"
 
-<table>
-    <tr>
-        <th>Department &nbsp;</th>
-        <th> &nbsp;Course No &nbsp;</th>
-        <th> &nbsp;Course Sec &nbsp;</th>
-        <th> &nbsp;Hours &nbsp;</th>
-    </tr>
-    <tr>
-        <td><script>document.getElementById('chDepartment').value</script></td>
-        <td><script>document.getElementById('courseNum').value</script></td>
-        <td><script>document.getElementById('courseSection').innerHTML</script></td>
-        <td><script>document.getElementById('creditHours').innerText</script></td>
-    </tr>
-</table>
+                // Get the text/value for the tag
+                // from the form
+                let value = document.getElementById("dept").value.padEnd(21, " \xa0") +
+                    document.getElementById("num").value.padEnd(28, " \xa0") +
+                    document.getElementById("section").value.padEnd(19, " \xa0") +
+                    document.getElementById("hours").value;
 
+                // createElement() is used for
+                // creating a new element
+                type
+                    = document.createElement(type);
+
+                // Use value as textnode in this example
+                type.appendChild(
+                    document.createTextNode(value));
+
+                // Append as child to the parent
+                // tag i.e. ol
+                document.getElementById(
+                    "parent").appendChild(type);
+
+
+            }
+
+            function removeItem() {
+                // Get type of element from form
+                var select = document.getElementById('parent');
+                select.removeChild(select.lastChild);
+
+            }
+
+        </script>
 </body>
 
 </html>
+
