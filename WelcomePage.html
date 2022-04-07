@@ -65,7 +65,7 @@
 
              <td>
                  <p>
-                     <input type = "button" id = "search" value = "Search" />
+                     <input type = "button" id = "search" value = "Search" onclick="classAggMap.get('fal22csc').sortCourses()"/>
                  </p>
              </td>
 
@@ -560,6 +560,8 @@
             * the frontend.
             */
             fillThousandsArrayAndTabularize(courseArray) {
+                this.thousandsArrays = [[],[],[],[],[],[],[],[],[]];
+                this.tables = [];
                 for (let i = 1; i <= this.thousandsArrays.length; i++)
                 {
                     for (let j = 0; j < courseArray.length; j++) 
@@ -572,7 +574,6 @@
                 
                 //document.getElementById("test").innerHTML += " " + this.thousandsArrays[0][this.thousandsArrays[0].length - 1].getNumber();
                 //After filling the array, tabularize all values and send tables to frontend
-                let courses;
                 for (let i = 0; i < this.thousandsArrays.length; i++) {
                     this.tables.push(this.tabularize(this.thousandsArrays[i]));
                 }
@@ -811,12 +812,12 @@
             }
 
             filterCIFlag(course){
-                return course.getFlags.includes("C-I");
+                return course.getFlags().includes("C-I");
             }
 
             filterWEBFlag(course){
-                return course.getFlags.includes("100% WEB BASED") || course.getFlags.includes("75-99% WEB BASE")
-                    || course.getFlags.includes("50-74% WEB BASE") || course.getFlags.includes("1-49% WEB BASED");
+                return course.getFlags().includes("100% WEB BASED") || course.getFlags().includes("75-99% WEB BASE")
+                    || course.getFlags().includes("50-74% WEB BASE") || course.getFlags().includes("1-49% WEB BASED");
             }
 
             //a method for filtering availability, it is called in the sortCourses method
@@ -845,9 +846,10 @@
             *
             * 6) WEBflag: true if included, null if not
             */
-            sortCourses(startTime, mon, tues, wed, thurs, fri, sat, professorArray, available, CIflag, WEBflag) {
+            sortCourses() {
                 this.filteredCourseSelection = [].concat(this.courseSelection);
 
+                /*
                 if (startTime != null){
                     if (startTime === "morning")
                         this.filteredCourseSelection = this.filteredCourseSelection.filter(this.filterStartTimeByMorning);
@@ -869,11 +871,12 @@
                     this.filteredCourseSelection = this.filteredCourseSelection.filter(this.filterFri);
                 if (sat != null)
                     this.filteredCourseSelection = this.filteredCourseSelection.filter(this.filterSat);
-
+                */
                 /*.filter() would not work for this because the professors change from each xml file, as well as there being too
                 * many to keep track of. I did it this way because .filter does not take in a professor parameter, so it's just
                 * easier to do the operation here in the filter.
                 */
+                /*
                 if (Array.isArray(professorArray) && professorArray.length !== 0){
                     let tempArray = [];
                     for (let i = 0; i < professorArray.length; i++) {
@@ -883,20 +886,25 @@
                         }
                     }
                     this.filteredCourseSelection = tempArray;
-                }
-
+                }*/
+                /*
                 if (available != null) {
                     this.filteredCourseSelection = this.filteredCourseSelection.filter(this.filterAvailable);
                 }
-
-                if (CIflag != null){
-                    this.filteredCourseSelection = this.filteredCourseSelection.filter(this.filterCIFlag);
+                */
+                if (document.getElementById("ci").checked){
+                    let tempArray = [];
+                    for (let i = 0; i < this.filteredCourseSelection.length; i++) {
+                        if (this.filteredCourseSelection[i].getFlags() !== null && this.filteredCourseSelection[i].getFlags().includes("C-I"))
+                            tempArray.push(this.filteredCourseSelection[i]);
+                    }
+                    this.filteredCourseSelection = tempArray;
                 }
-
+                /*
                 if (WEBflag != null){
                     this.filteredCourseSelection = this.filteredCourseSelection.filter(this.filterWEBFlag);
                 }
-
+                */
                 this.fillThousandsArrayAndTabularize(this.filteredCourseSelection);
             }
 
