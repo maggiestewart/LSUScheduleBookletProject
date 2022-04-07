@@ -160,7 +160,7 @@ li a {
     text-align: left;
     border-style: solid;
     border-radius: 5px;
-    border-color: #a19f9f;
+    border-color: #4F2992;
     border-width: 1px;
 
 
@@ -209,7 +209,7 @@ li a:hover {
 #theadTR tr, #theadTR td {
     padding: 0px;
     width: 95%;
-    background-color: mediumpurple;
+    background-color: #4F2992;
     border-spacing: 0px;
     border-collapse: collapse;
 }
@@ -260,6 +260,12 @@ li a:hover {
     .classesTable tr:nth-child(odd) {
         background-color: #1c1c1c;
         border-collapse: collapse;
+    }
+
+
+    .tableForHeaderBar tbody {
+
+        background-color: #171717;
     }
 
 
