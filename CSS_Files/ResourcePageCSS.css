@@ -8,6 +8,7 @@
 body {
     padding-top: 60px;
     color: black;
+    margin: 0;
 }
 .middlePage h2 {
     text-align: center;
@@ -25,6 +26,7 @@ body {
     top:0;
     width: 100%;
     margin-bottom: 20px;
+    box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
 
 }
 .navBarOutsideWrapper {
@@ -115,6 +117,10 @@ csc for drop down boxes
     position: relative;
     padding: 5px;
     width: 100%;
+
+    position:sticky;
+    bottom:0;
+    box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
 }
 
 
@@ -131,7 +137,6 @@ ul li {
 
     background-color: #4E5052;
     position: relative;
-    padding: 20px;
     color: white;
 
 

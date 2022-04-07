@@ -2,44 +2,80 @@
 <html lang="en">
 <head>
 
+    <meta charset="UTF-8">
+    <meta content = "width=device-width, initial-scale=1">
+    <title>Mock Schedule</title>
+    <link rel = "stylesheet" type = "text/css" href = "CSS_Files/SchedulePopUp.css">
+
+
 </head>
 
 <body>
-    <p>Create a list of your potential classes:</p>
-        <table style="table-layout: fixed; width: 100%;" >
-            <tr>
-                <td>Department:</td>
-                <td> <select id = "chDepartment" name = "chooseDepartment">
-                    <option disabled selected value> -- Select a department -- </option>
-                    <option value = "CSC"> Computer Science </option>
-                    <option value = "MAT"> Math </option>
-                    <option value = "ENL"> English </option>
-                </select></td>
-            </tr>
 
-            <tr>
-                <td>Course Number:</td>
-                <td><input type = "text" name = "courseNum" ></td>
-            </tr>
+<div class = "header">
+    <img alt="LSU logo" align="left" class=logo height=20px style="padding-top: 15px; padding-right: 15px; padding-left: 15px" src="https://www.lsu.edu/_resources_fierce/svgs/lsu-logo.svg" width=auto>
+    <div style="text-align: left; font-size: 20px; padding-top: 15px" >
+        Mock Schedule
+    </div>
 
-            <br>
-            <tr>
-                <td>Course Section: </td>
-                <td><input type = "text" name = "courseSection"></td>
-            </tr>
+</div>
+<br>
+Create a list of your potential classes:
+<table style="table-layout: fixed; width: 100%;" >
+    <tr>
+        <td>Department:</td>
+        <td> <select id = "chDepartment" name = "chooseDepartment">
+            <option disabled selected value> -- Select a department -- </option>
+            <option value = "CSC"> Computer Science </option>
+            <option value = "MAT"> Math </option>
+            <option value = "ENL"> English </option>
+        </select></td>
+    </tr>
 
-            <br>
-            <tr>
-                <td>Credit Hours:</td>
-                <td><input type = "text" name = "creditHour"></td>
-            </tr>
+    <tr>
+        <td>Course Number:</td>
+        <td><input type = "text" name = "courseNum" ></td>
+    </tr>
 
-        </table>
+    <br>
+    <tr>
+        <td>Course Section: </td>
+        <td><input type = "text" name = "courseSection"></td>
+    </tr>
 
-        <script>document.write(document.getElementById('courseNum').value+" "+document.getElementById('courseSection').value+""+document.getElementById('creditHour').value);</script>
+    <br>
+    <tr>
+        <td>Credit Hours:</td>
+        <td><input type = "text" name = "creditHour"></td>
+    </tr>
 
-        <span id = "classInfo"></span><br />
+</table>
 
-        <input type = "button" value = "Submit" onClick="writeValues(form)">
+<script>document.write(document.getElementById('courseNum').value+" "+document.getElementById('courseSection').value+""+document.getElementById('creditHour').value);</script>
+
+<span id = "classInfo"></span><br />
+
+<input type = "button" value = "Submit" onclick="myFunc(form)">
+
+<script src="SchedulePopUp.js"></script>
+
+<hr>
+
+
+
+<table>
+    <tr>
+        <th>Department &nbsp;</th>
+        <th> &nbsp;Course No &nbsp;</th>
+        <th> &nbsp;Course Sec &nbsp;</th>
+        <th> &nbsp;Hours &nbsp;</th>
+    </tr>
+    <tr>
+        <td><script>document.getElementById('chooseDepartment').value</script></td>
+        <td><script>document.getElementById('courseNum').value</script></td>
+        <td><script>document.getElementById('courseSection').innerHTML</script></td>
+        <td><script>document.getElementById('creditHours').innerText</script></td>
+    </tr>
+</table>
 
 </body>
