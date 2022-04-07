@@ -72,7 +72,7 @@
 
     <h1 id = "specialh1" style="width:97.5%; margin-left: 1.25%;margin-right: 1.25%;">1000-Level Classes</h1>
 
-    <table class = "classesTable" style="width:97.5%; margin-left: 1.25%;margin-right: 1.25%;">
+    <table id = "1000" class = "classesTable" style="width:97.5%; margin-left: 1.25%;margin-right: 1.25%;">
         <thead id = "theadTR">
             <tr style = "color: white;">
 
@@ -121,35 +121,35 @@
 
     </table>
 
-    <table class = "classesTable">
+    <table id = "2000" class = "classesTable">
 
     </table>
 
-    <table class = "classesTable">
+    <table id = "3000" class = "classesTable">
 
     </table>
 
-    <table class = "classesTable">
+    <table id = "4000" class = "classesTable">
 
     </table>
 
-    <table class = "classesTable">
+    <table id = "5000" class = "classesTable">
 
     </table>
 
-    <table class = "classesTable">
+    <table id = "6000" class = "classesTable">
 
     </table>
 
-    <table class = "classesTable">
+    <table id = "7000" class = "classesTable">
 
     </table>
 
-    <table class = "classesTable">
+    <table id = "8000" class = "classesTable">
 
     </table>
 
-    <table class = "classesTable">
+    <table id = "9000" class = "classesTable">
 
     </table>
 
@@ -542,14 +542,19 @@
                         }
                     }
                 }
-                document.getElementById("test").innerHTML += " " + this.thousandsArrays[0][this.thousandsArrays[0].length - 1].getNumber();
+                
+                //document.getElementById("test").innerHTML += " " + this.thousandsArrays[0][this.thousandsArrays[0].length - 1].getNumber();
                 //After filling the array, tabularize all values and send tables to frontend
                 let courses;
-                for (courses in this.thousandsArrays) {
-                    this.tables.push(this.tabularize(courses));
+                for (let i = 0; i < this.thousandsArrays.length; i++) {
+                    this.tables.push(this.tabularize(this.thousandsArrays[i]));
+                    document.getElementById("test").innerHTML += " " + "hello";
                 }
+                
                 //Sends each 1000 table to their respective table tag in frontend
-
+                for (let i = 1; i <= this.tables.length; i++) {
+                    document.getElementById(i + "000").innerHTML = this.tables[i-1];
+                }
             }
 
             /*
