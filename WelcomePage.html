@@ -18,6 +18,8 @@
         <div style="text-align: left">
             <h1>Course Offering</h1>
         </div>
+
+
        <!--- <p>Welcome!</p> --->
     </div>
 
@@ -41,22 +43,20 @@
 
          <tr>
              <td>
-                 <input name = "semesterInput" type = "hidden" value = 1>
-
-                 <select id = "chooseDepartment" name = "chooseDepartment">
-                     <option disabled selected value> -- Select a semester -- </option>
-                     <option value = "CSC"> Computer Science </option>
-                     <option value = "MAT"> Math </option>
-                     <option value = "ENL"> English </option>
-                 </select>
-             </td>
-             <td>
                  <select id = "chooseSemester" name = "chooseSemester">
-                     <option disabled selected value> -- Select a department -- </option>
+                     <option disabled selected value> -- Select a semester -- </option>
                      <option value = "FAL22"> Fall 2022 </option>
                      <option value = "SPR22"> Spring 2022 </option>
                      <option value = "FAL21"> Fall 2021 </option>
                      <option value = "SPR21"> Spring 2021 </option>
+                 </select>
+             </td>
+             <td>
+                 <select id = "chooseDepartment" name = "chooseDepartment">
+                     <option disabled selected value> -- Select a department -- </option>
+                         <option value = "CSC"> Computer Science </option>
+                         <option value = "MAT"> Math </option>
+                         <option value = "ENL"> English </option>
                  </select>
              </td>
 
@@ -74,7 +74,7 @@
 
     <table class = "classesTable" style="width:97.5%; margin-left: 1.25%;margin-right: 1.25%;">
         <thead id = "theadTR">
-            <tr>
+            <tr style = "color: white;">
 
                 <td style="border-top-left-radius: 5px;padding: 10px;"> Course Name</td>
                 <td style="padding: 10px;"> Course Number</td>
