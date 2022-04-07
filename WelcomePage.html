@@ -517,7 +517,7 @@
                             else
                                 labFlag = false;
                         });
-                        document.getElementById("test").innerHTML += this.courseSelection[0].getAvailable();
+                        //document.getElementById("test").innerHTML += this.courseSelection[0].getAvailable();
                         this.filteredCourseSelection = this.filteredCourseSelection.concat(this.courseSelection);
                         this.fillThousandsArrayAndTabularize(this.filteredCourseSelection);
                     });
@@ -533,10 +533,16 @@
             * the frontend.
             */
             fillThousandsArrayAndTabularize(courseArray) {
-                for (let i = 1; i <= courseArray.length; i++) {
-                    this.thousandsArrays[i - 1] = courseArray.filter(function(course) {return i * 1000 <= parseInt(course.getNumber())
-                        && parseInt(course.getNumber) < i * 1000 + 1000});
+                for (let i = 1; i <= this.thousandsArrays.length; i++)
+                {
+                    for (let j = 0; j < courseArray.length; j++) 
+                    {
+                        if (((i * 1000) <= parseInt(courseArray[j].getNumber())) && (parseInt(courseArray[j].getNumber()) < i * 1000 + 1000)){
+                            this.thousandsArrays[i - 1].push(courseArray[j]);
+                        }
+                    }
                 }
+                document.getElementById("test").innerHTML += " " + this.thousandsArrays[0][this.thousandsArrays[0].length - 1].getNumber();
                 //After filling the array, tabularize all values and send tables to frontend
                 let courses;
                 for (courses in this.thousandsArrays) {
@@ -600,7 +606,7 @@
 
                 return table;
             }
-
+            /*
             fillCourseSelection(xmlFileName) {
                 //Set up XML file to be read
                 let xmlFile = xmlFileName.responseXML;
@@ -633,12 +639,6 @@
 
                             //Set times
                             const timeArray = cellTags[8].getElementsByTagName("Data")[0].innerText.split("-");
-                            /*
-                            const startTimer=tempCourse.setStartTimeHours(timeArray[0].slice(0,timeArray[0].length-2))
-                                .setStartTimeMinutes(timeArray[0].slice(timeArray[0].length-2,timeArray[0].length));
-                            const endTimer=tempCourse.setEndTimeHours(timeArray[1].slice(0,timeArray[1].length-2))
-                                .setEndTimeMinutes(timeArray[1].slice(timeArray[1].length-2,timeArray[1].length));
-                             */
                             tempCourse = tempCourse.setStartTime(timeArray[0]).setEndTime(timeArray[1])
                                 .setDays(cellTags[9].getElementsByTagName("Data")[0].innerText);
 
@@ -686,6 +686,7 @@
                 this.filteredCourseSelection = this.filteredCourseSelection.concat(this.courseSelection);
                 this.fillThousandsArrayAndTabularize(this.filteredCourseSelection);
             }
+            */
 
             /*
             * Filters classes of type CourseConstruct based on start time to get morning classes (start of day to 12:00)
