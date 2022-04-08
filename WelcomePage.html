@@ -46,24 +46,25 @@
              <td>
                  <select id = "chooseSemester" name = "chooseSemester">
                      <option disabled selected value> -- Select a semester -- </option>
-                     <option value = "FAL22"> Fall 2022 </option>
-                     <option value = "SPR22"> Spring 2022 </option>
-                     <option value = "FAL21"> Fall 2021 </option>
-                     <option value = "SPR21"> Spring 2021 </option>
+                     <option value = "fal22"> Fall 2022 </option>
+                     <option value = "spr22"> Spring 2022 </option>
+                     <option value = "fal21"> Fall 2021 </option>
+                     <option value = "spr21"> Spring 2021 </option>
                  </select>
              </td>
              <td>
                  <select id = "chooseDepartment" name = "chooseDepartment">
                      <option disabled selected value> -- Select a department -- </option>
-                         <option value = "CSC"> Computer Science </option>
-                         <option value = "MAT"> Math </option>
-                         <option value = "ENL"> English </option>
+                         <option value = "csc"> Computer Science </option>
+                         <option value = "math"> Math </option>
+                         <option value = "engl"> English </option>
+                         <option value = "hnrs"> Honors </option>
                  </select>
              </td>
 
              <td>
                  <p>
-                     <input type = "button" id = "search" value = "Search" onclick="classAggMap.get('fal22csc').sortCourses()"/>
+                     <input type = "button" id = "search" value = "Search" onclick="loadClassAgg()"/>
                  </p>
              </td>
 
@@ -504,6 +505,12 @@
                 };
                 httpReq.open("GET", this.XMLFileName, true);
                 httpReq.send();*/
+                this.courseSelection = [];
+                this.filteredCourseSelection = [];
+                this.profSelection = [];
+                this.thousandsArrays = [[], [], [], [], [], [], [], [], []];
+                this.tables = [];
+
                 let xmlContent = "";
                 let labFlag = false;
 
@@ -1053,6 +1060,14 @@
             [],
             []
         ]);
+
+        let currentClassAgg;
+        function loadClassAgg() {
+            let keyString = document.getElementById("chooseSemester").value + document.getElementById("chooseDepartment").value;
+            currentClassAgg = classAggMap.get(keyString);
+            currentClassAgg.loadXMLFile();
+
+        }
         </script></p>
 
     </div>
