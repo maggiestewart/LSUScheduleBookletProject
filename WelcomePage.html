@@ -979,8 +979,13 @@
                     this.filteredCourseSelection = tempArray;
                 }*/
                 /*
-                if (available != null) {
-                    this.filteredCourseSelection = this.filteredCourseSelection.filter(this.filterAvailable);
+                if (document.getElementById("avl").checked){
+                    let tempArray = [];
+                    for (let i = 0; i < this.filteredCourseSelection.length; i++) {
+                        if (this.filteredCourseSelection[i].getAvailable() !== null && !(this.filteredCourseSelection[i].getAvailable() === "(F)" || this.filteredCourseSelection[i].getAvailable() === "(H)"))
+                            tempArray.push(this.filteredCourseSelection[i]);
+                    }
+                    this.filteredCourseSelection = tempArray;
                 }
                 */
                 if (document.getElementById("ci").checked){
