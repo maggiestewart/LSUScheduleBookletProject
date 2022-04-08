@@ -898,8 +898,8 @@
                         this.filteredCourseSelection = this.filteredCourseSelection.filter(this.filterStartTimeByNight);
                 }
                 */
-                /*
-                if (document.getElementById("mon").checked){
+
+                if (document.getElementById("Monday").checked){
                     let tempArray = [];
                     for (let i = 0; i < this.filteredCourseSelection.length; i++) {
                         if (this.filteredCourseSelection[i].getDays() !== null && this.filteredCourseSelection[i].getDays().includes("M"))
@@ -908,14 +908,14 @@
                     this.filteredCourseSelection = tempArray;
                 }
 
-                if (document.getElementById("tues").checked){
+                if (document.getElementById("Tuesday").checked){
                     let tempArray = [];
                     for (let i = 0; i < this.filteredCourseSelection.length; i++) {
-                        if (this.filteredCourseSelection[i].getDays().includes("T")) {
+                        if (this.filteredCourseSelection[i].getDays() !== null && this.filteredCourseSelection[i].getDays().includes("T")) {
                             //String only has 1 T, meaning it is exclusively tues or thurs
                             if (this.filteredCourseSelection[i].getDays().indexOf("T") === this.filteredCourseSelection[i].getDays().lastIndexOf("T")) {
                                 //test if the one day is thursday. If it is not, return true because it must be tues at that point
-                                if (!this.filteredCourseSelection[i].getDays().includes("Th")){
+                                if (!this.filteredCourseSelection[i].getDays().includes("TH")){
                                     tempArray.push(this.filteredCourseSelection[i]);
                                 }
                             }
@@ -927,7 +927,7 @@
                     this.filteredCourseSelection = tempArray;
                 }
 
-                if (document.getElementById("wed").checked){
+                if (document.getElementById("Wednesday").checked){
                     let tempArray = [];
                     for (let i = 0; i < this.filteredCourseSelection.length; i++) {
                         if (this.filteredCourseSelection[i].getDays() !== null && this.filteredCourseSelection[i].getDays().includes("W"))
@@ -936,16 +936,16 @@
                     this.filteredCourseSelection = tempArray;
                 }
 
-                if (document.getElementById("thu").checked){
+                if (document.getElementById("Thursday").checked){
                     let tempArray = [];
                     for (let i = 0; i < this.filteredCourseSelection.length; i++) {
-                        if (this.filteredCourseSelection[i].getDays() !== null && this.filteredCourseSelection[i].getDays().includes("Th"))
+                        if (this.filteredCourseSelection[i].getDays() !== null && this.filteredCourseSelection[i].getDays().includes("TH"))
                             tempArray.push(this.filteredCourseSelection[i]);
                     }
                     this.filteredCourseSelection = tempArray;
                 }
 
-                if (document.getElementById("fri").checked){
+                if (document.getElementById("Friday").checked){
                     let tempArray = [];
                     for (let i = 0; i < this.filteredCourseSelection.length; i++) {
                         if (this.filteredCourseSelection[i].getDays() !== null && this.filteredCourseSelection[i].getDays().includes("F"))
@@ -954,7 +954,7 @@
                     this.filteredCourseSelection = tempArray;
                 }
 
-                if (document.getElementById("sat").checked){
+                if (document.getElementById("Saturday").checked){
                     let tempArray = [];
                     for (let i = 0; i < this.filteredCourseSelection.length; i++) {
                         if (this.filteredCourseSelection[i].getDays() !== null && this.filteredCourseSelection[i].getDays().includes("S"))
@@ -962,7 +962,7 @@
                     }
                     this.filteredCourseSelection = tempArray;
                 }
-                */
+
                 /*.filter() would not work for this because the professors change from each xml file, as well as there being too
                 * many to keep track of. I did it this way because .filter does not take in a professor parameter, so it's just
                 * easier to do the operation here in the filter.
@@ -978,8 +978,8 @@
                     }
                     this.filteredCourseSelection = tempArray;
                 }*/
-                /*
-                if (document.getElementById("avl").checked){
+
+                if (document.getElementById("Seats Available").checked){
                     let tempArray = [];
                     for (let i = 0; i < this.filteredCourseSelection.length; i++) {
                         if (this.filteredCourseSelection[i].getAvailable() !== null && !(this.filteredCourseSelection[i].getAvailable() === "(F)" || this.filteredCourseSelection[i].getAvailable() === "(H)"))
@@ -987,7 +987,7 @@
                     }
                     this.filteredCourseSelection = tempArray;
                 }
-                */
+
                 if (document.getElementById("ci").checked){
                     let tempArray = [];
                     for (let i = 0; i < this.filteredCourseSelection.length; i++) {
@@ -996,8 +996,8 @@
                     }
                     this.filteredCourseSelection = tempArray;
                 }
-                /*
-                if (document.getElementById("wb").checked) {
+
+                if (document.getElementById("Virtual").checked) {
                     let tempArray = [];
                     for (let i = 0; i < this.filteredCourseSelection.length; i++) {
                         if (this.filteredCourseSelection[i].getFlags() !== null && (this.filteredCourseSelection[i].getFlags().includes("100% WEB BASED") || this.filteredCourseSelection[i].getFlags().includes("75-99% WEB BASE")
@@ -1005,7 +1005,7 @@
                             tempArray.push(this.filteredCourseSelection[i]);
                     }
                     this.filteredCourseSelection = tempArray;
-                }*/
+                }
 
                 this.fillThousandsArrayAndTabularize(this.filteredCourseSelection);
             }
