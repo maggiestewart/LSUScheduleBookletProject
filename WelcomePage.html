@@ -104,7 +104,7 @@
 
     <b style="padding-left:15px">Time:</b>
         <select id = "time" name = "time">
-            <option disabled selected value> -- Select a time -- </option>
+            <option value = "all"> All </option>
             <option value = "morning"> Morning (starts before 12pm) </option>
             <option value = "afternoon"> Afternoon (starts 12pm-4:30pm) </option>
             <option value = "night"> Night (starts after 4:30pm)</option>
@@ -873,24 +873,23 @@
             */
             sortCourses() {
                 this.filteredCourseSelection = [].concat(this.courseSelection);
-                /*
+
                 if (document.getElementById('time').value === "morning") {
                     let tempArray = [];
                     for (let i = 0; i < this.filteredCourseSelection.length; i++) {
                         if (this.filteredCourseSelection[i].getStartTime() !== "TBA" && this.filteredCourseSelection[i].getStartTime() !== null
                         && this.filteredCourseSelection[i].getEndTime() !== "TBA" && this.filteredCourseSelection[i].getStartTime() !== null) {
                             if (!this.filteredCourseSelection[i].getEndTime().includes('N') && parseInt(this.filteredCourseSelection[i].getStartTime()) >= 730
-                                && parseInt(this.filteredCourseSelection[i].getStartTime()) <= 1200)
+                                && parseInt(this.filteredCourseSelection[i].getStartTime()) < 1200)
                                 tempArray.push(this.filteredCourseSelection[i]);
                         }
                     }
                     this.filteredCourseSelection = tempArray;
-                }*/
-                /*
+                }
                 else if (document.getElementById('time').value === "afternoon") {
                     let tempArray = [];
                     for (let i = 0; i < this.filteredCourseSelection.length; i++) {
-                        if (parseInt(this.filteredCourseSelection[i].getStartTime()) < 430 && parseInt(this.filteredCourseSelection[i].getStartTime()) > 1200)
+                        if (parseInt(this.filteredCourseSelection[i].getStartTime()) < 430 || parseInt(this.filteredCourseSelection[i].getStartTime()) >= 1200)
                             tempArray.push(this.filteredCourseSelection[i]);
                     }
                     this.filteredCourseSelection = tempArray;
@@ -903,7 +902,6 @@
                     }
                     this.filteredCourseSelection = tempArray;
                 }
-                */
                 if (document.getElementById("Monday").checked){
                     let tempArray = [];
                     for (let i = 0; i < this.filteredCourseSelection.length; i++) {
