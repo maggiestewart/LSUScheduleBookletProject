@@ -887,18 +887,36 @@
             */
             sortCourses() {
                 this.filteredCourseSelection = [].concat(this.courseSelection);
-
                 /*
-                if (startTime != null){
-                    if (startTime === "morning")
-                        this.filteredCourseSelection = this.filteredCourseSelection.filter(this.filterStartTimeByMorning);
-                    else if (startTime === "afternoon")
-                        this.filteredCourseSelection = this.filteredCourseSelection.filter(this.filterStartTimeByAfternoon);
-                    else if (startTime === "night")
-                        this.filteredCourseSelection = this.filteredCourseSelection.filter(this.filterStartTimeByNight);
+                if (document.getElementById('time').value === "morning") {
+                    let tempArray = [];
+                    for (let i = 0; i < this.filteredCourseSelection.length; i++) {
+                        if (this.filteredCourseSelection[i].getStartTime() !== "TBA" && this.filteredCourseSelection[i].getStartTime() !== null
+                        && this.filteredCourseSelection[i].getEndTime() !== "TBA" && this.filteredCourseSelection[i].getStartTime() !== null) {
+                            if (!this.filteredCourseSelection[i].getEndTime().includes('N') && parseInt(this.filteredCourseSelection[i].getStartTime()) >= 730
+                                && parseInt(this.filteredCourseSelection[i].getStartTime()) <= 1200)
+                                tempArray.push(this.filteredCourseSelection[i]);
+                        }
+                    }
+                    this.filteredCourseSelection = tempArray;
+                }
+                else if (document.getElementById('time').value === "afternoon") {
+                    let tempArray = [];
+                    for (let i = 0; i < this.filteredCourseSelection.length; i++) {
+                        if (parseInt(this.filteredCourseSelection[i].getStartTime()) < 430 && parseInt(this.filteredCourseSelection[i].getStartTime()) > 1200)
+                            tempArray.push(this.filteredCourseSelection[i]);
+                    }
+                    this.filteredCourseSelection = tempArray;
+                }
+                else if (document.getElementById('time').value === "night") {
+                    let tempArray = [];
+                    for (let i = 0; i < this.filteredCourseSelection.length; i++) {
+                        if (this.filteredCourseSelection[i].getEndTime().includes('N'))
+                            tempArray.push(this.filteredCourseSelection[i]);
+                    }
+                    this.filteredCourseSelection = tempArray;
                 }
                 */
-
                 if (document.getElementById("Monday").checked){
                     let tempArray = [];
                     for (let i = 0; i < this.filteredCourseSelection.length; i++) {
