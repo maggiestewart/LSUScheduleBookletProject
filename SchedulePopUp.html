@@ -68,7 +68,7 @@
 
 	<buttons style="position: fixed; bottom: 5px;">
             <button type="button"
-                    onClick="myCourse.addItem(), myCourse.clearItems()">
+                    onClick="myCourse.addItem(), myCourse.alignItem(), myCourse.clearItems()">
 
                 Add
             </button>
@@ -87,11 +87,11 @@
                     addItem: function () {
                         // Get type of element from form
                         let type = "body"
-                        // Get the text/value for the tag from the form
+                        //Get the text/value for the tag from the form
                         let value = document.getElementById("dept").value.padEnd(21, " \xa0") +
                             document.getElementById("num").value.padEnd(28, " \xa0") +
                             document.getElementById("section").value.padEnd(19, " \xa0") +
-                            document.getElementById("hours").value;
+                            document.getElementById("hours").value.padEnd(19, " \xa0");
 
                         // createElement() is used for creating a new element
                         type
@@ -103,17 +103,25 @@
                         // Append as child to the parent
                         document.getElementById(
                             "parent").appendChild(type);
+
                     },
                     removeItem: function () {
                        // Get type of element from form
                        let select = document.getElementById('parent');
                        select.removeChild(select.lastChild);
                     },
-                    clearItems: function(){
+                    clearItems: function() {
                         document.getElementById("dept").value = "";
                         document.getElementById("num").value = "";
                         document.getElementById("section").value = "";
                         document.getElementById("hours").value = "";
+
+                     },
+                    alignItem: function(){
+                        document.getElementById("dept").value.padEnd(20, " ");
+                        document.getElementById("num").value.padEnd(20, " ");
+                        document.getElementById("section").value.padEnd(21, " ");
+                        document.getElementById("hours").value.padEnd(21, " ");
                     }
                 };
 
