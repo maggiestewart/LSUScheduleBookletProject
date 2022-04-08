@@ -475,15 +475,6 @@
              * This is called on object creation so the arrays will be ready for use no matter what.
              */
             loadXMLFile(){
-                /*let httpReq = new XMLHttpRequest();
-                httpReq.onreadystatechange = function() {
-                    if (this.readyState === 4 && this.status === 200 && this.XMLFileName !== null) {
-                        document.getElementById("test").innerHTML = this.responseText;
-                        this.fillCourseSelection(this.XMLFileName);
-                    }
-                };
-                httpReq.open("GET", this.XMLFileName, true);
-                httpReq.send();*/
                 this.courseSelection = [];
                 this.filteredCourseSelection = [];
                 this.profSelection = [];
@@ -699,178 +690,7 @@
 
                 return table;
             }
-            /*
-            fillCourseSelection(xmlFileName) {
-                //Set up XML file to be read
-                let xmlFile = xmlFileName.responseXML;
-                //Get row tags so that each course can be filled individually
-                let rowTags = xmlFile.getElementsByTagName("Row");
 
-
-                for (let i = 0; i < rowTags.length; i++) {
-
-                    let cellTags = rowTags[i].getElementsByTagName("Cell");
-
-                    let tempCourse = new ClassConstruct.ClassBuilder();
-
-                    if (cellTags[0].getElementsByTagName("Data")[0].getAttribute("ss.Type") === "Number"
-                        || cellTags[0].getElementsByTagName("Data")[0].innerText === "(F)"
-                        || cellTags[0].getElementsByTagName("Data")[0].innerText === "(H)") {
-
-                        tempCourse = tempCourse.setAvailable(cellTags[0].getElementsByTagName("Data")[0].innerText)
-                            .setSize(cellTags[1].getElementsByTagName("Data")[0].innerText)
-                            .setNumber(cellTags[3].getElementsByTagName("Data")[0].innerText);
-
-                        if (cellTags[4].querySelector("Data") != null)
-                            tempCourse = tempCourse.setType(cellTags[4].getElementsByTagName("Data")[0].innerText);
-
-                        tempCourse = tempCourse.setSection(cellTags[5].getElementsByTagName("Data")[0].innerText)
-                            .setTitle(cellTags[6].getElementsByTagName("Data")[0].innerText)
-                            .setHours(cellTags[7].getElementsByTagName("Data")[0].innerText);
-
-                        if (cellTags[8].getElementsByTagName("Data")[0].innerText !== "TBA") {
-
-                            //Set times
-                            const timeArray = cellTags[8].getElementsByTagName("Data")[0].innerText.split("-");
-                            tempCourse = tempCourse.setStartTime(timeArray[0]).setEndTime(timeArray[1])
-                                .setDays(cellTags[9].getElementsByTagName("Data")[0].innerText);
-
-                            //If it has a room, get the room and building
-                            if (cellTags[10].querySelector("Data") != null)
-                                tempCourse = tempCourse.setRoom(cellTags[10].getElementsByTagName("Data")[0].innerText)
-                                    .setBuilding(cellTags[11].getElementsByTagName("Data")[0].innerText);
-
-                        } else
-                            tempCourse = tempCourse.setStartTime("TBA").setEndTime("TBA");
-
-                        //Get special tags when applicable
-                        if (cellTags[12].querySelector("Data") != null)
-                            tempCourse = tempCourse.setFlags(cellTags[12].getElementsByTagName("Data")[0].innerText);
-
-                        //Get professor when applicable
-                        if (cellTags[13].querySelector("Data") != null) {
-                            tempCourse = tempCourse.setProfessor(cellTags[13].getElementsByTagName("Data")[0].innerText);
-                            //Add unique professors to a list for frontend to display
-                            if (!this.profSelection.includes(cellTags[13].getElementsByTagName("Data")[0].innerText))
-                                this.profSelection.push(cellTags[13].getElementsByTagName("Data")[0].innerText);
-                        }
-
-                        //Check to see if the class has a lab and fill out its info if so
-                        if (i + 1 < rowTags.length && rowTags[i + 1].getElementsByTagName("Data")[0].innerText === "LAB") {
-                            tempCourse = tempCourse.setLab(true);
-
-                            //Set times by splitting the "-" if not TBA
-                            if (rowTags[i + 1].getElementsByTagName("Data")[1].innerText !== "TBA") {
-                                const labTimeArray = rowTags[i + 1].getElementsByTagName("Data")[1].innerText.split("-");
-                                tempCourse = tempCourse.setLabStartTime(labTimeArray[0]).setLabEndTime(labTimeArray[1])
-                                    .setLabDays(rowTags[i + 1].getElementsByTagName("Data")[2].innerText);
-                            }
-                            else
-                                tempCourse = tempCourse.setLabStartTime("TBA").setLabEndTime("TBA");
-
-                            //We run this line because we want to skip over the lab line we just imported and pick up with the next row
-                            i++;
-                        }
-
-                        this.courseSelection.push(tempCourse.build());
-                    }
-                }
-
-                this.filteredCourseSelection = this.filteredCourseSelection.concat(this.courseSelection);
-                this.fillThousandsArrayAndTabularize(this.filteredCourseSelection);
-            }
-            */
-
-            /*
-            * Filters classes of type CourseConstruct based on start time to get morning classes (start of day to 12:00)
-            */
-            filterStartTimeByMorning(course) {
-                return !course.getEndTime().includes('N') && parseInt(course.getStartTime()) >= 730
-                    && parseInt(course.getStartTime()) <= 1200;
-            }
-
-            /*
-            * Filters classes of type CourseConstruct based on start time to get afternoon classes (12:00 to before 4:30 start)
-            */
-            filterStartTimeByAfternoon(course) {
-                return parseInt(course.getStartTime()) < 430 && parseInt(course.getStartTime()) > 1200;
-            }
-
-            /*
-            * Filters classes of type CourseConstruct based on night flag N to get night classes (start of day to 12:00)
-            */
-            filterStartTimeByNight(course) {
-                return course.getEndTime().includes('N');
-            }
-
-            //Filter by days section
-            filterMon(course) {
-                return course.getDays().includes("M");
-            }
-            //Dif because we have to make sure it's not reading thursday
-            filterTues(course) {
-                if (course.getDays().includes("T")) {
-                    //String only has 1 T, meaning it is exclusively tues or thurs
-                    if (course.getDays().indexOf("T") === course.getDays().lastIndexOf("T")) {
-                        //test if the one day is thursday. If it is not, return true because it must be tues at that point
-                        return !course.getDays().includes("Th");
-                    }
-                    //Course has both tues and thurs, return true because it definitely has tues
-                    else
-                        return true;
-                }
-                //Return false because no T means no tuesday
-                else
-                    return false;
-            }
-            filterWed(course) {
-                return course.getDays().includes("W");
-            }
-            filterThurs(course) {
-                return course.getDays().includes("Th");
-            }
-            filterFri(course) {
-                return course.getDays().includes("F");
-            }
-            filterSat(course) {
-                return course.getDays().includes("S");
-            }
-
-            filterCIFlag(course){
-                return course.getFlags().includes("C-I");
-            }
-
-            filterWEBFlag(course){
-                return course.getFlags().includes("100% WEB BASED") || course.getFlags().includes("75-99% WEB BASE")
-                    || course.getFlags().includes("50-74% WEB BASE") || course.getFlags().includes("1-49% WEB BASED");
-            }
-
-            //a method for filtering availability, it is called in the sortCourses method
-            filterAvailable(available){
-                //Hiding items that are full or on hold, aka only sending numbers back because those are available
-                return !(available.getAvailable() === "(F)" || available.getAvailable() === "(H)");
-            }
-
-            /*
-            * For this method, parameters will either be passed as:
-            * 1) null: meaning we don't want to filter/sort by that parameter.
-            * 2) some other meaningful value (TBD what that value is for each filter): will pass the if statement and
-            * sort accordingly.
-            *
-            * *****HOW TO NAME EACH PARAMETER IF NOT NULL*****
-            * 1) startTime: as a string, either 1) "morning" 2) "afternoon" 3) "night"
-            *
-            * 2) days: for each field for the days, true if included, null if not
-            *
-            * 3) professor: pass an ARRAY of STRINGS of the profs you want to include. Preferably you would pull the strings
-            * off of the profSelection array based on what professors are chosen so we can do this operation for any xml file.
-            *
-            * 4) available: true if included, null if not
-            *
-            * 5) CIflag: true if included, null if not
-            *
-            * 6) WEBflag: true if included, null if not
-            */
             sortCourses() {
                 this.filteredCourseSelection = [].concat(this.courseSelection);
 
@@ -966,22 +786,6 @@
                     this.filteredCourseSelection = tempArray;
                 }
 
-                /*.filter() would not work for this because the professors change from each xml file, as well as there being too
-                * many to keep track of. I did it this way because .filter does not take in a professor parameter, so it's just
-                * easier to do the operation here in the filter.
-                */
-                /*
-                if (Array.isArray(professorArray) && professorArray.length !== 0){
-                    let tempArray = [];
-                    for (let i = 0; i < professorArray.length; i++) {
-                        for (let j = 0; j < this.filteredCourseSelection.length; j++) {
-                            if (professorArray[i] === this.filteredCourseSelection[j].getProfessor())
-                                tempArray.push(this.filteredCourseSelection[j]);
-                        }
-                    }
-                    this.filteredCourseSelection = tempArray;
-                }*/
-
                 if (document.getElementById("Seats Available").checked){
                     let tempArray = [];
                     for (let i = 0; i < this.filteredCourseSelection.length; i++) {
@@ -1029,13 +833,6 @@
             ["fal22engl", new ClassAggregation("fal22engl.xml")],
             ["fal22engr", new ClassAggregation("fal22engr.xml")],
             ["fal22hnrs", new ClassAggregation("fal22hnrs.xml")],
-            //["fal22math", new ClassAggregation("fal22math.xml")],
-            //["spr22csc", new ClassAggregation("spr22csc.xml")],
-            //["fal21csc", new ClassAggregation("fal21csc.xml")],
-            //["spr21csc", new ClassAggregation("spr21csc.xml")],
-            [],
-            [],
-            [],
             []
         ]);
 
