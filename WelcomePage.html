@@ -858,19 +858,71 @@
                     else if (startTime === "night")
                         this.filteredCourseSelection = this.filteredCourseSelection.filter(this.filterStartTimeByNight);
                 }
+                */
+                /*
+                if (document.getElementById("mon").checked){
+                    let tempArray = [];
+                    for (let i = 0; i < this.filteredCourseSelection.length; i++) {
+                        if (this.filteredCourseSelection[i].getDays() !== null && this.filteredCourseSelection[i].getDays().includes("M"))
+                            tempArray.push(this.filteredCourseSelection[i]);
+                    }
+                    this.filteredCourseSelection = tempArray;
+                }
 
-                if (mon != null)
-                    this.filteredCourseSelection = this.filteredCourseSelection.filter(this.filterMon);
-                if (tues != null)
-                    this.filteredCourseSelection = this.filteredCourseSelection.filter(this.filterTues);
-                if (wed != null)
-                    this.filteredCourseSelection = this.filteredCourseSelection.filter(this.filterWed);
-                if (thurs != null)
-                    this.filteredCourseSelection = this.filteredCourseSelection.filter(this.filterThurs);
-                if (fri != null)
-                    this.filteredCourseSelection = this.filteredCourseSelection.filter(this.filterFri);
-                if (sat != null)
-                    this.filteredCourseSelection = this.filteredCourseSelection.filter(this.filterSat);
+                if (document.getElementById("tues").checked){
+                    let tempArray = [];
+                    for (let i = 0; i < this.filteredCourseSelection.length; i++) {
+                        if (this.filteredCourseSelection[i].getDays().includes("T")) {
+                            //String only has 1 T, meaning it is exclusively tues or thurs
+                            if (this.filteredCourseSelection[i].getDays().indexOf("T") === this.filteredCourseSelection[i].getDays().lastIndexOf("T")) {
+                                //test if the one day is thursday. If it is not, return true because it must be tues at that point
+                                if (!this.filteredCourseSelection[i].getDays().includes("Th")){
+                                    tempArray.push(this.filteredCourseSelection[i]);
+                                }
+                            }
+                            //Course has both tues and thurs, return true because it definitely has tues
+                            else
+                                tempArray.push(this.filteredCourseSelection[i]);
+                        }
+                    }
+                    this.filteredCourseSelection = tempArray;
+                }
+
+                if (document.getElementById("wed").checked){
+                    let tempArray = [];
+                    for (let i = 0; i < this.filteredCourseSelection.length; i++) {
+                        if (this.filteredCourseSelection[i].getDays() !== null && this.filteredCourseSelection[i].getDays().includes("W"))
+                            tempArray.push(this.filteredCourseSelection[i]);
+                    }
+                    this.filteredCourseSelection = tempArray;
+                }
+
+                if (document.getElementById("thu").checked){
+                    let tempArray = [];
+                    for (let i = 0; i < this.filteredCourseSelection.length; i++) {
+                        if (this.filteredCourseSelection[i].getDays() !== null && this.filteredCourseSelection[i].getDays().includes("Th"))
+                            tempArray.push(this.filteredCourseSelection[i]);
+                    }
+                    this.filteredCourseSelection = tempArray;
+                }
+
+                if (document.getElementById("fri").checked){
+                    let tempArray = [];
+                    for (let i = 0; i < this.filteredCourseSelection.length; i++) {
+                        if (this.filteredCourseSelection[i].getDays() !== null && this.filteredCourseSelection[i].getDays().includes("F"))
+                            tempArray.push(this.filteredCourseSelection[i]);
+                    }
+                    this.filteredCourseSelection = tempArray;
+                }
+
+                if (document.getElementById("sat").checked){
+                    let tempArray = [];
+                    for (let i = 0; i < this.filteredCourseSelection.length; i++) {
+                        if (this.filteredCourseSelection[i].getDays() !== null && this.filteredCourseSelection[i].getDays().includes("S"))
+                            tempArray.push(this.filteredCourseSelection[i]);
+                    }
+                    this.filteredCourseSelection = tempArray;
+                }
                 */
                 /*.filter() would not work for this because the professors change from each xml file, as well as there being too
                 * many to keep track of. I did it this way because .filter does not take in a professor parameter, so it's just
