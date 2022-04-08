@@ -36,9 +36,10 @@
         <td>Department:</td>
         <td><select id="dept" name="chooseDepartment">
             <option disabled selected value> -- Select a department --</option>
-            <option value="CSC"> Computer Science</option>
-            <option value="MATH"> Math</option>
-            <option value="ENGL"> English</option>
+            <option value="CSC"> Computer Science </option>
+            <option value="ENGL"> English </option>
+            <option value="ENGR"> Engineering </option>
+            <option value="HNRS"> Honors </option>
         </select></td>
         <br/><br/>
 
@@ -47,7 +48,7 @@
             <td><input type="text" id="num"
                        placeholder="Course number"
                        value=""/>
-                </td>
+            </td>
         </tr>
         <br>
         <tr>
@@ -67,23 +68,20 @@
 </table>
 
 	<buttons style="position: fixed; bottom: 5px;">
-            <button type="button"
-                    onClick="myCourse.addItem(), myCourse.alignItem(), myCourse.clearItems()">
-
+            <button type="button" id = "addButton"
+                    onclick="Courses.addItem(), Courses.clearItems()">
                 Add
             </button>
-            <button type="button"
-                    onClick="myCourse.removeItem()">
+            <button type="button" id = "removeButton"
+                    onclick="Courses.removeItem()">
                 Remove
             </button>
 
-        </buttons>
+    </buttons>
 
 
 	<script>
-            // Define the addItem() function to be called through onclick
-            // function addItem() {
-                let myCourse = {
+            let Courses = {
                     addItem: function () {
                         // Get type of element from form
                         let type = "body"
@@ -103,30 +101,33 @@
                         // Append as child to the parent
                         document.getElementById(
                             "parent").appendChild(type);
+                    },
 
-                    },
                     removeItem: function () {
-                       // Get type of element from form
-                       let select = document.getElementById('parent');
-                       select.removeChild(select.lastChild);
+                        // Get type of element from form
+                        let select = document.getElementById('parent');
+                        select.removeChild(select.lastChild);
                     },
+
                     clearItems: function() {
                         document.getElementById("dept").value = "";
                         document.getElementById("num").value = "";
                         document.getElementById("section").value = "";
                         document.getElementById("hours").value = "";
+                    },
 
-                     },
-                    alignItem: function(){
-                        document.getElementById("dept").value.padEnd(20, " ");
-                        document.getElementById("num").value.padEnd(20, " ");
-                        document.getElementById("section").value.padEnd(21, " ");
-                        document.getElementById("hours").value.padEnd(21, " ");
+                    getClassInstance: function() {
+                        // Condition checking existence of instance
+                        if (!document) {
+                            document.getElementById("dept").value = "";
+                            document.getElementById("num").value = "";
+                            document.getElementById("section").value = "";
+                            document.getElementById("hours").value = "";
+                        }
                     }
-                };
+            };
 
         </script>
 </body>
-
 </html>
 
