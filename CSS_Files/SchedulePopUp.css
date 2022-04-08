@@ -33,6 +33,9 @@ body {
 
 }
 
+document{
+    text-align: center;
+}
 
 
 @media (prefers-color-scheme: dark) {
