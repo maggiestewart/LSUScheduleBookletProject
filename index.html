@@ -36,16 +36,11 @@
             </br>
             <b>Departments:</b>
         </td>
-        <td>
-            </br>
-            <b>Display courses:</b>
-
-        </td>
     </tr>
 
     <tr>
         <td>
-            <select id="chooseSemester" name="chooseSemester">
+            <select id="chooseSemester" name="chooseSemester" onchange="loadClassAgg()">
                 <option disabled selected value> -- Select a semester --</option>
                 <option value="fal22"> Fall 2022</option>
                 <option value="spr22"> Spring 2022</option>
@@ -54,19 +49,13 @@
             </select>
         </td>
         <td>
-            <select id="chooseDepartment" name="chooseDepartment">
+            <select id="chooseDepartment" name="chooseDepartment" onchange="loadClassAgg()">
                 <option disabled selected value> -- Select a department --</option>
                 <option value="csc"> Computer Science</option>
                 <option value="engl"> English</option>
                 <option value="engr"> Engineering</option>
                 <option value="hnrs"> Honors</option>
             </select>
-        </td>
-
-        <td>
-            <p>
-                <input type="button" id="display" value="Display" onclick="loadClassAgg()"/>
-            </p>
         </td>
 
     </tr>
@@ -76,34 +65,34 @@
 <br>
 <center>
     <b style="padding-left:15px">Monday:</b>
-    <input type="checkbox" id="Monday" name="monday" value="monday">
+    <input type="checkbox" id="Monday" name="monday" value="monday" onclick="currentClassAgg.sortCourses()">
 
     <b style="padding-left:15px">Tuesday:</b>
-    <input type="checkbox" id="Tuesday" name="tuesday" value="tuesday">
+    <input type="checkbox" id="Tuesday" name="tuesday" value="tuesday" onclick="currentClassAgg.sortCourses()">
 
     <b style="padding-left:15px">Wednesday:</b>
-    <input type="checkbox" id="Wednesday" name="wednesday" value="wednesday">
+    <input type="checkbox" id="Wednesday" name="wednesday" value="wednesday" onclick="currentClassAgg.sortCourses()">
 
     <b style="padding-left:15px">Thursday:</b>
-    <input type="checkbox" id="Thursday" name="thursday" value="thursday">
+    <input type="checkbox" id="Thursday" name="thursday" value="thursday" onclick="currentClassAgg.sortCourses()">
 
     <b style="padding-left:15px">Friday:</b>
-    <input type="checkbox" id="Friday" name="friday" value="friday">
+    <input type="checkbox" id="Friday" name="friday" value="friday" onclick="currentClassAgg.sortCourses()">
 
     <b style="padding-left:15px">Saturday:</b>
-    <input type="checkbox" id="Saturday" name="saturday" value="saturday">
+    <input type="checkbox" id="Saturday" name="saturday" value="saturday" onclick="currentClassAgg.sortCourses()">
 
     <b style="padding-left:15px">Virtual:</b>
-    <input type="checkbox" id="Virtual" name="virtual" value="virtual">
+    <input type="checkbox" id="Virtual" name="virtual" value="virtual" onclick="currentClassAgg.sortCourses()">
 
     <b style="padding-left:15px">Seats Available:</b>
-    <input type="checkbox" id="Seats Available" name="available" value="available">
+    <input type="checkbox" id="Seats Available" name="available" value="available" onclick="currentClassAgg.sortCourses()">
 
     <b style="padding-left:15px">CI:</b>
-    <input type="checkbox" id="ci" name="ci" value="ci">
+    <input type="checkbox" id="ci" name="ci" value="ci" onclick="currentClassAgg.sortCourses()">
 
     <b style="padding-left:15px">Time:</b>
-    <select id="time" name="time">
+    <select id="time" name="time" onchange="currentClassAgg.sortCourses()">
         <option value="all"> All</option>
         <option value="morning"> Morning (starts before 12pm)</option>
         <option value="afternoon"> Afternoon (starts 12pm-4:30pm)</option>
@@ -111,8 +100,6 @@
     </select>
 
 
-    <b style="padding-left:15px">Search:</b>
-    <input type="button" id="search" value="Go" onclick="currentClassAgg.sortCourses()"/>
 </center>
 
 
