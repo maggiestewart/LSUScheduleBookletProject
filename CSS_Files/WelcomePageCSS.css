@@ -124,6 +124,7 @@ select {
     width: 100%;
     position: relative;
     padding: 20px;
+    color: white;
 }
 
 
@@ -317,16 +318,9 @@ li a:hover {
 }
 
 nav {
-    transition: transform 250ms;
     width: 95%;
     margin: 40px auto;
     border-radius: 5px;
-}
-
-nav:hover {
-    transform: scale(1.005);
-    width: 95.5%;
-
 }
 
 span {
@@ -346,7 +340,7 @@ span {
 span::after {
     float: right;
     right: 10%;
-    content: "+";
+    content: "-";
 }
 
 .slide {
