@@ -259,8 +259,6 @@ span::after {
     overflow: hidden;
     text-align: center;
     transition: height .4s ease;
-
-
 }
 
 .slide li {
@@ -274,7 +272,7 @@ span::after {
 }
 
 #touch:checked + .slide, #touch1:checked + .slide, #touch2:checked + .slide, #touch3:checked + .slide, #touch4:checked + .slide, #touch4:checked + .slide, #touch5:checked + .slide, #touch6:checked + .slide, #touch7:checked + .slide, #touch8:checked + .slide, #touch9:checked + .slide, #touch10:checked + .slide, #touch11:checked + .slide, #touch12:checked + .slide, #touch13:checked + .slide, #touch14:checked + .slide {
-    height: 250px;
+    height: 100px;
 }
 
 

@@ -10,6 +10,7 @@
 
 
 
+
 body {
     padding-top: 80px;
     margin: 0;
@@ -84,7 +85,7 @@ body {
 
 .tableForHeaderBar tbody {
 
-    background-color: grey;
+    background-color: #ebe6fd;
 }
 
 /*
@@ -173,14 +174,6 @@ li a:hover {
     text-decoration-line: underline;
 }
 
-#specialh1 {
-    text-align: center;
-    color: white;
-    width: 95%;
-    border-radius: 5px;
-    background-color: #4F2992;
-}
-
 
 .onekClass {
     /*
@@ -206,9 +199,8 @@ li a:hover {
 }
 
 .classesTable tr:nth-child(even) {
-    background-color: #eeebeb;
+    background-color: white;
     border-collapse: collapse;
-    text-align: left;
 }
 
 
@@ -245,7 +237,30 @@ li a:hover {
     border-collapse: collapse;
 }
 
+@media (prefers-color-scheme: light) {
+    nav {
+        background: #ebe6fd;
+        box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.15), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    }
+
+    nav:hover{
+        box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+
+    }
+}
+
+
 @media (prefers-color-scheme: dark) {
+    nav {
+        background: #171717;
+        box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+
+    }
+
+    nav:hover {
+        box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    }
+
     html {
         background: #2b2b2b;
     }
@@ -258,10 +273,7 @@ li a:hover {
         color: white;
     }
 
-    nav {
-        background: #171717;
 
-    }
 
     .navBar {
         background-color: #262626;
@@ -287,8 +299,97 @@ li a:hover {
         background-color: #4F2992;
         color: white;
         border-collapse: collapse;
-        text-align: left;
     }
 
 
 }
+
+
+/*
+    This part deals with dropdown menu stuff for the resource page
+ */
+
+li a {
+    text-decoration: none;
+    padding: 2px;
+    color: black;
+    text-align: left;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #ebe6fd;
+    border-width: 1px;
+
+
+}
+
+li a:hover {
+    text-decoration-line: underline;
+}
+
+nav {
+    transition: transform 250ms;
+    width : 95%;
+    margin : 40px auto;
+    border-radius: 5px;
+}
+
+nav:hover{
+    transform: scale(1.005);
+    width : 95.5%;
+
+}
+
+span {
+    padding : 10px;
+    background : #4F2992;
+    color : white;
+    font-size : 1.5em;
+    font-variant : small-caps;
+    font-weight: bold;
+    cursor : pointer;
+    display: block;
+    text-align: center;
+    border-radius: 5px;
+
+}
+
+span::after {
+    float: right;
+    right: 10%;
+    content:"+";
+}
+
+.slide {
+    clear: both;
+    width: 100%;
+    height: 0;
+
+    /*This is a workaround to get sliding animations working avoiding a bug with using auto height*/
+    overflow: hidden;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    transition: all .5s ease;
+
+}
+
+.slide li {
+    height: auto;
+
+    padding: 30px;
+}
+
+#touch1000, #touch2000, #touch3000, #touch4000, #touch5000, #touch6000, #touch7000, #touch8000, #touch9000 {
+    position: absolute;
+    opacity: 0;
+    height: 0px;
+}
+
+#touch1000:checked + .slide, #touch2000:checked + .slide, #touch3000:checked + .slide, #touch4000:checked + .slide, #touch5000:checked + .slide, #touch6000:checked + .slide, #touch7000:checked + .slide, #touch8000:checked + .slide, #touch9000:checked + .slide {
+    height: auto;
+    padding-bottom: 20px;
+}
+
+
+/*
+    Dropdown menu stuff for resource page ends here
+ */
