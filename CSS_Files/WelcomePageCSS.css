@@ -1,6 +1,7 @@
 .outsideHeaderWrapper {
     height: 100%;
 }
+
 /*
 
 * {
@@ -9,13 +10,10 @@
 */
 
 
-
-
 body {
     padding-top: 80px;
     margin: 0;
 }
-
 
 
 .header {
@@ -32,9 +30,9 @@ body {
     */
     text-align: center;
     color: white;
-    position:fixed;
+    position: fixed;
     left: 0;
-    top:0;
+    top: 0;
     width: 100%;
     margin-bottom: 10px;
     box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
@@ -75,12 +73,7 @@ body {
     text-align: center;
 
 
-
-
 }
-
-
-
 
 
 .tableForHeaderBar tbody {
@@ -102,11 +95,9 @@ body {
 }
 */
 
- select {
-     border-radius: 5px;
- }
-
-
+select {
+    border-radius: 5px;
+}
 
 
 .middlePage {
@@ -123,8 +114,8 @@ body {
     padding: 5px;
     width: 100%;
 
-    position:sticky;
-    bottom:0;
+    position: sticky;
+    bottom: 0;
     box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
 }
 
@@ -204,7 +195,6 @@ li a:hover {
 }
 
 
-
 .classesTable tr:nth-child(2) {
     background-color: #4F2992;
     color: white;
@@ -220,11 +210,11 @@ li a:hover {
     border-collapse: collapse;
 }
 
-#theadTRRight tr{
+#theadTRRight tr {
     border-top-right-radius: 5px;
 }
 
-#theadTRLeft tr{
+#theadTRLeft tr {
     border-top-left-radius: 5px;
 
 }
@@ -243,7 +233,7 @@ li a:hover {
         box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.15), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
     }
 
-    nav:hover{
+    nav:hover {
         box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
 
     }
@@ -264,6 +254,7 @@ li a:hover {
     html {
         background: #2b2b2b;
     }
+
     .columnGeneralInformation a {
         color: white;
         background: #171717;
@@ -272,7 +263,6 @@ li a:hover {
     li a {
         color: white;
     }
-
 
 
     .navBar {
@@ -328,25 +318,25 @@ li a:hover {
 
 nav {
     transition: transform 250ms;
-    width : 95%;
-    margin : 40px auto;
+    width: 95%;
+    margin: 40px auto;
     border-radius: 5px;
 }
 
-nav:hover{
+nav:hover {
     transform: scale(1.005);
-    width : 95.5%;
+    width: 95.5%;
 
 }
 
 span {
-    padding : 10px;
-    background : #4F2992;
-    color : white;
-    font-size : 1.5em;
-    font-variant : small-caps;
+    padding: 10px;
+    background: #4F2992;
+    color: white;
+    font-size: 1.5em;
+    font-variant: small-caps;
     font-weight: bold;
-    cursor : pointer;
+    cursor: pointer;
     display: block;
     text-align: center;
     border-radius: 5px;
@@ -356,7 +346,7 @@ span {
 span::after {
     float: right;
     right: 10%;
-    content:"+";
+    content: "+";
 }
 
 .slide {

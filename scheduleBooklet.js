@@ -46,92 +46,92 @@ class ClassConstruct {
         #labEndTime = null;
         #labDays = null;
 
-        setNumber(number){
+        setNumber(number) {
             this.#number = number;
             return this;
         }
 
-        setSection(section){
+        setSection(section) {
             this.#section = section;
             return this;
         }
 
-        setType(type){
+        setType(type) {
             this.#type = type;
             return this;
         }
 
-        setTitle(title){
+        setTitle(title) {
             this.#title = title;
             return this;
         }
 
-        setHours(hours){
+        setHours(hours) {
             this.#hours = hours;
             return this;
         }
 
-        setStartTime(startTime){
+        setStartTime(startTime) {
             this.#startTime = startTime;
             return this;
         }
 
-        setEndTime(endTime){
+        setEndTime(endTime) {
             this.#endTime = endTime;
             return this;
         }
 
-        setDays(days){
+        setDays(days) {
             this.#days = days;
             return this;
         }
 
-        setProfessor(professor){
+        setProfessor(professor) {
             this.#professor = professor;
             return this;
         }
 
-        setAvailable(available){
+        setAvailable(available) {
             this.#available = available;
             return this;
         }
 
-        setSize(size){
+        setSize(size) {
             this.#size = size;
             return this;
         }
 
-        setBuilding(building){
+        setBuilding(building) {
             this.#building = building;
             return this;
         }
 
-        setRoom(room){
+        setRoom(room) {
             this.#room = room;
             return this;
         }
 
-        setFlags(flags){
+        setFlags(flags) {
             this.#flags = flags;
             return this;
         }
 
-        setLab(lab){
+        setLab(lab) {
             this.#lab = lab;
             return this;
         }
 
-        setLabStartTime(labStartTime){
+        setLabStartTime(labStartTime) {
             this.#labStartTime = labStartTime;
             return this;
         }
 
-        setLabEndTime(labEndTime){
+        setLabEndTime(labEndTime) {
             this.#labEndTime = labEndTime;
             return this;
         }
 
-        setLabDays(labDays){
+        setLabDays(labDays) {
             this.#labDays = labDays;
             return this;
         }
@@ -160,7 +160,7 @@ class ClassConstruct {
     }
 
     constructor(number, section, type, title, hours, startTime, endTime, days, professor, available, size, building, room,
-                flags, lab, labStart, labEnd, labDays){
+                flags, lab, labStart, labEnd, labDays) {
         this.#number = number;
         this.#section = section;
         this.#type = type;
@@ -274,7 +274,7 @@ class ClassAggregation {
      * In the if statement, calling the fill course selection lets us fill our array when the file is ready.
      * This is called on object creation so the arrays will be ready for use no matter what.
      */
-    loadXMLFile(){
+    loadXMLFile() {
         /*let httpReq = new XMLHttpRequest();
         httpReq.onreadystatechange = function() {
             if (this.readyState === 4 && this.status === 200 && this.XMLFileName !== null) {
@@ -286,28 +286,28 @@ class ClassAggregation {
         httpReq.send();*/
         let xmlContent = "";
         let labFlag = false;
-        fetch(this.XMLFileName).then((response)=>{
-            response.text().then((xml)=>{
+        fetch(this.XMLFileName).then((response) => {
+            response.text().then((xml) => {
                 xmlContent = xml;
                 let parser = new DOMParser();
                 let xmlDOM = parser.parseFromString(xmlContent, "application/xml");
                 let rows = xmlDOM.querySelectorAll("Row");
 
                 rows.forEach(rowXMLNode => {
-                    if (!labFlag){
+                    if (!labFlag) {
                         let tempCourse = new ClassConstruct.ClassBuilder();
 
                         //If first tag has a data tag child and
                         if (rowXMLNode.children[0].childNodes[0].nodeValue === "(F)"
                             || rowXMLNode.children[0].childNodes[0].nodeValue === "(H)"
-                            || rowXMLNode.children[0].children[0].getAttribute("Type")  === "Number") {
+                            || rowXMLNode.children[0].children[0].getAttribute("Type") === "Number") {
 
                             tempCourse = tempCourse.setAvailable(rowXMLNode.children[0].childNodes[0].nodeValue)
-                                 .setSize(rowXMLNode.children[1].childNodes[0].nodeValue)
-                                 .setNumber(rowXMLNode.children[3].childNodes[0].nodeValue)
+                                .setSize(rowXMLNode.children[1].childNodes[0].nodeValue)
+                                .setNumber(rowXMLNode.children[3].childNodes[0].nodeValue)
 
                             if (rowXMLNode.children[4].querySelector("Data") !== null)
-                                 tempCourse = tempCourse.setType(rowXMLNode.children[4].childNodes[0].nodeValue);
+                                tempCourse = tempCourse.setType(rowXMLNode.children[4].childNodes[0].nodeValue);
 
                             tempCourse = tempCourse.setSection(rowXMLNode.children[5].childNodes[0].nodeValue)
                                 .setTitle(rowXMLNode.children[6].childNodes[0].nodeValue)
@@ -317,7 +317,7 @@ class ClassAggregation {
                                 //Set times
                                 const timeArray = rowXMLNode.children[8].childNodes[0].nodeValue.split("-");
                                 tempCourse = tempCourse.setStartTime(timeArray[0]).setEndTime(timeArray[1])
-                                   .setDays(rowXMLNode.children[9].childNodes[0].nodeValue);
+                                    .setDays(rowXMLNode.children[9].childNodes[0].nodeValue);
 
                                 //If it has a room, get the room and building
                                 if (rowXMLNode.children[10].querySelector("Data") !== null)
@@ -354,7 +354,7 @@ class ClassAggregation {
                                 labFlag = true;
                             }
 
-                        this.courseSelection.push(tempCourse.build());
+                            this.courseSelection.push(tempCourse.build());
                         }
                     }
                     //Reset lab flag so we can start reading rows again
@@ -377,8 +377,10 @@ class ClassAggregation {
     */
     fillThousandsArrayAndTabularize(courseArray) {
         for (let i = 1; i <= courseArray.length; i++) {
-            this.thousandsArrays[i - 1] = courseArray.filter(function(course) {return i * 1000 <= parseInt(course.getNumber())
-                                                                               && parseInt(course.getNumber) < i * 1000 + 1000});
+            this.thousandsArrays[i - 1] = courseArray.filter(function (course) {
+                return i * 1000 <= parseInt(course.getNumber())
+                    && parseInt(course.getNumber) < i * 1000 + 1000
+            });
         }
         //After filling the array, tabularize all values and send tables to frontend
         let courses;
@@ -421,24 +423,24 @@ class ClassAggregation {
         let course;
         for (course in array) {
             table += "<tr><td>" +
-                    course.getAvailable() + "</td>><td>" +
-                    course.getSize() + "</td>><td>" +
-                    course.getNumber() + "</td>><td>" +
-                    course.getType() + "</td>><td>" +
-                    course.getSection() + "</td>><td>" +
-                    course.getTitle() + "</td>><td>" +
-                    course.getHours() + "</td>><td>" +
-                    course.getStartTime() + "</td>><td>" +
-                    course.getEndTime() + "</td>><td>" +
-                    course.getDays() + "</td>><td>" +
-                    course.getRoom() + "</td>><td>" +
-                    course.getBuilding() + "</td>><td>" +
-                    course.getFlags() + "</td>><td>" +
-                    course.getProfessor() + "</td>><td>" +
-                    course.getLabStartTime() + "</td>><td>" +
-                    course.getLabEndTime() + "</td>><td>" +
-                    course.getLabDays() + "</td>><td>" +
-                    "</td>></tr>>";
+                course.getAvailable() + "</td>><td>" +
+                course.getSize() + "</td>><td>" +
+                course.getNumber() + "</td>><td>" +
+                course.getType() + "</td>><td>" +
+                course.getSection() + "</td>><td>" +
+                course.getTitle() + "</td>><td>" +
+                course.getHours() + "</td>><td>" +
+                course.getStartTime() + "</td>><td>" +
+                course.getEndTime() + "</td>><td>" +
+                course.getDays() + "</td>><td>" +
+                course.getRoom() + "</td>><td>" +
+                course.getBuilding() + "</td>><td>" +
+                course.getFlags() + "</td>><td>" +
+                course.getProfessor() + "</td>><td>" +
+                course.getLabStartTime() + "</td>><td>" +
+                course.getLabEndTime() + "</td>><td>" +
+                course.getLabDays() + "</td>><td>" +
+                "</td>></tr>>";
         }
 
         return table;
@@ -514,8 +516,7 @@ class ClassAggregation {
                         const labTimeArray = rowTags[i + 1].getElementsByTagName("Data")[1].innerText.split("-");
                         tempCourse = tempCourse.setLabStartTime(labTimeArray[0]).setLabEndTime(labTimeArray[1])
                             .setLabDays(rowTags[i + 1].getElementsByTagName("Data")[2].innerText);
-                    }
-                    else
+                    } else
                         tempCourse = tempCourse.setLabStartTime("TBA").setLabEndTime("TBA");
 
                     //We run this line because we want to skip over the lab line we just imported and pick up with the next row
@@ -535,7 +536,7 @@ class ClassAggregation {
     */
     filterStartTimeByMorning(course) {
         return !course.getEndTime().includes('N') && parseInt(course.getStartTime()) >= 730
-               && parseInt(course.getStartTime()) <= 1200;
+            && parseInt(course.getStartTime()) <= 1200;
     }
 
     /*
@@ -556,6 +557,7 @@ class ClassAggregation {
     filterMon(course) {
         return course.getDays().includes("M");
     }
+
     //Dif because we have to make sure it's not reading thursday
     filterTues(course) {
         if (course.getDays().includes("T")) {
@@ -572,30 +574,34 @@ class ClassAggregation {
         else
             return false;
     }
+
     filterWed(course) {
         return course.getDays().includes("W");
     }
+
     filterThurs(course) {
         return course.getDays().includes("Th");
     }
+
     filterFri(course) {
         return course.getDays().includes("F");
     }
+
     filterSat(course) {
         return course.getDays().includes("S");
     }
 
-    filterCIFlag(course){
+    filterCIFlag(course) {
         return course.getFlags.includes("C-I");
     }
 
-    filterWEBFlag(course){
+    filterWEBFlag(course) {
         return course.getFlags.includes("100% WEB BASED") || course.getFlags.includes("75-99% WEB BASE")
             || course.getFlags.includes("50-74% WEB BASE") || course.getFlags.includes("1-49% WEB BASED");
-        }
+    }
 
     //a method for filtering availability, it is called in the sortCourses method
-    filterAvailable(available){
+    filterAvailable(available) {
         //Hiding items that are full or on hold, aka only sending numbers back because those are available
         return !(available.getAvailable() === "(F)" || available.getAvailable() === "(H)");
     }
@@ -623,7 +629,7 @@ class ClassAggregation {
     sortCourses(startTime, mon, tues, wed, thurs, fri, sat, professorArray, available, CIflag, WEBflag) {
         this.filteredCourseSelection = [].concat(this.courseSelection);
 
-        if (startTime != null){
+        if (startTime != null) {
             if (startTime === "morning")
                 this.filteredCourseSelection = this.filteredCourseSelection.filter(this.filterStartTimeByMorning);
             else if (startTime === "afternoon")
@@ -649,7 +655,7 @@ class ClassAggregation {
         * many to keep track of. I did it this way because .filter does not take in a professor parameter, so it's just
         * easier to do the operation here in the filter.
         */
-        if (Array.isArray(professorArray) && professorArray.length !== 0){
+        if (Array.isArray(professorArray) && professorArray.length !== 0) {
             let tempArray = [];
             for (let i = 0; i < professorArray.length; i++) {
                 for (let j = 0; j < this.filteredCourseSelection.length; j++) {
@@ -664,22 +670,22 @@ class ClassAggregation {
             this.filteredCourseSelection = this.filteredCourseSelection.filter(this.filterAvailable);
         }
 
-        if (CIflag != null){
+        if (CIflag != null) {
             this.filteredCourseSelection = this.filteredCourseSelection.filter(this.filterCIFlag);
         }
 
-        if (WEBflag != null){
+        if (WEBflag != null) {
             this.filteredCourseSelection = this.filteredCourseSelection.filter(this.filterWEBFlag);
         }
 
         this.fillThousandsArrayAndTabularize(this.filteredCourseSelection);
     }
 
-    getThousandsCourses(){
+    getThousandsCourses() {
         return this.thousandsArrays;
     }
 
-    getProfArray(){
+    getProfArray() {
         return this.profSelection;
     }
 }

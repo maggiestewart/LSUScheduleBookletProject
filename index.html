@@ -1,79 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <link rel="shortcut icon" type="image/jpg" href="favicon.ico"/>
-    <head>
+<head>
 
-        <meta charset="UTF-8">
-        <meta content = "width=device-width, initial-scale=1">
-        <title>Course Offering</title>
-        <link rel = "stylesheet" type = "text/css" href = "CSS_Files/WelcomePageCSS.css">
-
-
-    </head>
-
-    <body>
-
-    <div class = "header">
-        <img alt="LSU logo" align="left" class=logo height=50px style="padding-top: 15px" src="https://www.lsu.edu/_resources_fierce/svgs/lsu-logo.svg" width=225px>
-        <div style="text-align: left">
-            <h1>Course Offering</h1>
-        </div>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1">
+    <title>Course Offering</title>
+    <link rel="stylesheet" type="text/css" href="CSS_Files/WelcomePageCSS.css">
 
 
-       <!--- <p>Welcome!</p> --->
+</head>
+
+<body>
+
+<div class="header">
+    <img alt="LSU logo" align="left" class=logo height=50px style="padding-top: 15px"
+         src="https://www.lsu.edu/_resources_fierce/svgs/lsu-logo.svg" width=225px>
+    <div style="text-align: left">
+        <h1>Course Offering</h1>
     </div>
 
-    <table class = "tableForHeaderBar" style="width:100%;">
-        <tbody>
-          <tr>
-              <td>
 
-                  </br>
-                  <b>Semester/Year:</b>
-              </td>
-              <td>
-                  </br>
-                  <b>Departments:</b>
-              </td>
-              <td>
-                  </br>
-                  <b>Display courses:</b>
+    <!--- <p>Welcome!</p> --->
+</div>
 
-              </td>
-         </tr>
+<table class="tableForHeaderBar" style="width:100%;">
+    <tbody>
+    <tr>
+        <td>
 
-         <tr>
-             <td>
-                 <select id = "chooseSemester" name = "chooseSemester">
-                     <option disabled selected value> -- Select a semester -- </option>
-                     <option value = "fal22"> Fall 2022 </option>
-                     <option value = "spr22"> Spring 2022 </option>
-                     <option value = "fal21"> Fall 2021 </option>
-                     <option value = "spr21"> Spring 2021 </option>
-                 </select>
-             </td>
-             <td>
-                 <select id = "chooseDepartment" name = "chooseDepartment">
-                     <option disabled selected value> -- Select a department -- </option>
-                         <option value = "csc"> Computer Science </option>
-                         <option value = "engl"> English </option>
-                         <option value = "engr"> Engineering </option>
-                         <option value = "hnrs"> Honors </option>
-                 </select>
-             </td>
+            </br>
+            <b>Semester/Year:</b>
+        </td>
+        <td>
+            </br>
+            <b>Departments:</b>
+        </td>
+        <td>
+            </br>
+            <b>Display courses:</b>
 
-             <td>
-                 <p>
-                     <input type = "button" id = "display" value = "Display" onclick="loadClassAgg()"/>
-                 </p>
-             </td>
+        </td>
+    </tr>
 
-         </tr>
-        </tbody>
-    </table>
+    <tr>
+        <td>
+            <select id="chooseSemester" name="chooseSemester">
+                <option disabled selected value> -- Select a semester --</option>
+                <option value="fal22"> Fall 2022</option>
+                <option value="spr22"> Spring 2022</option>
+                <option value="fal21"> Fall 2021</option>
+                <option value="spr21"> Spring 2021</option>
+            </select>
+        </td>
+        <td>
+            <select id="chooseDepartment" name="chooseDepartment">
+                <option disabled selected value> -- Select a department --</option>
+                <option value="csc"> Computer Science</option>
+                <option value="engl"> English</option>
+                <option value="engr"> Engineering</option>
+                <option value="hnrs"> Honors</option>
+            </select>
+        </td>
 
-    <br>
-    <center>
+        <td>
+            <p>
+                <input type="button" id="display" value="Display" onclick="loadClassAgg()"/>
+            </p>
+        </td>
+
+    </tr>
+    </tbody>
+</table>
+
+<br>
+<center>
     <b style="padding-left:15px">Monday:</b>
     <input type="checkbox" id="Monday" name="monday" value="monday">
 
@@ -102,232 +103,232 @@
     <input type="checkbox" id="ci" name="ci" value="ci">
 
     <b style="padding-left:15px">Time:</b>
-        <select id = "time" name = "time">
-            <option value = "all"> All </option>
-            <option value = "morning"> Morning (starts before 12pm) </option>
-            <option value = "afternoon"> Afternoon (starts 12pm-4:30pm) </option>
-            <option value = "night"> Night (starts after 4:30pm)</option>
-        </select>
+    <select id="time" name="time">
+        <option value="all"> All</option>
+        <option value="morning"> Morning (starts before 12pm)</option>
+        <option value="afternoon"> Afternoon (starts 12pm-4:30pm)</option>
+        <option value="night"> Night (starts after 4:30pm)</option>
+    </select>
 
 
     <b style="padding-left:15px">Search:</b>
-    <input type = "button" id = "search" value = "Go" onclick="currentClassAgg.sortCourses()"/>
-    </center>
+    <input type="button" id="search" value="Go" onclick="currentClassAgg.sortCourses()"/>
+</center>
 
 
-    <nav>
-        <label for="touch1000" ><span>  1000-Level Classes</span></label>
-        <input type="checkbox" id="touch1000">
-        <ul class="slide">
-            <table id="1000" class="classesTable"
-                   style="width:97.5%; margin-left: -1.25%;margin-right: 1.25%;border-collapse: collapse;border: none;">
-                <thead id="theadTR">
+<nav>
+    <label for="touch1000"><span>  1000-Level Classes</span></label>
+    <input type="checkbox" id="touch1000">
+    <ul class="slide">
+        <table id="1000" class="classesTable"
+               style="width:97.5%; margin-left: -1.25%;margin-right: 1.25%;border-collapse: collapse;border: none;">
+            <thead id="theadTR">
 
-                    <tr style="color: white;">
-                    </tr>
+            <tr style="color: white;">
+            </tr>
 
-                </thead>
+            </thead>
 
-                <tbody id="tbodyTR">
-                    <tr>
-                        <td> There are no courses for the selected department and semester.</td>
-                    </tr>
-                </tbody>
+            <tbody id="tbodyTR">
+            <tr>
+                <td> There are no courses for the selected department and semester.</td>
+            </tr>
+            </tbody>
 
-            </table>
-        </ul>
-    </nav>
+        </table>
+    </ul>
+</nav>
 
-    <nav>
-        <label for="touch2000"><span> 2000-Level Classes</span></label>
-        <input type="checkbox" id="touch2000">
-        <ul class="slide">
-            <table id="2000" class="classesTable"
-                   style="width:97.5%; margin-left: -1.25%;margin-right: 1.25%;border-collapse: collapse;border: none;">
-                <thead id="theadTR">
+<nav>
+    <label for="touch2000"><span> 2000-Level Classes</span></label>
+    <input type="checkbox" id="touch2000">
+    <ul class="slide">
+        <table id="2000" class="classesTable"
+               style="width:97.5%; margin-left: -1.25%;margin-right: 1.25%;border-collapse: collapse;border: none;">
+            <thead id="theadTR">
 
-                <tr style="color: white;">
-                </tr>
+            <tr style="color: white;">
+            </tr>
 
-                </thead>
+            </thead>
 
-                <tbody id="tbodyTR">
-                <tr>
-                    <td> There are no courses for the selected department and semester.</td>
-                </tr>
-                </tbody>
+            <tbody id="tbodyTR">
+            <tr>
+                <td> There are no courses for the selected department and semester.</td>
+            </tr>
+            </tbody>
 
-            </table>
-        </ul>
-    </nav>
+        </table>
+    </ul>
+</nav>
 
-    <nav>
-        <label for="touch3000"><span> 3000-Level Classes</span></label>
-        <input type="checkbox" id="touch3000">
-        <ul class="slide">
-            <table id="3000" class="classesTable"
-                   style="width:97.5%; margin-left: -1.25%;margin-right: 1.25%;border-collapse: collapse;border: none;">
-                <thead id="theadTR">
+<nav>
+    <label for="touch3000"><span> 3000-Level Classes</span></label>
+    <input type="checkbox" id="touch3000">
+    <ul class="slide">
+        <table id="3000" class="classesTable"
+               style="width:97.5%; margin-left: -1.25%;margin-right: 1.25%;border-collapse: collapse;border: none;">
+            <thead id="theadTR">
 
-                <tr style="color: white;">
-                </tr>
+            <tr style="color: white;">
+            </tr>
 
-                </thead>
+            </thead>
 
-                <tbody id="tbodyTR">
-                <tr>
-                    <td> There are no courses for the selected department and semester.</td>
-                </tr>
-                </tbody>
+            <tbody id="tbodyTR">
+            <tr>
+                <td> There are no courses for the selected department and semester.</td>
+            </tr>
+            </tbody>
 
-            </table>
-        </ul>
-    </nav>
+        </table>
+    </ul>
+</nav>
 
-    <nav>
-        <label for="touch4000"><span> 4000-Level Classes</span></label>
-        <input type="checkbox" id="touch4000">
-        <ul class="slide">
-            <table id="4000" class="classesTable"
-                   style="width:97.5%; margin-left: -1.25%;margin-right: 1.25%;border-collapse: collapse;border: none;">
-                <thead id="theadTR">
+<nav>
+    <label for="touch4000"><span> 4000-Level Classes</span></label>
+    <input type="checkbox" id="touch4000">
+    <ul class="slide">
+        <table id="4000" class="classesTable"
+               style="width:97.5%; margin-left: -1.25%;margin-right: 1.25%;border-collapse: collapse;border: none;">
+            <thead id="theadTR">
 
-                <tr style="color: white;">
-                </tr>
+            <tr style="color: white;">
+            </tr>
 
-                </thead>
+            </thead>
 
-                <tbody id="tbodyTR">
-                <tr>
-                    <td> There are no courses for the selected department and semester.</td>
-                </tr>
-                </tbody>
+            <tbody id="tbodyTR">
+            <tr>
+                <td> There are no courses for the selected department and semester.</td>
+            </tr>
+            </tbody>
 
-            </table>
-        </ul>
-    </nav>
+        </table>
+    </ul>
+</nav>
 
-    <nav>
-        <label for="touch5000"><span> 5000-Level Classes</span></label>
-        <input type="checkbox" id="touch5000">
-        <ul class="slide">
-            <table id="5000" class="classesTable"
-                   style="width:97.5%; margin-left: -1.25%;margin-right: 1.25%;border-collapse: collapse;border: none;">
-                <thead id="theadTR">
+<nav>
+    <label for="touch5000"><span> 5000-Level Classes</span></label>
+    <input type="checkbox" id="touch5000">
+    <ul class="slide">
+        <table id="5000" class="classesTable"
+               style="width:97.5%; margin-left: -1.25%;margin-right: 1.25%;border-collapse: collapse;border: none;">
+            <thead id="theadTR">
 
-                <tr style="color: white;">
-                </tr>
+            <tr style="color: white;">
+            </tr>
 
-                </thead>
+            </thead>
 
-                <tbody id="tbodyTR">
-                <tr>
-                    <td> There are no courses for the selected department and semester.</td>
-                </tr>
-                </tbody>
+            <tbody id="tbodyTR">
+            <tr>
+                <td> There are no courses for the selected department and semester.</td>
+            </tr>
+            </tbody>
 
-            </table>
-        </ul>
-    </nav>
+        </table>
+    </ul>
+</nav>
 
-    <nav>
-        <label for="touch6000"><span> 6000-Level Classes</span></label>
-        <input type="checkbox" id="touch6000">
-        <ul class="slide">
-            <table id="6000" class="classesTable"
-                   style="width:97.5%; margin-left: -1.25%;margin-right: 1.25%;border-collapse: collapse;border: none;">
-                <thead id="theadTR">
+<nav>
+    <label for="touch6000"><span> 6000-Level Classes</span></label>
+    <input type="checkbox" id="touch6000">
+    <ul class="slide">
+        <table id="6000" class="classesTable"
+               style="width:97.5%; margin-left: -1.25%;margin-right: 1.25%;border-collapse: collapse;border: none;">
+            <thead id="theadTR">
 
-                <tr style="color: white;">
-                </tr>
+            <tr style="color: white;">
+            </tr>
 
-                </thead>
+            </thead>
 
-                <tbody id="tbodyTR">
-                <tr>
-                    <td> There are no courses for the selected department and semester.</td>
-                </tr>
-                </tbody>
+            <tbody id="tbodyTR">
+            <tr>
+                <td> There are no courses for the selected department and semester.</td>
+            </tr>
+            </tbody>
 
-            </table>
-        </ul>
-    </nav>
+        </table>
+    </ul>
+</nav>
 
-    <nav>
-        <label for="touch7000"><span> 7000-Level Classes</span></label>
-        <input type="checkbox" id="touch7000">
-        <ul class="slide">
-            <table id="7000" class="classesTable"
-                   style="width:97.5%; margin-left: -1.25%;margin-right: 1.25%;border-collapse: collapse;border: none;">
-                <thead id="theadTR">
+<nav>
+    <label for="touch7000"><span> 7000-Level Classes</span></label>
+    <input type="checkbox" id="touch7000">
+    <ul class="slide">
+        <table id="7000" class="classesTable"
+               style="width:97.5%; margin-left: -1.25%;margin-right: 1.25%;border-collapse: collapse;border: none;">
+            <thead id="theadTR">
 
-                <tr style="color: white;">
-                </tr>
+            <tr style="color: white;">
+            </tr>
 
-                </thead>
+            </thead>
 
-                <tbody id="tbodyTR">
-                <tr>
-                    <td> There are no courses for the selected department and semester.</td>
-                </tr>
-                </tbody>
+            <tbody id="tbodyTR">
+            <tr>
+                <td> There are no courses for the selected department and semester.</td>
+            </tr>
+            </tbody>
 
-            </table>
-        </ul>
-    </nav>
+        </table>
+    </ul>
+</nav>
 
-    <nav>
-        <label for="touch8000"><span> 8000-Level Classes</span></label>
-        <input type="checkbox" id="touch8000">
-        <ul class="slide">
-            <table id="8000" class="classesTable"
-                   style="width:97.5%; margin-left: -1.25%;margin-right: 1.25%;border-collapse: collapse;border: none;">
-                <thead id="theadTR">
+<nav>
+    <label for="touch8000"><span> 8000-Level Classes</span></label>
+    <input type="checkbox" id="touch8000">
+    <ul class="slide">
+        <table id="8000" class="classesTable"
+               style="width:97.5%; margin-left: -1.25%;margin-right: 1.25%;border-collapse: collapse;border: none;">
+            <thead id="theadTR">
 
-                <tr style="color: white;">
-                </tr>
+            <tr style="color: white;">
+            </tr>
 
-                </thead>
+            </thead>
 
-                <tbody id="tbodyTR">
-                <tr>
-                    <td> There are no courses for the selected department and semester.</td>
-                </tr>
-                </tbody>
+            <tbody id="tbodyTR">
+            <tr>
+                <td> There are no courses for the selected department and semester.</td>
+            </tr>
+            </tbody>
 
-            </table>
-        </ul>
-    </nav>
+        </table>
+    </ul>
+</nav>
 
-    <nav>
-        <label for="touch9000"><span> 9000-Level Classes</span></label>
-        <input type="checkbox" id="touch9000">
-        <ul class="slide">
-            <table id="9000" class="classesTable"
-                   style="width:97.5%; margin-left: -1.25%;margin-right: 1.25%;border-collapse: collapse;border: none;">
-                <thead id="theadTR">
+<nav>
+    <label for="touch9000"><span> 9000-Level Classes</span></label>
+    <input type="checkbox" id="touch9000">
+    <ul class="slide">
+        <table id="9000" class="classesTable"
+               style="width:97.5%; margin-left: -1.25%;margin-right: 1.25%;border-collapse: collapse;border: none;">
+            <thead id="theadTR">
 
-                <tr style="color: white;">
-                </tr>
+            <tr style="color: white;">
+            </tr>
 
-                </thead>
+            </thead>
 
-                <tbody id="tbodyTR">
-                <tr>
-                    <td> There are no courses for the selected department and semester.</td>
-                </tr>
-                </tbody>
+            <tbody id="tbodyTR">
+            <tr>
+                <td> There are no courses for the selected department and semester.</td>
+            </tr>
+            </tbody>
 
-            </table>
-        </ul>
-    </nav>
-
-
-
-    <div class = "middlePage">
+        </table>
+    </ul>
+</nav>
 
 
-        <p><script>class ClassConstruct {
+<div class="middlePage">
+
+
+    <p>
+        <script>class ClassConstruct {
 
             #number = null;
             #section = null;
@@ -368,92 +369,92 @@
                 #labEndTime = null;
                 #labDays = null;
 
-                setNumber(number){
+                setNumber(number) {
                     this.#number = number;
                     return this;
                 }
 
-                setSection(section){
+                setSection(section) {
                     this.#section = section;
                     return this;
                 }
 
-                setType(type){
+                setType(type) {
                     this.#type = type;
                     return this;
                 }
 
-                setTitle(title){
+                setTitle(title) {
                     this.#title = title;
                     return this;
                 }
 
-                setHours(hours){
+                setHours(hours) {
                     this.#hours = hours;
                     return this;
                 }
 
-                setStartTime(startTime){
+                setStartTime(startTime) {
                     this.#startTime = startTime;
                     return this;
                 }
 
-                setEndTime(endTime){
+                setEndTime(endTime) {
                     this.#endTime = endTime;
                     return this;
                 }
 
-                setDays(days){
+                setDays(days) {
                     this.#days = days;
                     return this;
                 }
 
-                setProfessor(professor){
+                setProfessor(professor) {
                     this.#professor = professor;
                     return this;
                 }
 
-                setAvailable(available){
+                setAvailable(available) {
                     this.#available = available;
                     return this;
                 }
 
-                setSize(size){
+                setSize(size) {
                     this.#size = size;
                     return this;
                 }
 
-                setBuilding(building){
+                setBuilding(building) {
                     this.#building = building;
                     return this;
                 }
 
-                setRoom(room){
+                setRoom(room) {
                     this.#room = room;
                     return this;
                 }
 
-                setFlags(flags){
+                setFlags(flags) {
                     this.#flags = flags;
                     return this;
                 }
 
-                setLab(lab){
+                setLab(lab) {
                     this.#lab = lab;
                     return this;
                 }
 
-                setLabStartTime(labStartTime){
+                setLabStartTime(labStartTime) {
                     this.#labStartTime = labStartTime;
                     return this;
                 }
 
-                setLabEndTime(labEndTime){
+                setLabEndTime(labEndTime) {
                     this.#labEndTime = labEndTime;
                     return this;
                 }
 
-                setLabDays(labDays){
+                setLabDays(labDays) {
                     this.#labDays = labDays;
                     return this;
                 }
@@ -482,7 +483,7 @@
             }
 
             constructor(number, section, type, title, hours, startTime, endTime, days, professor, available, size, building, room,
-                        flags, lab, labStart, labEnd, labDays){
+                        flags, lab, labStart, labEnd, labDays) {
                 this.#number = number;
                 this.#section = section;
                 this.#type = type;
@@ -595,7 +596,7 @@
              * In the if statement, calling the fill course selection lets us fill our array when the file is ready.
              * This is called on object creation so the arrays will be ready for use no matter what.
              */
-            loadXMLFile(){
+            loadXMLFile() {
                 this.courseSelection = [];
                 this.filteredCourseSelection = [];
                 this.profSelection = [];
@@ -607,85 +608,85 @@
 
                 fetch(this.XMLFileName)
                     .catch(err => console.log(err))
-                    .then((response)=>{
-                    response.text().then((xml)=>{
-                        xmlContent = xml;
-                        let parser = new DOMParser();
-                        let xmlDOM = parser.parseFromString(xmlContent, "application/xml");
-                        let rows = xmlDOM.querySelectorAll("Row");
+                    .then((response) => {
+                        response.text().then((xml) => {
+                            xmlContent = xml;
+                            let parser = new DOMParser();
+                            let xmlDOM = parser.parseFromString(xmlContent, "application/xml");
+                            let rows = xmlDOM.querySelectorAll("Row");
 
-                        rows.forEach(rowXMLNode => {
-                            if (!labFlag){
-                                let tempCourse = new ClassConstruct.ClassBuilder();
-                                
-                                //If first tag has a data tag child and
-                                if (rowXMLNode.children[0].childNodes[0].textContent === "(F)"
-                                    || rowXMLNode.children[0].childNodes[0].textContent === "(H)"
-                                    || rowXMLNode.children[0].children[0].getAttribute("ss:Type")  === "Number") {
-                                        
-                                    tempCourse = tempCourse.setAvailable(rowXMLNode.children[0].childNodes[0].textContent)
-                                        .setSize(rowXMLNode.children[1].childNodes[0].textContent)
-                                        .setNumber(rowXMLNode.children[3].childNodes[0].textContent);
-                                        
-                                    if (rowXMLNode.children[4].querySelector("Data") !== null)
-                                        tempCourse = tempCourse.setType(rowXMLNode.children[4].childNodes[0].textContent);
-                                        
-                                    tempCourse = tempCourse.setSection(rowXMLNode.children[5].childNodes[0].textContent)
-                                        .setTitle(rowXMLNode.children[6].childNodes[0].textContent)
-                                        .setHours(rowXMLNode.children[7].childNodes[0].textContent);
-                                        
-                                    if (rowXMLNode.children[8].childNodes[0].textContent !== "TBA") {
-                                        //Set times
-                                        const timeArray = rowXMLNode.children[8].childNodes[0].textContent.split("-");
-                                        tempCourse = tempCourse.setStartTime(timeArray[0]).setEndTime(timeArray[1])
-                                            .setDays(rowXMLNode.children[9].childNodes[0].textContent);
+                            rows.forEach(rowXMLNode => {
+                                if (!labFlag) {
+                                    let tempCourse = new ClassConstruct.ClassBuilder();
 
-                                        //If it has a room, get the room and building
-                                        if (rowXMLNode.children[10].querySelector("Data") !== null)
-                                            tempCourse = tempCourse.setRoom(rowXMLNode.children[10].childNodes[0].textContent)
-                                                .setBuilding(rowXMLNode.children[11].childNodes[0].textContent);
-                                    } else
-                                        tempCourse = tempCourse.setStartTime("TBA").setEndTime("TBA");
+                                    //If first tag has a data tag child and
+                                    if (rowXMLNode.children[0].childNodes[0].textContent === "(F)"
+                                        || rowXMLNode.children[0].childNodes[0].textContent === "(H)"
+                                        || rowXMLNode.children[0].children[0].getAttribute("ss:Type") === "Number") {
 
-                                    //Get special tags when applicable
-                                    if (rowXMLNode.children[12].querySelector("Data") !== null)
-                                        tempCourse = tempCourse.setFlags(rowXMLNode.children[12].childNodes[0].textContent);
+                                        tempCourse = tempCourse.setAvailable(rowXMLNode.children[0].childNodes[0].textContent)
+                                            .setSize(rowXMLNode.children[1].childNodes[0].textContent)
+                                            .setNumber(rowXMLNode.children[3].childNodes[0].textContent);
 
-                                    //Get professor when applicable
-                                    if (rowXMLNode.children[13].querySelector("Data") !== null) {
-                                        tempCourse = tempCourse.setProfessor(rowXMLNode.children[13].childNodes[0].textContent);
-                                        //Add unique professors to a list for frontend to display
-                                        if (!this.profSelection.includes(rowXMLNode.children[13].childNodes[0].textContent))
-                                            this.profSelection.push(rowXMLNode.children[13].childNodes[0].textContent);
-                                    }
-                                    
-                                    //Check to see if the class has a lab and fill out its info if so
-                                    if (rowXMLNode.nextElementSibling !== null && rowXMLNode.nextElementSibling.children[4].childNodes[0].textContent === "LAB") {
-                                        tempCourse = tempCourse.setLab("LAB");
-                                        //Set times by splitting the "-" if not TBA
-                                        if (rowXMLNode.nextElementSibling.children[8].childNodes[0].textContent !== "TBA") {
-                                            const labTimeArray = rowXMLNode.nextElementSibling.children[8].childNodes[0].textContent.split("-");
-                                            tempCourse = tempCourse.setLabStartTime(labTimeArray[0]).setLabEndTime(labTimeArray[1])
-                                                .setLabDays(rowXMLNode.nextElementSibling.children[9].childNodes[0].textContent);
+                                        if (rowXMLNode.children[4].querySelector("Data") !== null)
+                                            tempCourse = tempCourse.setType(rowXMLNode.children[4].childNodes[0].textContent);
+
+                                        tempCourse = tempCourse.setSection(rowXMLNode.children[5].childNodes[0].textContent)
+                                            .setTitle(rowXMLNode.children[6].childNodes[0].textContent)
+                                            .setHours(rowXMLNode.children[7].childNodes[0].textContent);
+
+                                        if (rowXMLNode.children[8].childNodes[0].textContent !== "TBA") {
+                                            //Set times
+                                            const timeArray = rowXMLNode.children[8].childNodes[0].textContent.split("-");
+                                            tempCourse = tempCourse.setStartTime(timeArray[0]).setEndTime(timeArray[1])
+                                                .setDays(rowXMLNode.children[9].childNodes[0].textContent);
+
+                                            //If it has a room, get the room and building
+                                            if (rowXMLNode.children[10].querySelector("Data") !== null)
+                                                tempCourse = tempCourse.setRoom(rowXMLNode.children[10].childNodes[0].textContent)
+                                                    .setBuilding(rowXMLNode.children[11].childNodes[0].textContent);
                                         } else
-                                            tempCourse = tempCourse.setLabStartTime("TBA").setLabEndTime("TBA");
-                                        
-                                        //We run this line because we want to skip over the lab line we just imported and pick up with the next row
-                                        labFlag = true;
+                                            tempCourse = tempCourse.setStartTime("TBA").setEndTime("TBA");
+
+                                        //Get special tags when applicable
+                                        if (rowXMLNode.children[12].querySelector("Data") !== null)
+                                            tempCourse = tempCourse.setFlags(rowXMLNode.children[12].childNodes[0].textContent);
+
+                                        //Get professor when applicable
+                                        if (rowXMLNode.children[13].querySelector("Data") !== null) {
+                                            tempCourse = tempCourse.setProfessor(rowXMLNode.children[13].childNodes[0].textContent);
+                                            //Add unique professors to a list for frontend to display
+                                            if (!this.profSelection.includes(rowXMLNode.children[13].childNodes[0].textContent))
+                                                this.profSelection.push(rowXMLNode.children[13].childNodes[0].textContent);
+                                        }
+
+                                        //Check to see if the class has a lab and fill out its info if so
+                                        if (rowXMLNode.nextElementSibling !== null && rowXMLNode.nextElementSibling.children[4].childNodes[0].textContent === "LAB") {
+                                            tempCourse = tempCourse.setLab("LAB");
+                                            //Set times by splitting the "-" if not TBA
+                                            if (rowXMLNode.nextElementSibling.children[8].childNodes[0].textContent !== "TBA") {
+                                                const labTimeArray = rowXMLNode.nextElementSibling.children[8].childNodes[0].textContent.split("-");
+                                                tempCourse = tempCourse.setLabStartTime(labTimeArray[0]).setLabEndTime(labTimeArray[1])
+                                                    .setLabDays(rowXMLNode.nextElementSibling.children[9].childNodes[0].textContent);
+                                            } else
+                                                tempCourse = tempCourse.setLabStartTime("TBA").setLabEndTime("TBA");
+
+                                            //We run this line because we want to skip over the lab line we just imported and pick up with the next row
+                                            labFlag = true;
+                                        }
+                                        //document.getElementById("test").innerHTML += " " + rowXMLNode.children[0].childNodes[0].textContent;
+                                        this.courseSelection.push(tempCourse.build());
                                     }
-                                    //document.getElementById("test").innerHTML += " " + rowXMLNode.children[0].childNodes[0].textContent;
-                                    this.courseSelection.push(tempCourse.build());
                                 }
-                            }
-                            //Reset lab flag so we can start reading rows again
-                            else
-                                labFlag = false;
+                                //Reset lab flag so we can start reading rows again
+                                else
+                                    labFlag = false;
+                            });
+                            //document.getElementById("test").innerHTML += this.courseSelection[0].getAvailable();
+                            this.filteredCourseSelection = this.filteredCourseSelection.concat(this.courseSelection);
+                            this.fillThousandsArrayAndTabularize(this.filteredCourseSelection);
                         });
-                        //document.getElementById("test").innerHTML += this.courseSelection[0].getAvailable();
-                        this.filteredCourseSelection = this.filteredCourseSelection.concat(this.courseSelection);
-                        this.fillThousandsArrayAndTabularize(this.filteredCourseSelection);
                     });
-                });
             }
 
             /*
@@ -697,27 +698,25 @@
             * the frontend.
             */
             fillThousandsArrayAndTabularize(courseArray) {
-                this.thousandsArrays = [[],[],[],[],[],[],[],[],[]];
+                this.thousandsArrays = [[], [], [], [], [], [], [], [], []];
                 this.tables = [];
-                for (let i = 1; i <= this.thousandsArrays.length; i++)
-                {
-                    for (let j = 0; j < courseArray.length; j++) 
-                    {
-                        if (((i * 1000) <= parseInt(courseArray[j].getNumber())) && (parseInt(courseArray[j].getNumber()) < i * 1000 + 1000)){
+                for (let i = 1; i <= this.thousandsArrays.length; i++) {
+                    for (let j = 0; j < courseArray.length; j++) {
+                        if (((i * 1000) <= parseInt(courseArray[j].getNumber())) && (parseInt(courseArray[j].getNumber()) < i * 1000 + 1000)) {
                             this.thousandsArrays[i - 1].push(courseArray[j]);
                         }
                     }
                 }
-                
+
                 //document.getElementById("test").innerHTML += " " + this.thousandsArrays[0][this.thousandsArrays[0].length - 1].getNumber();
                 //After filling the array, tabularize all values and send tables to frontend
                 for (let i = 0; i < this.thousandsArrays.length; i++) {
                     this.tables.push(this.tabularize(this.thousandsArrays[i]));
                 }
-                
+
                 //Sends each 1000 table to their respective table tag in frontend
                 for (let i = 1; i <= this.tables.length; i++) {
-                    document.getElementById(i.toString() + "000").innerHTML = this.tables[i-1];
+                    document.getElementById(i.toString() + "000").innerHTML = this.tables[i - 1];
                 }
             }
 
@@ -755,12 +754,12 @@
                         array[i].getAvailable() + "</td><td>" +
                         array[i].getSize() + "</td><td>" +
                         array[i].getNumber() + "</td><td>";
-                    
+
                     if (array[i].getType() !== null)
                         table += array[i].getType() + "</td><td>";
                     else
                         table += "</td><td>";
-                    
+
                     table += array[i].getSection() + "</td><td>" +
                         array[i].getTitle() + "</td><td>" +
                         array[i].getHours() + "</td><td>" +
@@ -781,12 +780,12 @@
                         table += array[i].getBuilding() + "</td><td>";
                     else
                         table += "</td><td>";
-                    
+
                     if (array[i].getFlags() !== null)
                         table += array[i].getFlags() + "</td><td>";
                     else
                         table += "</td><td>";
-                    
+
                     if (array[i].getProfessor() !== null)
                         table += array[i].getProfessor() + "</td><td>";
                     else
@@ -819,23 +818,21 @@
                     let tempArray = [];
                     for (let i = 0; i < this.filteredCourseSelection.length; i++) {
                         if (this.filteredCourseSelection[i].getStartTime() !== "TBA" && this.filteredCourseSelection[i].getStartTime() !== null
-                        && this.filteredCourseSelection[i].getEndTime() !== "TBA" && this.filteredCourseSelection[i].getStartTime() !== null) {
+                            && this.filteredCourseSelection[i].getEndTime() !== "TBA" && this.filteredCourseSelection[i].getStartTime() !== null) {
                             if (!this.filteredCourseSelection[i].getEndTime().includes('N') && parseInt(this.filteredCourseSelection[i].getStartTime()) >= 730
                                 && parseInt(this.filteredCourseSelection[i].getStartTime()) < 1200)
                                 tempArray.push(this.filteredCourseSelection[i]);
                         }
                     }
                     this.filteredCourseSelection = tempArray;
-                }
-                else if (document.getElementById('time').value === "afternoon") {
+                } else if (document.getElementById('time').value === "afternoon") {
                     let tempArray = [];
                     for (let i = 0; i < this.filteredCourseSelection.length; i++) {
                         if (parseInt(this.filteredCourseSelection[i].getStartTime()) < 430 || parseInt(this.filteredCourseSelection[i].getStartTime()) >= 1200)
                             tempArray.push(this.filteredCourseSelection[i]);
                     }
                     this.filteredCourseSelection = tempArray;
-                }
-                else if (document.getElementById('time').value === "night") {
+                } else if (document.getElementById('time').value === "night") {
                     let tempArray = [];
                     for (let i = 0; i < this.filteredCourseSelection.length; i++) {
                         if (this.filteredCourseSelection[i].getEndTime().includes('N'))
@@ -843,7 +840,7 @@
                     }
                     this.filteredCourseSelection = tempArray;
                 }
-                if (document.getElementById("Monday").checked){
+                if (document.getElementById("Monday").checked) {
                     let tempArray = [];
                     for (let i = 0; i < this.filteredCourseSelection.length; i++) {
                         if (this.filteredCourseSelection[i].getDays() !== null && this.filteredCourseSelection[i].getDays().includes("M"))
@@ -852,14 +849,14 @@
                     this.filteredCourseSelection = tempArray;
                 }
 
-                if (document.getElementById("Tuesday").checked){
+                if (document.getElementById("Tuesday").checked) {
                     let tempArray = [];
                     for (let i = 0; i < this.filteredCourseSelection.length; i++) {
                         if (this.filteredCourseSelection[i].getDays() !== null && this.filteredCourseSelection[i].getDays().includes("T")) {
                             //String only has 1 T, meaning it is exclusively tues or thurs
                             if (this.filteredCourseSelection[i].getDays().indexOf("T") === this.filteredCourseSelection[i].getDays().lastIndexOf("T")) {
                                 //test if the one day is thursday. If it is not, return true because it must be tues at that point
-                                if (!this.filteredCourseSelection[i].getDays().includes("TH")){
+                                if (!this.filteredCourseSelection[i].getDays().includes("TH")) {
                                     tempArray.push(this.filteredCourseSelection[i]);
                                 }
                             }
@@ -871,7 +868,7 @@
                     this.filteredCourseSelection = tempArray;
                 }
 
-                if (document.getElementById("Wednesday").checked){
+                if (document.getElementById("Wednesday").checked) {
                     let tempArray = [];
                     for (let i = 0; i < this.filteredCourseSelection.length; i++) {
                         if (this.filteredCourseSelection[i].getDays() !== null && this.filteredCourseSelection[i].getDays().includes("W"))
@@ -880,7 +877,7 @@
                     this.filteredCourseSelection = tempArray;
                 }
 
-                if (document.getElementById("Thursday").checked){
+                if (document.getElementById("Thursday").checked) {
                     let tempArray = [];
                     for (let i = 0; i < this.filteredCourseSelection.length; i++) {
                         if (this.filteredCourseSelection[i].getDays() !== null && this.filteredCourseSelection[i].getDays().includes("TH"))
@@ -889,7 +886,7 @@
                     this.filteredCourseSelection = tempArray;
                 }
 
-                if (document.getElementById("Friday").checked){
+                if (document.getElementById("Friday").checked) {
                     let tempArray = [];
                     for (let i = 0; i < this.filteredCourseSelection.length; i++) {
                         if (this.filteredCourseSelection[i].getDays() !== null && this.filteredCourseSelection[i].getDays().includes("F"))
@@ -898,7 +895,7 @@
                     this.filteredCourseSelection = tempArray;
                 }
 
-                if (document.getElementById("Saturday").checked){
+                if (document.getElementById("Saturday").checked) {
                     let tempArray = [];
                     for (let i = 0; i < this.filteredCourseSelection.length; i++) {
                         if (this.filteredCourseSelection[i].getDays() !== null && this.filteredCourseSelection[i].getDays().includes("S"))
@@ -907,7 +904,7 @@
                     this.filteredCourseSelection = tempArray;
                 }
 
-                if (document.getElementById("Seats Available").checked){
+                if (document.getElementById("Seats Available").checked) {
                     let tempArray = [];
                     for (let i = 0; i < this.filteredCourseSelection.length; i++) {
                         if (this.filteredCourseSelection[i].getAvailable() !== null && !(this.filteredCourseSelection[i].getAvailable() === "(F)" || this.filteredCourseSelection[i].getAvailable() === "(H)"))
@@ -916,7 +913,7 @@
                     this.filteredCourseSelection = tempArray;
                 }
 
-                if (document.getElementById("ci").checked){
+                if (document.getElementById("ci").checked) {
                     let tempArray = [];
                     for (let i = 0; i < this.filteredCourseSelection.length; i++) {
                         if (this.filteredCourseSelection[i].getFlags() !== null && this.filteredCourseSelection[i].getFlags().includes("C-I"))
@@ -938,11 +935,11 @@
                 this.fillThousandsArrayAndTabularize(this.filteredCourseSelection);
             }
 
-            getThousandsCourses(){
+            getThousandsCourses() {
                 return this.thousandsArrays;
             }
 
-            getProfArray(){
+            getProfArray() {
                 return this.profSelection;
             }
         }
@@ -950,46 +947,49 @@
         //classAgg = new ClassAggregation("/revamped-schedule-booklet/fal22csc.xml");
 
         const classAggMap = new Map([
-            ["fal22csc", new ClassAggregation("fal22csc.xml")],
-            ["fal22engl", new ClassAggregation("fal22engl.xml")],
-            ["fal22engr", new ClassAggregation("fal22engr.xml")],
-            ["fal22hnrs", new ClassAggregation("fal22hnrs.xml")],
+            ["fal22csc", new ClassAggregation("XML_Files/fal22csc.xml")],
+            ["fal22engl", new ClassAggregation("XML_Files/fal22engl.xml")],
+            ["fal22engr", new ClassAggregation("XML_Files/fal22engr.xml")],
+            ["fal22hnrs", new ClassAggregation("XML_Files/fal22hnrs.xml")],
             []
         ]);
 
         let currentClassAgg;
+
         function loadClassAgg() {
             let keyString = document.getElementById("chooseSemester").value + document.getElementById("chooseDepartment").value;
             currentClassAgg = classAggMap.get(keyString);
             currentClassAgg.loadXMLFile();
         }
-        </script></p>
+        </script>
+    </p>
 
-    </div>
+</div>
 
 
+<div class="footer">
+    <ul class="footerLinks" style="color: white;">
 
-    <div class = "footer">
-        <ul class = "footerLinks" style="color: white;">
-
-            <li><a href="ResourcesPage.html" target = "_blank"style="background-color: white; color:#4F2992;padding: 10px 25px">Scheduling Resources</a></li>
-            <li><a href="SchedulePopUp.html" target = "_blank" style = "background-color: white;color:#4F2992;padding: 10px 25px"
-                   onclick="window.open('SchedulePopUp.html', 'newwindow', 'width=450,height=auto');
+        <li><a href="resourcesPage.html" target="_blank"
+               style="background-color: white; color:#4F2992;padding: 10px 25px">Scheduling Resources</a></li>
+        <li><a href="schedulePopUp.html" target="_blank"
+               style="background-color: white;color:#4F2992;padding: 10px 25px"
+               onclick="window.open('SchedulePopUp.html', 'newwindow', 'width=450,height=auto');
               return false;"
-            >Create a Mock Schedule</a></li>
-        </ul>
+        >Create a Mock Schedule</a></li>
+    </ul>
 
 
-    </div>
+</div>
 
-    <div class = "subFooter">
-<!--        <p> Team Loading... <Loading class="."></Loading> </p>-->
-        <center>
-            <img alt="Team Loading logo" class=logo height=auto src="Team loading.png" width=225px>
-            <center>Dustin Wleczyk, Joshua McCain, Maggie Stewart, Olivia Cheung, Serene Sam, Steven Seiden</center>
+<div class="subFooter">
+    <!--        <p> Team Loading... <Loading class="."></Loading> </p>-->
+    <center>
+        <img alt="Team Loading logo" class=logo height=auto src="Team loading.png" width=225px>
+        <center>Dustin Wleczyk, Joshua McCain, Maggie Stewart, Olivia Cheung, Serene Sam, Steven Seiden</center>
 
-        </center>
-    </div>
+    </center>
+</div>
 
-    </body>
+</body>
 </html>

@@ -5,30 +5,34 @@
 * {
     box-sizing: border-box;
 }
+
 body {
     padding-top: 60px;
     color: black;
     margin: 0;
 }
+
 .middlePage h2 {
     text-align: center;
     background-color: #4E5052;
     border-radius: 5px;
     color: white;
 }
+
 .header {
     background-color: #4F2992;
 
     text-align: center;
     color: white;
-    position:fixed;
+    position: fixed;
     left: 0;
-    top:0;
+    top: 0;
     width: 100%;
     margin-bottom: 20px;
     box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
 
 }
+
 .navBarOutsideWrapper {
     margin-top: 114px;
     text-alight: center;
@@ -39,8 +43,9 @@ body {
     width: 100%;
     margin-bottom: 20px;
 }
+
 .navBar {
-    flex: border-box ;
+    flex: border-box;
     text-align: center;
     background-color: grey;
     position: static;
@@ -100,7 +105,6 @@ csc for drop down boxes
 }
 
 
-
 .columnGeneralInformation a:hover {
     text-decoration: underline;
 }
@@ -118,11 +122,10 @@ csc for drop down boxes
     padding: 5px;
     width: 100%;
 
-    position:sticky;
-    bottom:0;
+    position: sticky;
+    bottom: 0;
     box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
 }
-
 
 
 ul li {
@@ -132,13 +135,11 @@ ul li {
 }
 
 
-
 .subFooter {
 
     background-color: #4E5052;
     position: relative;
     color: white;
-
 
 
 }
@@ -157,6 +158,7 @@ ul li {
     display: table;
     clear: both;
 }
+
 .subFooterHeader {
     position: relative;
     padding: 5px;
@@ -169,7 +171,6 @@ ul li {
     border-bottom-color: lightgrey;
 
 }
-
 
 
 /* csc for drop down boxes
@@ -227,20 +228,20 @@ li a:hover {
 }
 
 nav {
-    width : 95%;
+    width: 95%;
     background: #e7e3e3;
-    margin : 40px auto;
+    margin: 40px auto;
     border-radius: 5px;
 
 }
 
 span {
-    padding : 15px;
-    background : #4F2992;
-    color : white;
-    font-size : 1.2em;
-    font-variant : small-caps;
-    cursor : pointer;
+    padding: 15px;
+    background: #4F2992;
+    color: white;
+    font-size: 1.2em;
+    font-variant: small-caps;
+    cursor: pointer;
     display: block;
     text-align: center;
     border-radius: 5px;
@@ -249,7 +250,7 @@ span {
 span::after {
     float: right;
     right: 10%;
-    content:"+";
+    content: "+";
 }
 
 .slide {
@@ -287,6 +288,7 @@ span::after {
     html {
         background: #2b2b2b;
     }
+
     .columnGeneralInformation a {
         color: white;
         background: #171717;
