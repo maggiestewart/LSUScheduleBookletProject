@@ -752,8 +752,8 @@
                     table += array[i].getSection() + "</td><td>" +
                         array[i].getTitle() + "</td><td>" +
                         array[i].getHours() + "</td><td>" +
-                        array[i].getStartTime() + "</td><td>" +
-                        array[i].getEndTime() + "</td><td>";
+                        (array[i].getStartTime() == "TBA" ? "TBA" : array[i].getStartTime().substring(0,array[i].getStartTime().length-2) + ":" + array[i].getStartTime().substring(array[i].getStartTime().length-2,array[i].getStartTime().length)) + "</td><td>" +
+                        (array[i].getEndTime() == "TBA" ? "TBA" : array[i].getEndTime().substring(0,2) + ":" + array[i].getEndTime().substring(2,array[i].getEndTime().length)) + "</td><td>";
 
                     if (array[i].getDays() !== null)
                         table += array[i].getDays() + "</td><td>";
@@ -781,7 +781,7 @@
                         table += "</td><td>";
 
                     if (array[i].getLabStartTime() !== null)
-                        table += array[i].getLabStartTime() + "</td><td>";
+                        table += array[i].getLabStartTime().substring(0,array[i].getLabStartTime().length-2) + ":" + array[i].getLabStartTime().substring(array[i].getLabStartTime().length-2,array[i].getLabStartTime().length) + "</td><td>";
                     else
                         table += "</td><td>";
 
