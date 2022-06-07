@@ -212,13 +212,14 @@ a:hover {
 
 li a {
     text-decoration: none;
-    padding: 2px;
+    padding: 0px;
     color: black;
     text-align: left;
     border-style: solid;
     border-radius: 5px;
     border-color: #a19f9f;
     border-width: 1px;
+    flex-direction: row;
 
 
 }
