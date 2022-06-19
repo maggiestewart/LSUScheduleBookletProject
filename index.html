@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="shortcut icon" type="image/jpg" href="favicon.ico"/>
+<head>
+
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1">
+    <title>Course Offering</title>
+    <link rel="stylesheet" type="text/css" href="CSS_Files/WelcomePageCSS.css">
+
+
+</head>
+
+<body>
+
+<div class="header">
+    <img alt="LSU logo" align="left" class=logo height=50px style="padding-top: 15px"
+         src="https://www.lsu.edu/_resources_fierce/svgs/lsu-logo.svg" width=225px>
+    <div style="text-align: left">
+        <h1>Course Offering</h1>
+    </div>
+
+
+    <!--- <p>Welcome!</p> --->
+</div>
+
+<table class="tableForHeaderBar" style="width:100%;">
+    <tbody>
+    <tr>
+        <td>
+
+            </br>
+            <b>Semester/Year:</b>
+        </td>
+        <td>
+            </br>
+            <b>Departments:</b>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <select id="chooseSemester" name="chooseSemester" onchange="loadClassAgg()">
+                <option disabled selected value> -- Select a semester --</option>
+                <option value="fal22"> Fall 2022</option>
+                <option value="spr22"> Spring 2022</option>
+                <option value="fal21"> Fall 2021</option>
+                <option value="spr21"> Spring 2021</option>
+            </select>
+        </td>
+        <td>
+            <select id="chooseDepartment" name="chooseDepartment" onchange="loadClassAgg()">
+                <option disabled selected value> -- Select a department --</option>
+                <option value="csc"> Computer Science</option>
+                <option value="engl"> English</option>
+                <option value="engr"> Engineering</option>
+                <option value="hnrs"> Honors</option>
+            </select>
+        </td>
+    </tr>
+
+    <tbody><tr><td></br></td><td></br></td></tr></tbody>
+
+
+</table>
+
+<br>
+<center>
+    <b style="padding-left:15px">Monday:</b>
+    <input type="checkbox" id="Monday" name="monday" value="monday" onclick="currentClassAgg.sortCourses()">
+
+    <b style="padding-left:15px">Tuesday:</b>
+    <input type="checkbox" id="Tuesday" name="tuesday" value="tuesday" onclick="currentClassAgg.sortCourses()">
+
+    <b style="padding-left:15px">Wednesday:</b>
+    <input type="checkbox" id="Wednesday" name="wednesday" value="wednesday" onclick="currentClassAgg.sortCourses()">
+
+    <b style="padding-left:15px">Thursday:</b>
+    <input type="checkbox" id="Thursday" name="thursday" value="thursday" onclick="currentClassAgg.sortCourses()">
+
+    <b style="padding-left:15px">Friday:</b>
+    <input type="checkbox" id="Friday" name="friday" value="friday" onclick="currentClassAgg.sortCourses()">
+
+    <b style="padding-left:15px">Saturday:</b>
+    <input type="checkbox" id="Saturday" name="saturday" value="saturday" onclick="currentClassAgg.sortCourses()">
+
+    <b style="padding-left:15px">Virtual:</b>
+    <input type="checkbox" id="Virtual" name="virtual" value="virtual" onclick="currentClassAgg.sortCourses()">
+
+    <b style="padding-left:15px">Seats Available:</b>
+    <input type="checkbox" id="Seats Available" name="available" value="available" onclick="currentClassAgg.sortCourses()">
+
+    <b style="padding-left:15px">CI:</b>
+    <input type="checkbox" id="ci" name="ci" value="ci" onclick="currentClassAgg.sortCourses()">
+
+    <b style="padding-left:15px">Time:</b>
+    <select id="time" name="time" onchange="currentClassAgg.sortCourses()">
+        <option value="all"> All</option>
+        <option value="morning"> Morning (starts before 12pm)</option>
+        <option value="afternoon"> Afternoon (starts 12pm-4:30pm)</option>
+        <option value="night"> Night (starts after 4:30pm)</option>
+    </select>
+
+
+</center>
+
+
+<nav>
+    <label for="touch1000"><span>  1000-Level Classes</span></label>
+    <input type="checkbox" id="touch1000" checked="true">
+    <ul class="slide">
+        <table id="1000" class="classesTable"
+               style="width:97.5%; margin-left: -1.25%;margin-right: 1.25%;border-collapse: collapse;border: none;">
+            <thead id="theadTR">
+
+            <tr style="color: white;">
+            </tr>
+
+            </thead>
+
+            <tbody id="tbodyTR">
+            <tr>
+                <td> There are no courses for the selected department and semester.</td>
+            </tr>
+            </tbody>
+
+        </table>
+    </ul>
+</nav>
+
+<nav>
+    <label for="touch2000"><span> 2000-Level Classes</span></label>
+    <input type="checkbox" id="touch2000" checked="true">
+    <ul class="slide">
+        <table id="2000" class="classesTable"
+               style="width:97.5%; margin-left: -1.25%;margin-right: 1.25%;border-collapse: collapse;border: none;">
+            <thead id="theadTR">
+
+            <tr style="color: white;">
+            </tr>
+
+            </thead>
+
+            <tbody id="tbodyTR">
+            <tr>
+                <td> There are no courses for the selected department and semester.</td>
+            </tr>
+            </tbody>
+
+        </table>
+    </ul>
+</nav>
+
+<nav>
+    <label for="touch3000"><span> 3000-Level Classes</span></label>
+    <input type="checkbox" id="touch3000" checked="true">
+    <ul class="slide">
+        <table id="3000" class="classesTable"
+               style="width:97.5%; margin-left: -1.25%;margin-right: 1.25%;border-collapse: collapse;border: none;">
+            <thead id="theadTR">
+
+            <tr style="color: white;">
+            </tr>
+
+            </thead>
+
+            <tbody id="tbodyTR">
+            <tr>
+                <td> There are no courses for the selected department and semester.</td>
+            </tr>
+            </tbody>
+
+        </table>
+    </ul>
+</nav>
+
+<nav>
+    <label for="touch4000"><span> 4000-Level Classes</span></label>
+    <input type="checkbox" id="touch4000" checked="true">
+    <ul class="slide">
+        <table id="4000" class="classesTable"
+               style="width:97.5%; margin-left: -1.25%;margin-right: 1.25%;border-collapse: collapse;border: none;">
+            <thead id="theadTR">
+
+            <tr style="color: white;">
+            </tr>
+
+            </thead>
+
+            <tbody id="tbodyTR">
+            <tr>
+                <td> There are no courses for the selected department and semester.</td>
+            </tr>
+            </tbody>
+
+        </table>
+    </ul>
+</nav>
+
+<nav>
+    <label for="touch5000"><span> 5000-Level Classes</span></label>
+    <input type="checkbox" id="touch5000" checked="true">
+    <ul class="slide">
+        <table id="5000" class="classesTable"
+               style="width:97.5%; margin-left: -1.25%;margin-right: 1.25%;border-collapse: collapse;border: none;">
+            <thead id="theadTR">
+
+            <tr style="color: white;">
+            </tr>
+
+            </thead>
+
+            <tbody id="tbodyTR">
+            <tr>
+                <td> There are no courses for the selected department and semester.</td>
+            </tr>
+            </tbody>
+
+        </table>
+    </ul>
+</nav>
+
+<nav>
+    <label for="touch6000"><span> 6000-Level Classes</span></label>
+    <input type="checkbox" id="touch6000" checked="true">
+    <ul class="slide">
+        <table id="6000" class="classesTable"
+               style="width:97.5%; margin-left: -1.25%;margin-right: 1.25%;border-collapse: collapse;border: none;">
+            <thead id="theadTR">
+
+            <tr style="color: white;">
+            </tr>
+
+            </thead>
+
+            <tbody id="tbodyTR">
+            <tr>
+                <td> There are no courses for the selected department and semester.</td>
+            </tr>
+            </tbody>
+
+        </table>
+    </ul>
+</nav>
+
+<nav>
+    <label for="touch7000"><span> 7000-Level Classes</span></label>
+    <input type="checkbox" id="touch7000" checked="true">
+    <ul class="slide">
+        <table id="7000" class="classesTable"
+               style="width:97.5%; margin-left: -1.25%;margin-right: 1.25%;border-collapse: collapse;border: none;">
+            <thead id="theadTR">
+
+            <tr style="color: white;">
+            </tr>
+
+            </thead>
+
+            <tbody id="tbodyTR">
+            <tr>
+                <td> There are no courses for the selected department and semester.</td>
+            </tr>
+            </tbody>
+
+        </table>
+    </ul>
+</nav>
+
+<nav>
+    <label for="touch8000"><span> 8000-Level Classes</span></label>
+    <input type="checkbox" id="touch8000" checked="true">
+    <ul class="slide">
+        <table id="8000" class="classesTable"
+               style="width:97.5%; margin-left: -1.25%;margin-right: 1.25%;border-collapse: collapse;border: none;">
+            <thead id="theadTR">
+
+            <tr style="color: white;">
+            </tr>
+
+            </thead>
+
+            <tbody id="tbodyTR">
+            <tr>
+                <td> There are no courses for the selected department and semester.</td>
+            </tr>
+            </tbody>
+
+        </table>
+    </ul>
+</nav>
+
+<nav>
+    <label for="touch9000"><span> 9000-Level Classes</span></label>
+    <input type="checkbox" id="touch9000" checked="true">
+    <ul class="slide">
+        <table id="9000" class="classesTable"
+               style="width:97.5%; margin-left: -1.25%;margin-right: 1.25%;border-collapse: collapse;border: none;">
+            <thead id="theadTR">
+
+            <tr style="color: white;">
+            </tr>
+
+            </thead>
+
+            <tbody id="tbodyTR">
+            <tr>
+                <td> There are no courses for the selected department and semester.</td>
+            </tr>
+            </tbody>
+
+        </table>
+    </ul>
+</nav>
+
+
+<div class="middlePage">
+
+
+    <p>
+        <script>class ClassConstruct {
+
+            #number = null;
+            #section = null;
+            #type = null;
+            #title = null;
+            #hours = null;
+            #startTime = null;
+            #endTime = null;
+            #days = null;
+            #professor = null;
+            #available = null;
+            #size = null;
+            #building = null;
+            #room = null;
+            #flags = null;
+            #lab = null;
+            #labStartTime = null;
+            #labEndTime = null;
+            #labDays = null;
+
+            static ClassBuilder = class {
+                #number = null;
+                #section = null;
+                #type = null;
+                #title = null;
+                #hours = null;
+                #startTime = null;
+                #endTime = null;
+                #days = null;
+                #professor = null;
+                #available = null;
+                #size = null;
+                #building = null;
+                #room = null;
+                #flags = null;
+                #lab = null;
+                #labStartTime = null;
+                #labEndTime = null;
+                #labDays = null;
+
+                setNumber(number) {
+                    this.#number = number;
+                    return this;
+                }
+
+                setSection(section) {
+                    this.#section = section;
+                    return this;
+                }
+
+                setType(type) {
+                    this.#type = type;
+                    return this;
+                }
+
+                setTitle(title) {
+                    this.#title = title;
+                    return this;
+                }
+
+                setHours(hours) {
+                    this.#hours = hours;
+                    return this;
+                }
+
+                setStartTime(startTime) {
+                    this.#startTime = startTime;
+                    return this;
+                }
+
+                setEndTime(endTime) {
+                    this.#endTime = endTime;
+                    return this;
+                }
+
+                setDays(days) {
+                    this.#days = days;
+                    return this;
+                }
+
+                setProfessor(professor) {
+                    this.#professor = professor;
+                    return this;
+                }
+
+                setAvailable(available) {
+                    this.#available = available;
+                    return this;
+                }
+
+                setSize(size) {
+                    this.#size = size;
+                    return this;
+                }
+
+                setBuilding(building) {
+                    this.#building = building;
+                    return this;
+                }
+
+                setRoom(room) {
+                    this.#room = room;
+                    return this;
+                }
+
+                setFlags(flags) {
+                    this.#flags = flags;
+                    return this;
+                }
+
+                setLab(lab) {
+                    this.#lab = lab;
+                    return this;
+                }
+
+                setLabStartTime(labStartTime) {
+                    this.#labStartTime = labStartTime;
+                    return this;
+                }
+
+                setLabEndTime(labEndTime) {
+                    this.#labEndTime = labEndTime;
+                    return this;
+                }
+
+                setLabDays(labDays) {
+                    this.#labDays = labDays;
+                    return this;
+                }
+
+                build() {
+                    return new ClassConstruct(
+                        this.#number,
+                        this.#section,
+                        this.#type,
+                        this.#title,
+                        this.#hours,
+                        this.#startTime,
+                        this.#endTime,
+                        this.#days,
+                        this.#professor,
+                        this.#available,
+                        this.#size,
+                        this.#building,
+                        this.#room,
+                        this.#flags,
+                        this.#lab,
+                        this.#labStartTime,
+                        this.#labEndTime,
+                        this.#labDays)
+                }
+            }
+
+            constructor(number, section, type, title, hours, startTime, endTime, days, professor, available, size, building, room,
+                        flags, lab, labStart, labEnd, labDays) {
+                this.#number = number;
+                this.#section = section;
+                this.#type = type;
+                this.#title = title;
+                this.#hours = hours;
+                this.#startTime = startTime;
+                this.#endTime = endTime;
+                this.#days = days;
+                this.#professor = professor;
+                this.#available = available;
+                this.#size = size;
+                this.#building = building;
+                this.#room = room;
+                this.#flags = flags;
+                this.#lab = lab;
+                this.#labStartTime = labStart;
+                this.#labEndTime = labEnd;
+                this.#labDays = labDays;
+            }
+
+            getNumber() {
+                return this.#number;
+            }
+
+            getSection() {
+                return this.#section;
+            }
+
+            getType() {
+                return this.#type;
+            }
+
+            getTitle() {
+                return this.#title;
+            }
+
+            getHours() {
+                return this.#hours;
+            }
+
+            getStartTime() {
+                return this.#startTime;
+            }
+
+            getEndTime() {
+                return this.#endTime;
+            }
+
+            getDays() {
+                return this.#days;
+            }
+
+            getProfessor() {
+                return this.#professor;
+            }
+
+            getAvailable() {
+                return this.#available;
+            }
+
+            getSize() {
+                return this.#size;
+            }
+
+            getBuilding() {
+                return this.#building;
+            }
+
+            getRoom() {
+                return this.#room;
+            }
+
+            getFlags() {
+                return this.#flags
+            }
+
+            getLab() {
+                return this.#lab;
+            }
+
+            getLabStartTime() {
+                return this.#labStartTime;
+            }
+
+            getLabEndTime() {
+                return this.#labEndTime;
+            }
+
+            getLabDays() {
+                return this.#labDays;
+            }
+        }
+
+        class ClassAggregation {
+            /*
+            * This constructor should take in the courses previously imported from the XML file and fill the both array
+            * members with the data.
+            */
+            constructor(XMLFileName) {
+                this.courseSelection = [];
+                this.filteredCourseSelection = [];
+                this.profSelection = [];
+                this.thousandsArrays = [[], [], [], [], [], [], [], [], []];
+                this.tables = [];
+                this.XMLFileName = XMLFileName;
+            }
+
+            /*
+             * Loads the xml file that the function is called with so that any xml file from LSU booklet can be used.
+             * In the if statement, calling the fill course selection lets us fill our array when the file is ready.
+             * This is called on object creation so the arrays will be ready for use no matter what.
+             */
+            loadXMLFile() {
+                this.courseSelection = [];
+                this.filteredCourseSelection = [];
+                this.profSelection = [];
+                this.thousandsArrays = [[], [], [], [], [], [], [], [], []];
+                this.tables = [];
+
+                let xmlContent = "";
+                let labFlag = false;
+
+                fetch(this.XMLFileName)
+                    .catch(err => console.log(err))
+                    .then((response) => {
+                        response.text().then((xml) => {
+                            xmlContent = xml;
+                            let parser = new DOMParser();
+                            let xmlDOM = parser.parseFromString(xmlContent, "application/xml");
+                            let rows = xmlDOM.querySelectorAll("Row");
+
+                            rows.forEach(rowXMLNode => {
+                                if (!labFlag) {
+                                    let tempCourse = new ClassConstruct.ClassBuilder();
+
+                                    //If first tag has a data tag child and
+                                    if (rowXMLNode.children[0].childNodes[0].textContent === "(F)"
+                                        || rowXMLNode.children[0].childNodes[0].textContent === "(H)"
+                                        || rowXMLNode.children[0].children[0].getAttribute("ss:Type") === "Number") {
+
+                                        tempCourse = tempCourse.setAvailable(rowXMLNode.children[0].childNodes[0].textContent)
+                                            .setSize(rowXMLNode.children[1].childNodes[0].textContent)
+                                            .setNumber(rowXMLNode.children[3].childNodes[0].textContent);
+
+                                        if (rowXMLNode.children[4].querySelector("Data") !== null)
+                                            tempCourse = tempCourse.setType(rowXMLNode.children[4].childNodes[0].textContent);
+
+                                        tempCourse = tempCourse.setSection(rowXMLNode.children[5].childNodes[0].textContent)
+                                            .setTitle(rowXMLNode.children[6].childNodes[0].textContent)
+                                            .setHours(rowXMLNode.children[7].childNodes[0].textContent);
+
+                                        if (rowXMLNode.children[8].childNodes[0].textContent !== "TBA") {
+                                            //Set times
+                                            const timeArray = rowXMLNode.children[8].childNodes[0].textContent.split("-");
+                                            tempCourse = tempCourse.setStartTime(timeArray[0]).setEndTime(timeArray[1])
+                                                .setDays(rowXMLNode.children[9].childNodes[0].textContent);
+
+                                            //If it has a room, get the room and building
+                                            if (rowXMLNode.children[10].querySelector("Data") !== null)
+                                                tempCourse = tempCourse.setRoom(rowXMLNode.children[10].childNodes[0].textContent)
+                                                    .setBuilding(rowXMLNode.children[11].childNodes[0].textContent);
+                                        } else
+                                            tempCourse = tempCourse.setStartTime("TBA").setEndTime("TBA");
+
+                                        //Get special tags when applicable
+                                        if (rowXMLNode.children[12].querySelector("Data") !== null)
+                                            tempCourse = tempCourse.setFlags(rowXMLNode.children[12].childNodes[0].textContent);
+
+                                        //Get professor when applicable
+                                        if (rowXMLNode.children[13].querySelector("Data") !== null) {
+                                            tempCourse = tempCourse.setProfessor(rowXMLNode.children[13].childNodes[0].textContent);
+                                            //Add unique professors to a list for frontend to display
+                                            if (!this.profSelection.includes(rowXMLNode.children[13].childNodes[0].textContent))
+                                                this.profSelection.push(rowXMLNode.children[13].childNodes[0].textContent);
+                                        }
+
+                                        //Check to see if the class has a lab and fill out its info if so
+                                        if (rowXMLNode.nextElementSibling !== null && rowXMLNode.nextElementSibling.children[4].childNodes[0].textContent === "LAB") {
+                                            tempCourse = tempCourse.setLab("LAB");
+                                            //Set times by splitting the "-" if not TBA
+                                            if (rowXMLNode.nextElementSibling.children[8].childNodes[0].textContent !== "TBA") {
+                                                const labTimeArray = rowXMLNode.nextElementSibling.children[8].childNodes[0].textContent.split("-");
+                                                tempCourse = tempCourse.setLabStartTime(labTimeArray[0]).setLabEndTime(labTimeArray[1])
+                                                    .setLabDays(rowXMLNode.nextElementSibling.children[9].childNodes[0].textContent);
+                                            } else
+                                                tempCourse = tempCourse.setLabStartTime("TBA").setLabEndTime("TBA");
+
+                                            //We run this line because we want to skip over the lab line we just imported and pick up with the next row
+                                            labFlag = true;
+                                        }
+                                        //document.getElementById("test").innerHTML += " " + rowXMLNode.children[0].childNodes[0].textContent;
+                                        this.courseSelection.push(tempCourse.build());
+                                    }
+                                }
+                                //Reset lab flag so we can start reading rows again
+                                else
+                                    labFlag = false;
+                            });
+                            //document.getElementById("test").innerHTML += this.courseSelection[0].getAvailable();
+                            this.filteredCourseSelection = this.filteredCourseSelection.concat(this.courseSelection);
+                            this.fillThousandsArrayAndTabularize(this.filteredCourseSelection);
+                        });
+                    });
+            }
+
+            /*
+            * Pass in an array of CourseConstructs.
+            * It separates them by 1000 level into thousandsArrays, having each contained array count for a 1000 level up to
+            * 9000 level courses.
+            *
+            * The method then fills this.tables with the tables in the form of strings that can then be sent to table tags in
+            * the frontend.
+            */
+            fillThousandsArrayAndTabularize(courseArray) {
+                this.thousandsArrays = [[], [], [], [], [], [], [], [], []];
+                this.tables = [];
+                for (let i = 1; i <= this.thousandsArrays.length; i++) {
+                    for (let j = 0; j < courseArray.length; j++) {
+                        if (((i * 1000) <= parseInt(courseArray[j].getNumber())) && (parseInt(courseArray[j].getNumber()) < i * 1000 + 1000)) {
+                            this.thousandsArrays[i - 1].push(courseArray[j]);
+                        }
+                    }
+                }
+
+                //document.getElementById("test").innerHTML += " " + this.thousandsArrays[0][this.thousandsArrays[0].length - 1].getNumber();
+                //After filling the array, tabularize all values and send tables to frontend
+                for (let i = 0; i < this.thousandsArrays.length; i++) {
+                    this.tables.push(this.tabularize(this.thousandsArrays[i]));
+                }
+
+                //Sends each 1000 table to their respective table tag in frontend
+                for (let i = 1; i <= this.tables.length; i++) {
+                    document.getElementById(i.toString() + "000").innerHTML = this.tables[i - 1];
+                }
+            }
+
+            /*
+            * Takes any array of ClassConstructs and makes a table. Returns the table when constructed.
+            */
+            tabularize(array) {
+                let table =
+                    `<tr>
+                <th colspan="14">Course</th>
+                <th colspan="3">Lab</th>
+            </tr>
+            <tr>
+                <th title="The amount of seats free in the course.">Avl</th>
+                <th title="The amount of students enrolled in the course.">Enrl</th>
+                <th title="The course number.">Number</th>
+                <th title="The type of course, if a special course.">Type</th>
+                <th title="The section number">Section</th>
+                <th title="The abbreviated course title.">Title</th>
+                <th title="The amount of credit hours the course is worth.">Hours</th>
+                <th title="The course start time.">Start</th>
+                <th title="The course end time.">End</th>
+                <th title="The days that the course takes place.">Days</th>
+                <th title="The room number.">Room</th>
+                <th title="The building name.">Building</th>
+                <th title="Any important information pertaining to the course.">Notes/Requirements</th>
+                <th title="The person teaching the course.">Professor</th>
+                <th title="If the course has a lab, the time the lab will start.">Lab Start</th>
+                <th title="If the course has a lab, the time the lab will end.">Lab End</th>
+                <th title="If the course has a lab, the day(s) the lab occurs.">Lab Days</th>
+            </tr>`;
+                let course;
+                for (let i = 0; i < array.length; i++) {
+                    table += "<tr><td>" +
+                        array[i].getAvailable() + "</td><td>" +
+                        array[i].getSize() + "</td><td>" +
+                        array[i].getNumber() + "</td><td>";
+
+                    if (array[i].getType() !== null)
+                        table += array[i].getType() + "</td><td>";
+                    else
+                        table += "</td><td>";
+
+                    table += array[i].getSection() + "</td><td>" +
+                        array[i].getTitle() + "</td><td>" +
+                        array[i].getHours() + "</td><td>" +
+                        (array[i].getStartTime() == "TBA" ? "TBA" : array[i].getStartTime().substring(0,array[i].getStartTime().length-2) + ":" + array[i].getStartTime().substring(array[i].getStartTime().length-2,array[i].getStartTime().length)) + "</td><td>" +
+                        (array[i].getEndTime() == "TBA" ? "TBA" : array[i].getEndTime().substring(0,2) + ":" + array[i].getEndTime().substring(2,array[i].getEndTime().length)) + "</td><td>";
+
+                    if (array[i].getDays() !== null)
+                        table += array[i].getDays() + "</td><td>";
+                    else
+                        table += "</td><td>";
+
+                    if (array[i].getRoom() !== null)
+                        table += array[i].getRoom() + "</td><td>";
+                    else
+                        table += "</td><td>";
+
+                    if (array[i].getBuilding() !== null)
+                        table += array[i].getBuilding() + "</td><td>";
+                    else
+                        table += "</td><td>";
+
+                    if (array[i].getFlags() !== null)
+                        table += array[i].getFlags() + "</td><td>";
+                    else
+                        table += "</td><td>";
+
+                    if (array[i].getProfessor() !== null)
+                        table += array[i].getProfessor() + "</td><td>";
+                    else
+                        table += "</td><td>";
+
+                    if (array[i].getLabStartTime() !== null)
+                        table += array[i].getLabStartTime().substring(0,array[i].getLabStartTime().length-2) + ":" + array[i].getLabStartTime().substring(array[i].getLabStartTime().length-2,array[i].getLabStartTime().length) + "</td><td>";
+                    else
+                        table += "</td><td>";
+
+                    if (array[i].getLabEndTime() !== null)
+                        table += array[i].getLabEndTime() + "</td><td>";
+                    else
+                        table += "</td><td>";
+
+                    if (array[i].getLabDays() !== null)
+                        table += array[i].getLabDays() + "</td><td>";
+                    else
+                        table += "</td><td>";
+                    table += "</td></tr>";
+                }
+
+                return table;
+            }
+
+            sortCourses() {
+                this.filteredCourseSelection = [].concat(this.courseSelection);
+
+                if (document.getElementById('time').value === "morning") {
+                    let tempArray = [];
+                    for (let i = 0; i < this.filteredCourseSelection.length; i++) {
+                        if (this.filteredCourseSelection[i].getStartTime() !== "TBA" && this.filteredCourseSelection[i].getStartTime() !== null
+                            && this.filteredCourseSelection[i].getEndTime() !== "TBA" && this.filteredCourseSelection[i].getStartTime() !== null) {
+                            if (!this.filteredCourseSelection[i].getEndTime().includes('N') && parseInt(this.filteredCourseSelection[i].getStartTime()) >= 730
+                                && parseInt(this.filteredCourseSelection[i].getStartTime()) < 1200)
+                                tempArray.push(this.filteredCourseSelection[i]);
+                        }
+                    }
+                    this.filteredCourseSelection = tempArray;
+                } else if (document.getElementById('time').value === "afternoon") {
+                    let tempArray = [];
+                    for (let i = 0; i < this.filteredCourseSelection.length; i++) {
+                        if (parseInt(this.filteredCourseSelection[i].getStartTime()) < 430 || parseInt(this.filteredCourseSelection[i].getStartTime()) >= 1200)
+                            tempArray.push(this.filteredCourseSelection[i]);
+                    }
+                    this.filteredCourseSelection = tempArray;
+                } else if (document.getElementById('time').value === "night") {
+                    let tempArray = [];
+                    for (let i = 0; i < this.filteredCourseSelection.length; i++) {
+                        if (this.filteredCourseSelection[i].getEndTime().includes('N'))
+                            tempArray.push(this.filteredCourseSelection[i]);
+                    }
+                    this.filteredCourseSelection = tempArray;
+                }
+                if (document.getElementById("Monday").checked) {
+                    let tempArray = [];
+                    for (let i = 0; i < this.filteredCourseSelection.length; i++) {
+                        if (this.filteredCourseSelection[i].getDays() !== null && this.filteredCourseSelection[i].getDays().includes("M"))
+                            tempArray.push(this.filteredCourseSelection[i]);
+                    }
+                    this.filteredCourseSelection = tempArray;
+                }
+
+                if (document.getElementById("Tuesday").checked) {
+                    let tempArray = [];
+                    for (let i = 0; i < this.filteredCourseSelection.length; i++) {
+                        if (this.filteredCourseSelection[i].getDays() !== null && this.filteredCourseSelection[i].getDays().includes("T")) {
+                            //String only has 1 T, meaning it is exclusively tues or thurs
+                            if (this.filteredCourseSelection[i].getDays().indexOf("T") === this.filteredCourseSelection[i].getDays().lastIndexOf("T")) {
+                                //test if the one day is thursday. If it is not, return true because it must be tues at that point
+                                if (!this.filteredCourseSelection[i].getDays().includes("TH")) {
+                                    tempArray.push(this.filteredCourseSelection[i]);
+                                }
+                            }
+                            //Course has both tues and thurs, return true because it definitely has tues
+                            else
+                                tempArray.push(this.filteredCourseSelection[i]);
+                        }
+                    }
+                    this.filteredCourseSelection = tempArray;
+                }
+
+                if (document.getElementById("Wednesday").checked) {
+                    let tempArray = [];
+                    for (let i = 0; i < this.filteredCourseSelection.length; i++) {
+                        if (this.filteredCourseSelection[i].getDays() !== null && this.filteredCourseSelection[i].getDays().includes("W"))
+                            tempArray.push(this.filteredCourseSelection[i]);
+                    }
+                    this.filteredCourseSelection = tempArray;
+                }
+
+                if (document.getElementById("Thursday").checked) {
+                    let tempArray = [];
+                    for (let i = 0; i < this.filteredCourseSelection.length; i++) {
+                        if (this.filteredCourseSelection[i].getDays() !== null && this.filteredCourseSelection[i].getDays().includes("TH"))
+                            tempArray.push(this.filteredCourseSelection[i]);
+                    }
+                    this.filteredCourseSelection = tempArray;
+                }
+
+                if (document.getElementById("Friday").checked) {
+                    let tempArray = [];
+                    for (let i = 0; i < this.filteredCourseSelection.length; i++) {
+                        if (this.filteredCourseSelection[i].getDays() !== null && this.filteredCourseSelection[i].getDays().includes("F"))
+                            tempArray.push(this.filteredCourseSelection[i]);
+                    }
+                    this.filteredCourseSelection = tempArray;
+                }
+
+                if (document.getElementById("Saturday").checked) {
+                    let tempArray = [];
+                    for (let i = 0; i < this.filteredCourseSelection.length; i++) {
+                        if (this.filteredCourseSelection[i].getDays() !== null && this.filteredCourseSelection[i].getDays().includes("S"))
+                            tempArray.push(this.filteredCourseSelection[i]);
+                    }
+                    this.filteredCourseSelection = tempArray;
+                }
+
+                if (document.getElementById("Seats Available").checked) {
+                    let tempArray = [];
+                    for (let i = 0; i < this.filteredCourseSelection.length; i++) {
+                        if (this.filteredCourseSelection[i].getAvailable() !== null && !(this.filteredCourseSelection[i].getAvailable() === "(F)" || this.filteredCourseSelection[i].getAvailable() === "(H)"))
+                            tempArray.push(this.filteredCourseSelection[i]);
+                    }
+                    this.filteredCourseSelection = tempArray;
+                }
+
+                if (document.getElementById("ci").checked) {
+                    let tempArray = [];
+                    for (let i = 0; i < this.filteredCourseSelection.length; i++) {
+                        if (this.filteredCourseSelection[i].getFlags() !== null && this.filteredCourseSelection[i].getFlags().includes("C-I"))
+                            tempArray.push(this.filteredCourseSelection[i]);
+                    }
+                    this.filteredCourseSelection = tempArray;
+                }
+
+                if (document.getElementById("Virtual").checked) {
+                    let tempArray = [];
+                    for (let i = 0; i < this.filteredCourseSelection.length; i++) {
+                        if (this.filteredCourseSelection[i].getFlags() !== null && (this.filteredCourseSelection[i].getFlags().includes("100% WEB BASED") || this.filteredCourseSelection[i].getFlags().includes("75-99% WEB BASE")
+                            || this.filteredCourseSelection[i].getFlags().includes("50-74% WEB BASE") || this.filteredCourseSelection[i].getFlags().includes("1-49% WEB BASED")))
+                            tempArray.push(this.filteredCourseSelection[i]);
+                    }
+                    this.filteredCourseSelection = tempArray;
+                }
+
+                this.fillThousandsArrayAndTabularize(this.filteredCourseSelection);
+            }
+
+            getThousandsCourses() {
+                return this.thousandsArrays;
+            }
+
+            getProfArray() {
+                return this.profSelection;
+            }
+        }
+
+        //classAgg = new ClassAggregation("/revamped-schedule-booklet/fal22csc.xml");
+
+        const classAggMap = new Map([
+            ["fal22csc", new ClassAggregation("XML_Files/fal22csc.xml")],
+            ["fal22engl", new ClassAggregation("XML_Files/fal22engl.xml")],
+            ["fal22engr", new ClassAggregation("XML_Files/fal22engr.xml")],
+            ["fal22hnrs", new ClassAggregation("XML_Files/fal22hnrs.xml")],
+            []
+        ]);
+
+        let currentClassAgg;
+
+        function loadClassAgg() {
+            let keyString = document.getElementById("chooseSemester").value + document.getElementById("chooseDepartment").value;
+            currentClassAgg = classAggMap.get(keyString);
+            currentClassAgg.loadXMLFile();
+        }
+        </script>
+    </p>
+
+</div>
+
+
+<div class="footer">
+    <ul class="footerLinks" style="color: white;">
+
+        <li><a href="resourcesPage.html" target="_blank"
+               style="background-color: white; color:#4F2992;padding: 10px 25px">Scheduling Resources</a></li>
+        <li><a href="schedulePopUp.html" target="_blank"
+               style="background-color: white;color:#4F2992;padding: 10px 25px"
+               onclick="window.open('schedulePopUp.html', 'newwindow', 'width=450,height=auto');
+              return false;"
+        >Create a Mock Schedule</a></li>
+    </ul>
+
+
+</div>
+
+<div class="subFooter">
+    <!--        <p> Team Loading... <Loading class="."></Loading> </p>-->
+    <center>
+        <img alt="Team Loading logo" class=logo height=auto src="Team loading.png" width=225px>
+        <center>Dustin Wleczyk, Joshua McCain, Maggie Stewart, Olivia Cheung, Serene Sam, Steven Seiden</center>
+
+    </center>
+</div>
+
+</body>
+</html>
