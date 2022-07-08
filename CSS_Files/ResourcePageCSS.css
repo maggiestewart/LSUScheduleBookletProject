@@ -79,8 +79,6 @@ csc for drop down boxes
 
 .columnGeneralInformation {
     text-decoration: none;
-
-
 }
 
 .columnGeneralInformation:after {
@@ -134,14 +132,11 @@ ul li {
     margin-right: 10px
 }
 
-
 .subFooter {
 
     background-color: #4E5052;
     position: relative;
     color: white;
-
-
 }
 
 .column {
@@ -150,7 +145,6 @@ ul li {
     padding: 20px;
     height: 400px;
     border-style: solid;
-
 }
 
 .subFooter:after {
@@ -169,7 +163,6 @@ ul li {
     border-bottom-style: solid;
     border-bottom-width: 10px;
     border-bottom-color: lightgrey;
-
 }
 
 
@@ -220,8 +213,6 @@ li a {
     border-color: #a19f9f;
     border-width: 1px;
     flex-direction: row;
-
-
 }
 
 li a:hover {
@@ -233,7 +224,6 @@ nav {
     background: #ebe6fd;
     margin: 40px auto;
     border-radius: 5px;
-
 }
 
 span {
@@ -277,10 +267,10 @@ span::after {
     height: 100px;
 }
 
-
 /*
-    Dropdown menu stuff for resource page ends here
+    Dropdown menu styling for resource page END
  */
+
 #generalHeader {
     text-align: center;
 }
@@ -303,11 +293,9 @@ span::after {
         box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
 
     }
-
     nav:hover {
         box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
     }
-
     html {
         background: #2b2b2b;
     }
@@ -325,11 +313,9 @@ span::after {
         background: #171717;
 
     }
-
     .navBar {
         background-color: #262626;
     }
-
     body {
         color: white;
     }
