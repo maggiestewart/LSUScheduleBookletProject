@@ -1,33 +1,14 @@
-.outsideHeaderWrapper {
-    height: 100%;
-}
+.outsideHeaderWrapper { height: 100%; }
 
-/*
-
-* {
-    box-sizing: border-box;
-}
-*/
-
+b { padding-left: 15px; }
 
 body {
     padding-top: 80px;
     margin: 0;
 }
 
-
 .header {
     background-color: #4F2992;
-
-    /*
-    text-align: center;
-    color: white;
-    position:fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    margin-bottom: 20px;
-    */
     text-align: center;
     color: white;
     position: fixed;
@@ -39,72 +20,17 @@ body {
 
 }
 
-/*
-.headerBar {
-
-    /*
-    width: 100%;
-    background-color: grey;
-    margin-top: 20px;
-    margin-bottom: 80px;
-    position: static;
-    top: 0;
-    left 0;
-
-    margin-top: 114px;
-    text-align: center;
-    position: static;
-    padding-top: 20px;
-    padding-bottom: 20px;
-
-    left: 0;
-    top: 0;
-    width: 100%;
-    margin-bottom: 80px;
-
-}
-
-*/
 .tableForHeaderBar {
     width: 100%;
     font-family: Arial, Helvetica, sans-serif;
     border-radius: 10px;
     border-spacing: 0px;
     text-align: center;
-
-
 }
 
+.tableForHeaderBar tbody { background-color: #ebe6fd; }
 
-.tableForHeaderBar tbody {
-
-    background-color: #ebe6fd;
-}
-
-/*
-.chooseDepartment, .chooseSemester {
-    background-color: whitesmoke;
-    float: left;
-    left: 0;
-    text-align: center;
-    text-decoration: none;
-    padding: 5px;
-    border-radius: 5px;
-    border-style: solid;
-    margin-left: 10px;
-}
-*/
-
-select {
-    border-radius: 5px;
-}
-
-
-.middlePage {
-
-
-}
-
+select { border-radius: 5px; }
 
 .footer {
     background-color: #4F2992;
@@ -127,22 +53,6 @@ select {
     color: white;
 }
 
-
-/*
-a {
-    display: block;
-    width: 100%;
-    line-height: 2em;
-    text-align: center;
-    color: white;
-    border-radius: 5px;
-}
-a:hover {
-    color: rebeccapurple;
-    background: #eff;
-}
-*/
-
 ul li {
     list-style: none;
     display: inline-block;
@@ -158,25 +68,13 @@ li a {
     border-radius: 5px;
     border-color: #4F2992;
     border-width: 1px;
-
-
 }
 
 li a:hover {
     text-decoration-line: underline;
 }
 
-
 .onekClass {
-    /*
-    width: 100%;
-    border-radius: 5px;
-    margin-top: 10px;
-    padding: 5px;
-    text-align: center;
-    background-color: mediumpurple;
-    */
-
     border-radius: 10px;
     border-spacing: 10px;
     text-align: center;
@@ -186,15 +84,10 @@ li a:hover {
     border-collapse: collapse;
 }
 
-.classesTable thead {
-
-}
-
 .classesTable tr:nth-child(even) {
     background-color: white;
     border-collapse: collapse;
 }
-
 
 .classesTable tr:nth-child(2) {
     background-color: #4F2992;
@@ -202,7 +95,6 @@ li a:hover {
     border-collapse: collapse;
     text-align: left;
 }
-
 
 #theadTR tr, #theadTR td {
     padding: 0px;
@@ -212,17 +104,11 @@ li a:hover {
     border-collapse: collapse;
 }
 
-#theadTRRight tr {
-    border-top-right-radius: 5px;
-}
+#theadTRRight tr { border-top-right-radius: 5px; }
 
-#theadTRLeft tr {
-    border-top-left-radius: 5px;
-
-}
+#theadTRLeft tr { border-top-left-radius: 5px; }
 
 #tbodyTR tr, #tbodyTR td {
-
     padding: 0px;
     width: 95%;
     border-spacing: 0px;
@@ -235,10 +121,7 @@ li a:hover {
         box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.15), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
     }
 
-    nav:hover {
-        box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
-
-    }
+    nav:hover { box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.1); }
 }
 
 
@@ -246,61 +129,38 @@ li a:hover {
     nav {
         background: #171717;
         box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
-
     }
 
-    nav:hover {
-        box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
-    }
+    nav:hover { box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.1); }
 
-    html {
-        background: #2b2b2b;
-    }
+    html { background: #2b2b2b; }
 
     .columnGeneralInformation a {
         color: white;
         background: #171717;
     }
 
-    li a {
-        color: white;
-    }
+    li a { color: white; }
 
+    .navBar { background-color: #262626; }
 
-    .navBar {
-        background-color: #262626;
-    }
-
-    body {
-        color: white;
-    }
+    body { color: white; }
 
     .classesTable tr:nth-child(even) {
         background-color: #1c1c1c;
         border-collapse: collapse;
     }
 
-
-    .tableForHeaderBar tbody {
-
-        background-color: #171717;
-    }
-
+    .tableForHeaderBar tbody { background-color: #171717; }
 
     .classesTable tr:nth-child(2) {
         background-color: #4F2992;
         color: white;
         border-collapse: collapse;
     }
-
-
 }
 
-
-/*
-    This part deals with dropdown menu stuff for the resource page
- */
-
+/*This part deals with dropdown menu stuff for the resource page */
 li a {
     text-decoration: none;
     padding: 2px;
@@ -310,13 +170,9 @@ li a {
     border-radius: 5px;
     border-color: #ebe6fd;
     border-width: 1px;
-
-
 }
 
-li a:hover {
-    text-decoration-line: underline;
-}
+li a:hover { text-decoration-line: underline; }
 
 nav {
     width: 95%;
@@ -335,7 +191,6 @@ span {
     display: block;
     text-align: center;
     border-radius: 5px;
-
 }
 
 span::after {
@@ -348,13 +203,11 @@ span::after {
     clear: both;
     width: 100%;
     height: 0;
-
     /*This is a workaround to get sliding animations working avoiding a bug with using auto height*/
     overflow: hidden;
     -webkit-transition: all .5s ease;
     -moz-transition: all .5s ease;
     transition: all .5s ease;
-
 }
 
 .slide li {
@@ -373,7 +226,4 @@ span::after {
     padding-bottom: 20px;
 }
 
-
-/*
-    Dropdown menu stuff for resource page ends here
- */
+/* Dropdown menu stuff for resource page ends here */

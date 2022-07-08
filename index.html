@@ -2,13 +2,10 @@
 <html lang="en">
 <link rel="shortcut icon" type="image/jpg" href="favicon.ico"/>
 <head>
-
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1">
     <title>Course Offering</title>
     <link rel="stylesheet" type="text/css" href="CSS_Files/WelcomePageCSS.css">
-
-
 </head>
 
 <body>
@@ -16,91 +13,54 @@
 <div class="header">
     <img alt="LSU logo" align="left" class=logo height=50px style="padding-top: 15px"
          src="https://www.lsu.edu/_resources_fierce/svgs/lsu-logo.svg" width=225px>
-    <div style="text-align: left">
-        <h1>Course Offering</h1>
-    </div>
-
-
-    <!--- <p>Welcome!</p> --->
+    <div style="text-align: left"> <h1>Course Offering</h1> </div>
 </div>
 
 <table class="tableForHeaderBar" style="width:100%;">
     <tbody>
     <tr>
-        <td>
-
-            </br>
-            <b>Semester/Year:</b>
-        </td>
-        <td>
-            </br>
-            <b>Departments:</b>
-        </td>
+        <td></br><b>Semester/Year:</b></td>
+        <td></br><b>Departments:</b></td>
     </tr>
 
     <tr>
-        <td>
-            <select id="chooseSemester" name="chooseSemester" onchange="loadClassAgg()">
-                <option disabled selected value> -- Select a semester --</option>
-                <option value="fal22"> Fall 2022</option>
-                <option value="spr22"> Spring 2022</option>
-                <option value="fal21"> Fall 2021</option>
-                <option value="spr21"> Spring 2021</option>
-            </select>
-        </td>
-        <td>
-            <select id="chooseDepartment" name="chooseDepartment" onchange="loadClassAgg()">
-                <option disabled selected value> -- Select a department --</option>
-                <option value="csc"> Computer Science</option>
-                <option value="engl"> English</option>
-                <option value="engr"> Engineering</option>
-                <option value="hnrs"> Honors</option>
-            </select>
-        </td>
+        <td><select id="chooseSemester" name="chooseSemester" onchange="loadClassAgg()">
+            <option disabled selected value> -- Select a semester --</option>
+            <option value="fal22"> Fall 2022</option>
+            <option value="spr22"> Spring 2022</option>
+            <option value="fal21"> Fall 2021</option>
+            <option value="spr21"> Spring 2021</option>
+        </select></td>
+        <td><select id="chooseDepartment" name="chooseDepartment" onchange="loadClassAgg()">
+            <option disabled selected value> -- Select a department --</option>
+            <option value="csc"> Computer Science</option>
+            <option value="engl"> English</option>
+            <option value="engr"> Engineering</option>
+            <option value="hnrs"> Honors</option>
+        </select></td>
     </tr>
 
     <tbody><tr><td></br></td><td></br></td></tr></tbody>
-
-
 </table>
 
 <br>
 <center>
-    <b style="padding-left:15px">Monday:</b>
-    <input type="checkbox" id="Monday" name="monday" value="monday" onclick="currentClassAgg.sortCourses()">
+    <b>Monday:</b><input type="checkbox" id="Monday" name="monday" value="monday" onclick="currentClassAgg.sortCourses()">
+    <b>Tuesday:</b><input type="checkbox" id="Tuesday" name="tuesday" value="tuesday" onclick="currentClassAgg.sortCourses()">
+    <b>Wednesday:</b><input type="checkbox" id="Wednesday" name="wednesday" value="wednesday" onclick="currentClassAgg.sortCourses()">
+    <b>Thursday:</b><input type="checkbox" id="Thursday" name="thursday" value="thursday" onclick="currentClassAgg.sortCourses()">
+    <b>Friday:</b><input type="checkbox" id="Friday" name="friday" value="friday" onclick="currentClassAgg.sortCourses()">
+    <b>Saturday:</b><input type="checkbox" id="Saturday" name="saturday" value="saturday" onclick="currentClassAgg.sortCourses()">
 
-    <b style="padding-left:15px">Tuesday:</b>
-    <input type="checkbox" id="Tuesday" name="tuesday" value="tuesday" onclick="currentClassAgg.sortCourses()">
-
-    <b style="padding-left:15px">Wednesday:</b>
-    <input type="checkbox" id="Wednesday" name="wednesday" value="wednesday" onclick="currentClassAgg.sortCourses()">
-
-    <b style="padding-left:15px">Thursday:</b>
-    <input type="checkbox" id="Thursday" name="thursday" value="thursday" onclick="currentClassAgg.sortCourses()">
-
-    <b style="padding-left:15px">Friday:</b>
-    <input type="checkbox" id="Friday" name="friday" value="friday" onclick="currentClassAgg.sortCourses()">
-
-    <b style="padding-left:15px">Saturday:</b>
-    <input type="checkbox" id="Saturday" name="saturday" value="saturday" onclick="currentClassAgg.sortCourses()">
-
-    <b style="padding-left:15px">Virtual:</b>
-    <input type="checkbox" id="Virtual" name="virtual" value="virtual" onclick="currentClassAgg.sortCourses()">
-
-    <b style="padding-left:15px">Seats Available:</b>
-    <input type="checkbox" id="Seats Available" name="available" value="available" onclick="currentClassAgg.sortCourses()">
-
-    <b style="padding-left:15px">CI:</b>
-    <input type="checkbox" id="ci" name="ci" value="ci" onclick="currentClassAgg.sortCourses()">
-
-    <b style="padding-left:15px">Time:</b>
-    <select id="time" name="time" onchange="currentClassAgg.sortCourses()">
+    <b>Virtual:</b><input type="checkbox" id="Virtual" name="virtual" value="virtual" onclick="currentClassAgg.sortCourses()">
+    <b>Seats Available:</b><input type="checkbox" id="Seats Available" name="available" value="available" onclick="currentClassAgg.sortCourses()">
+    <b>CI:</b><input type="checkbox" id="ci" name="ci" value="ci" onclick="currentClassAgg.sortCourses()">
+    <b>Time:</b><select id="time" name="time" onchange="currentClassAgg.sortCourses()">
         <option value="all"> All</option>
         <option value="morning"> Morning (starts before 12pm)</option>
         <option value="afternoon"> Afternoon (starts 12pm-4:30pm)</option>
         <option value="night"> Night (starts after 4:30pm)</option>
     </select>
-
 
 </center>
 
@@ -111,19 +71,8 @@
     <ul class="slide">
         <table id="1000" class="classesTable"
                style="width:97.5%; margin-left: -1.25%;margin-right: 1.25%;border-collapse: collapse;border: none;">
-            <thead id="theadTR">
-
-            <tr style="color: white;">
-            </tr>
-
-            </thead>
-
-            <tbody id="tbodyTR">
-            <tr>
-                <td> There are no courses for the selected department and semester.</td>
-            </tr>
-            </tbody>
-
+            <thead id="theadTR"><tr style="color: white;"></tr></thead>
+            <tbody id="tbodyTR"><tr><td> There are no courses for the selected department and semester.</td></tr></tbody>
         </table>
     </ul>
 </nav>
@@ -134,19 +83,8 @@
     <ul class="slide">
         <table id="2000" class="classesTable"
                style="width:97.5%; margin-left: -1.25%;margin-right: 1.25%;border-collapse: collapse;border: none;">
-            <thead id="theadTR">
-
-            <tr style="color: white;">
-            </tr>
-
-            </thead>
-
-            <tbody id="tbodyTR">
-            <tr>
-                <td> There are no courses for the selected department and semester.</td>
-            </tr>
-            </tbody>
-
+            <thead id="theadTR"><tr style="color: white;"></tr></thead>
+            <tbody id="tbodyTR"><tr><td> There are no courses for the selected department and semester.</td></tr></tbody>
         </table>
     </ul>
 </nav>
@@ -157,19 +95,8 @@
     <ul class="slide">
         <table id="3000" class="classesTable"
                style="width:97.5%; margin-left: -1.25%;margin-right: 1.25%;border-collapse: collapse;border: none;">
-            <thead id="theadTR">
-
-            <tr style="color: white;">
-            </tr>
-
-            </thead>
-
-            <tbody id="tbodyTR">
-            <tr>
-                <td> There are no courses for the selected department and semester.</td>
-            </tr>
-            </tbody>
-
+            <thead id="theadTR"><tr style="color: white;"></tr></thead>
+            <tbody id="tbodyTR"><tr><td> There are no courses for the selected department and semester.</td></tr></tbody>
         </table>
     </ul>
 </nav>
@@ -180,19 +107,8 @@
     <ul class="slide">
         <table id="4000" class="classesTable"
                style="width:97.5%; margin-left: -1.25%;margin-right: 1.25%;border-collapse: collapse;border: none;">
-            <thead id="theadTR">
-
-            <tr style="color: white;">
-            </tr>
-
-            </thead>
-
-            <tbody id="tbodyTR">
-            <tr>
-                <td> There are no courses for the selected department and semester.</td>
-            </tr>
-            </tbody>
-
+            <thead id="theadTR"><tr style="color: white;"></tr></thead>
+            <tbody id="tbodyTR"><tr><td> There are no courses for the selected department and semester.</td></tr></tbody>
         </table>
     </ul>
 </nav>
@@ -203,19 +119,8 @@
     <ul class="slide">
         <table id="5000" class="classesTable"
                style="width:97.5%; margin-left: -1.25%;margin-right: 1.25%;border-collapse: collapse;border: none;">
-            <thead id="theadTR">
-
-            <tr style="color: white;">
-            </tr>
-
-            </thead>
-
-            <tbody id="tbodyTR">
-            <tr>
-                <td> There are no courses for the selected department and semester.</td>
-            </tr>
-            </tbody>
-
+            <thead id="theadTR"><tr style="color: white;"></tr></thead>
+            <tbody id="tbodyTR"><tr><td> There are no courses for the selected department and semester.</td></tr></tbody>
         </table>
     </ul>
 </nav>
@@ -226,19 +131,8 @@
     <ul class="slide">
         <table id="6000" class="classesTable"
                style="width:97.5%; margin-left: -1.25%;margin-right: 1.25%;border-collapse: collapse;border: none;">
-            <thead id="theadTR">
-
-            <tr style="color: white;">
-            </tr>
-
-            </thead>
-
-            <tbody id="tbodyTR">
-            <tr>
-                <td> There are no courses for the selected department and semester.</td>
-            </tr>
-            </tbody>
-
+            <thead id="theadTR"><tr style="color: white;"></tr></thead>
+            <tbody id="tbodyTR"><tr><td> There are no courses for the selected department and semester.</td></tr></tbody>
         </table>
     </ul>
 </nav>
@@ -249,19 +143,8 @@
     <ul class="slide">
         <table id="7000" class="classesTable"
                style="width:97.5%; margin-left: -1.25%;margin-right: 1.25%;border-collapse: collapse;border: none;">
-            <thead id="theadTR">
-
-            <tr style="color: white;">
-            </tr>
-
-            </thead>
-
-            <tbody id="tbodyTR">
-            <tr>
-                <td> There are no courses for the selected department and semester.</td>
-            </tr>
-            </tbody>
-
+            <thead id="theadTR"><tr style="color: white;"></tr></thead>
+            <tbody id="tbodyTR"><tr><td> There are no courses for the selected department and semester.</td></tr></tbody>
         </table>
     </ul>
 </nav>
@@ -272,18 +155,8 @@
     <ul class="slide">
         <table id="8000" class="classesTable"
                style="width:97.5%; margin-left: -1.25%;margin-right: 1.25%;border-collapse: collapse;border: none;">
-            <thead id="theadTR">
-
-            <tr style="color: white;">
-            </tr>
-
-            </thead>
-
-            <tbody id="tbodyTR">
-            <tr>
-                <td> There are no courses for the selected department and semester.</td>
-            </tr>
-            </tbody>
+            <thead id="theadTR"><tr style="color: white;"></tr></thead>
+            <tbody id="tbodyTR"><tr><td> There are no courses for the selected department and semester.</td></tr></tbody>
 
         </table>
     </ul>
@@ -295,27 +168,14 @@
     <ul class="slide">
         <table id="9000" class="classesTable"
                style="width:97.5%; margin-left: -1.25%;margin-right: 1.25%;border-collapse: collapse;border: none;">
-            <thead id="theadTR">
-
-            <tr style="color: white;">
-            </tr>
-
-            </thead>
-
-            <tbody id="tbodyTR">
-            <tr>
-                <td> There are no courses for the selected department and semester.</td>
-            </tr>
-            </tbody>
-
+            <thead id="theadTR"><tr style="color: white;"></tr></thead>
+            <tbody id="tbodyTR"><tr><td> There are no courses for the selected department and semester.</td></tr></tbody>
         </table>
     </ul>
 </nav>
 
 
 <div class="middlePage">
-
-
     <p>
         <script>class ClassConstruct {
 
@@ -964,19 +824,15 @@
         <li><a href="schedulePopUp.html" target="_blank"
                style="background-color: white;color:#4F2992;padding: 10px 25px"
                onclick="window.open('schedulePopUp.html', 'newwindow', 'width=450,height=auto');
-              return false;"
+               return false;"
         >Create a Mock Schedule</a></li>
     </ul>
-
-
 </div>
 
 <div class="subFooter">
-    <!--        <p> Team Loading... <Loading class="."></Loading> </p>-->
     <center>
         <img alt="Team Loading logo" class=logo height=auto src="Team loading.png" width=225px>
         <center>Dustin Wleczyk, Joshua McCain, Maggie Stewart, Olivia Cheung, Serene Sam, Steven Seiden</center>
-
     </center>
 </div>
 
