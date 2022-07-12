@@ -9,7 +9,7 @@
 #### TEAM: Dustin Wleczyk, Joshua McCain, Maggie Stewart, Steven Seiden, Olivia Cheung, Serene Sam
 #### LEADERSHIP: Maggie Stewart (Milestone 1/2 & Presentation/Post-Mortem), Steven Seiden (Milestone 3)
 
-###### ___________________________________________________________________________________________________________________________________________________________________________________
+###### ______________________________________________________________________________________________________________________________________________________________________
 
 
 #### When it's time for students to schedule their classes for the next semester, everyone must refer to the LSU course booklet. However, the current booklet is hard to understand due to its cluttered layout and  information in one place. The current searching process can be overwhelming or stressful for students. New students are unfamiliar with the layout of the course booklet, and upperclassmen are frustrated as they must keep track of their required classes. Our goal for this project was to create a more aesthetically pleasing user interface to make the course booklet easier to interpret and incorporate an advanced search bar for finer search details like the day, time of day, virtual, etc. 
